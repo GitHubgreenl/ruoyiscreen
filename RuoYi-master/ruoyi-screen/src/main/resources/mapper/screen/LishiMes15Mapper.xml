@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.LishiMes15Mapper">
+    
+    <resultMap type="LishiMes15" id="LishiMes15Result">
+        <result property="mIindex"    column="m_iIndex"    />
+        <result property="采样时间"    column="采样时间"    />
+        <result property="countGet"    column="count_get"    />
+        <result property="vDate1"    column="vDate1"    />
+        <result property="XMSLYG0"    column="XMSLYG0"    />
+        <result property="XMLOSS1"    column="XMLOSS1"    />
+        <result property="XMLOSS2"    column="XMLOSS2"    />
+        <result property="XMAL2O33"    column="XMAL2O33"    />
+        <result property="XMFe2O34"    column="XMFe2O34"    />
+        <result property="XMCaO5"    column="XMCaO5"    />
+        <result property="XMMgO6"    column="XMMgO6"    />
+        <result property="XMKH7"    column="XMKH7"    />
+        <result property="XMN8"    column="XMN8"    />
+        <result property="XMP9"    column="XMP9"    />
+        <result property="XMK2O10"    column="XMK2O10"    />
+        <result property="XMNa2O11"    column="XMNa2O11"    />
+        <result property="XMSO312"    column="XMSO312"    />
+    </resultMap>
+
+    <sql id="selectLishiMes15Vo">
+        select m_iIndex, 采样时间, count_get, vDate1, XMSLYG0, XMLOSS1, XMLOSS2, XMAL2O33, XMFe2O34, XMCaO5, XMMgO6, XMKH7, XMN8, XMP9, XMK2O10, XMNa2O11, XMSO312 from lishi_mes15
+    </sql>
+
+    <select id="selectLishiMes15List" parameterType="LishiMes15" resultMap="LishiMes15Result">
+        <include refid="selectLishiMes15Vo"/>
+        <where>  
+            <if test="mIindex != null "> and m_iIndex = #{mIindex}</if>
+            <if test="采样时间 != null "> and 采样时间 = #{采样时间}</if>
+            <if test="countGet != null "> and count_get = #{countGet}</if>
+            <if test="vDate1 != null "> and vDate1 = #{vDate1}</if>
+            <if test="XMSLYG0 != null  and XMSLYG0 != ''"> and XMSLYG0 = #{XMSLYG0}</if>
+            <if test="XMLOSS1 != null "> and XMLOSS1 = #{XMLOSS1}</if>
+            <if test="XMLOSS2 != null "> and XMLOSS2 = #{XMLOSS2}</if>
+            <if test="XMAL2O33 != null "> and XMAL2O33 = #{XMAL2O33}</if>
+            <if test="XMFe2O34 != null "> and XMFe2O34 = #{XMFe2O34}</if>
+            <if test="XMCaO5 != null "> and XMCaO5 = #{XMCaO5}</if>
+            <if test="XMMgO6 != null "> and XMMgO6 = #{XMMgO6}</if>
+            <if test="XMKH7 != null "> and XMKH7 = #{XMKH7}</if>
+            <if test="XMN8 != null "> and XMN8 = #{XMN8}</if>
+            <if test="XMP9 != null "> and XMP9 = #{XMP9}</if>
+            <if test="XMK2O10 != null "> and XMK2O10 = #{XMK2O10}</if>
+            <if test="XMNa2O11 != null "> and XMNa2O11 = #{XMNa2O11}</if>
+            <if test="XMSO312 != null "> and XMSO312 = #{XMSO312}</if>
+        </where>
+    </select>
+    
+    <select id="selectLishiMes15ByMIindex" parameterType="Long" resultMap="LishiMes15Result">
+        <include refid="selectLishiMes15Vo"/>
+        where m_iIndex = #{mIindex}
+    </select>
+
+    <insert id="insertLishiMes15" parameterType="LishiMes15">
+        insert into lishi_mes15
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="mIindex != null">m_iIndex,</if>
+            <if test="采样时间 != null">采样时间,</if>
+            <if test="countGet != null">count_get,</if>
+            <if test="vDate1 != null">vDate1,</if>
+            <if test="XMSLYG0 != null">XMSLYG0,</if>
+            <if test="XMLOSS1 != null">XMLOSS1,</if>
+            <if test="XMLOSS2 != null">XMLOSS2,</if>
+            <if test="XMAL2O33 != null">XMAL2O33,</if>
+            <if test="XMFe2O34 != null">XMFe2O34,</if>
+            <if test="XMCaO5 != null">XMCaO5,</if>
+            <if test="XMMgO6 != null">XMMgO6,</if>
+            <if test="XMKH7 != null">XMKH7,</if>
+            <if test="XMN8 != null">XMN8,</if>
+            <if test="XMP9 != null">XMP9,</if>
+            <if test="XMK2O10 != null">XMK2O10,</if>
+            <if test="XMNa2O11 != null">XMNa2O11,</if>
+            <if test="XMSO312 != null">XMSO312,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="mIindex != null">#{mIindex},</if>
+            <if test="采样时间 != null">#{采样时间},</if>
+            <if test="countGet != null">#{countGet},</if>
+            <if test="vDate1 != null">#{vDate1},</if>
+            <if test="XMSLYG0 != null">#{XMSLYG0},</if>
+            <if test="XMLOSS1 != null">#{XMLOSS1},</if>
+            <if test="XMLOSS2 != null">#{XMLOSS2},</if>
+            <if test="XMAL2O33 != null">#{XMAL2O33},</if>
+            <if test="XMFe2O34 != null">#{XMFe2O34},</if>
+            <if test="XMCaO5 != null">#{XMCaO5},</if>
+            <if test="XMMgO6 != null">#{XMMgO6},</if>
+            <if test="XMKH7 != null">#{XMKH7},</if>
+            <if test="XMN8 != null">#{XMN8},</if>
+            <if test="XMP9 != null">#{XMP9},</if>
+            <if test="XMK2O10 != null">#{XMK2O10},</if>
+            <if test="XMNa2O11 != null">#{XMNa2O11},</if>
+            <if test="XMSO312 != null">#{XMSO312},</if>
+         </trim>
+    </insert>
+
+    <update id="updateLishiMes15" parameterType="LishiMes15">
+        update lishi_mes15
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="采样时间 != null">采样时间 = #{采样时间},</if>
+            <if test="countGet != null">count_get = #{countGet},</if>
+            <if test="vDate1 != null">vDate1 = #{vDate1},</if>
+            <if test="XMSLYG0 != null">XMSLYG0 = #{XMSLYG0},</if>
+            <if test="XMLOSS1 != null">XMLOSS1 = #{XMLOSS1},</if>
+            <if test="XMLOSS2 != null">XMLOSS2 = #{XMLOSS2},</if>
+            <if test="XMAL2O33 != null">XMAL2O33 = #{XMAL2O33},</if>
+            <if test="XMFe2O34 != null">XMFe2O34 = #{XMFe2O34},</if>
+            <if test="XMCaO5 != null">XMCaO5 = #{XMCaO5},</if>
+            <if test="XMMgO6 != null">XMMgO6 = #{XMMgO6},</if>
+            <if test="XMKH7 != null">XMKH7 = #{XMKH7},</if>
+            <if test="XMN8 != null">XMN8 = #{XMN8},</if>
+            <if test="XMP9 != null">XMP9 = #{XMP9},</if>
+            <if test="XMK2O10 != null">XMK2O10 = #{XMK2O10},</if>
+            <if test="XMNa2O11 != null">XMNa2O11 = #{XMNa2O11},</if>
+            <if test="XMSO312 != null">XMSO312 = #{XMSO312},</if>
+        </trim>
+        where m_iIndex = #{mIindex}
+    </update>
+
+    <delete id="deleteLishiMes15ByMIindex" parameterType="Long">
+        delete from lishi_mes15 where m_iIndex = #{mIindex}
+    </delete>
+
+    <delete id="deleteLishiMes15ByMIindexs" parameterType="String">
+        delete from lishi_mes15 where m_iIndex in 
+        <foreach item="mIindex" collection="array" open="(" separator="," close=")">
+            #{mIindex}
+        </foreach>
+    </delete>
+</mapper>

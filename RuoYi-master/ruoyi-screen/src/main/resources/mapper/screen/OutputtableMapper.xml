@@ -1,0 +1,2339 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.OutputtableMapper">
+    
+    <resultMap type="Outputtable" id="OutputtableResult">
+        <result property="采样时间"    column="采样时间"    />
+        <result property="countGet"    column="count_get"    />
+        <result property="XCSLCSJ"    column="XCSLCSJ"    />
+        <result property="XCMSLLD"    column="XCMSLLD"    />
+        <result property="XXD"    column="XXD"    />
+        <result property="XSF"    column="XSF"    />
+        <result property="XHYSCA"    column="XHYSCA"    />
+        <result property="XHYSSI"    column="XHYSSI"    />
+        <result property="XHYSAL"    column="XHYSAL"    />
+        <result property="XHYSFE"    column="XHYSFE"    />
+        <result property="XSLSLZKH1"    column="XSLSLZKH1"    />
+        <result property="XSLSLZIM1"    column="XSLSLZIM1"    />
+        <result property="XSLSLZSM1"    column="XSLSLZSM1"    />
+        <result property="XRYSLCSJ"    column="XRYSLCSJ"    />
+        <result property="XRYSLLD"    column="XRYSLLD"    />
+        <result property="XRYSLSF"    column="XRYSLSF"    />
+        <result property="XRYSLXD"    column="XRYSLXD"    />
+        <result property="XRYSLCA"    column="XRYSLCA"    />
+        <result property="XRYSLSI"    column="XRYSLSI"    />
+        <result property="XRYSLAL"    column="XRYSLAL"    />
+        <result property="XRYSLFE"    column="XRYSLFE"    />
+        <result property="XRJSLSLZKH"    column="XRJSLSLZKH"    />
+        <result property="XRJSLSLZIM"    column="XRJSLSLZIM"    />
+        <result property="XRJSLSLZSM"    column="XRJSLSLZSM"    />
+        <result property="XFJL"    column="XFJL"    />
+        <result property="XCMFCSJ"    column="XCMFCSJ"    />
+        <result property="XCMMFSF"    column="XCMMFSF"    />
+        <result property="XCMMFXD"    column="XCMMFXD"    />
+        <result property="XMFRZ"    column="XMFRZ"    />
+        <result property="XMFHF"    column="XMFHF"    />
+        <result property="XMFHFF"    column="XMFHFF"    />
+        <result property="XMMFGDT"    column="XMMFGDT"    />
+        <result property="XCYSLCA"    column="XCYSLCA"    />
+        <result property="XCYSLSI"    column="XCYSLSI"    />
+        <result property="XCYSLAL"    column="XCYSLAL"    />
+        <result property="XCYSLFE"    column="XCYSLFE"    />
+        <result property="XCYSLCSJ"    column="XCYSLCSJ"    />
+        <result property="XSLSLZKH2"    column="XSLSLZKH2"    />
+        <result property="XSLSLZIM2"    column="XSLSLZIM2"    />
+        <result property="XSLSLZSM2"    column="XSLSLZSM2"    />
+        <result property="XCYSLHGXD"    column="XCYSLHGXD"    />
+        <result property="xfCao"    column="Xf_cao"    />
+        <result property="XLSZ"    column="XLSZ"    />
+        <result property="XHF"    column="XHF"    />
+        <result property="XC3SHL"    column="XC3SHL"    />
+        <result property="XC2SHL"    column="XC2SHL"    />
+        <result property="XYXL"    column="XYXL"    />
+        <result property="X28TQD"    column="X28TQD"    />
+        <result property="X3TQD"    column="X3TQD"    />
+        <result property="XHJCCSJ"    column="XHJCCSJ"    />
+        <result property="XSLBCL"    column="XSLBCL"    />
+        <result property="XMH"    column="XMH"    />
+        <result property="XYWBMH"    column="XYWBMH"    />
+        <result property="XYTBMH"    column="XYTBMH"    />
+        <result property="XSDMH"    column="XSDMH"    />
+        <result property="XCSNCSJ"    column="XCSNCSJ"    />
+        <result property="XCMSNXD"    column="XCMSNXD"    />
+        <result property="XCMSNBBMJ"    column="XCMSNBBMJ"    />
+        <result property="XCMSNLD"    column="XCMSNLD"    />
+        <result property="XCMSNSO2"    column="XCMSNSO2"    />
+        <result property="XCAO"    column="XCAO"    />
+        <result property="XFE2O3"    column="XFE2O3"    />
+        <result property="XAL2O3"    column="XAL2O3"    />
+        <result property="XSI02"    column="XSI02"    />
+        <result property="XFXYYXZTBZW"    column="XFXYYXZTBZW"    />
+        <result property="XSLPLSZDQHBZWYH"    column="XSLPLSZDQHBZWYH"    />
+        <result property="XSLZDPLYXBZWYH"    column="XSLZDPLYXBZWYH"    />
+        <result property="XSLPLYHBZW"    column="XSLPLYHBZW"    />
+        <result property="XSLPLYHFZBZW"    column="XSLPLYHFZBZW"    />
+        <result property="XCAJCZ"    column="XCAJCZ"    />
+        <result property="XSIJCZ"    column="XSIJCZ"    />
+        <result property="XALJCZ"    column="XALJCZ"    />
+        <result property="XFEJCZ"    column="XFEJCZ"    />
+        <result property="XKHJCZ"    column="XKHJCZ"    />
+        <result property="XSMJCZ"    column="XSMJCZ"    />
+        <result property="XIMJCZ"    column="XIMJCZ"    />
+        <result property="XCAM5FZGDJZ"    column="XCAM5FZGDJZ"    />
+        <result property="XSIM5FZGDJZ"    column="XSIM5FZGDJZ"    />
+        <result property="XALM5FZGDJZ"    column="XALM5FZGDJZ"    />
+        <result property="XFEM5FZGDJZ"    column="XFEM5FZGDJZ"    />
+        <result property="XKHM5FZGDJZ"    column="XKHM5FZGDJZ"    />
+        <result property="XSMM5FZGDJZ"    column="XSMM5FZGDJZ"    />
+        <result property="XIMM5FZGDJZ"    column="XIMM5FZGDJZ"    />
+        <result property="XCAMXSJZ"    column="XCAMXSJZ"    />
+        <result property="XSIMXSJZ"    column="XSIMXSJZ"    />
+        <result property="XALMXSJZ"    column="XALMXSJZ"    />
+        <result property="XFEMXSJZ"    column="XFEMXSJZ"    />
+        <result property="XKHMXSJZ"    column="XKHMXSJZ"    />
+        <result property="XSMMXSJZ"    column="XSMMXSJZ"    />
+        <result property="XIMMXSJZ"    column="XIMMXSJZ"    />
+        <result property="XKHSDMBZ"    column="XKHSDMBZ"    />
+        <result property="XSMSDMBZ"    column="XSMSDMBZ"    />
+        <result property="XIMSDMBZ"    column="XIMSDMBZ"    />
+        <result property="XYHMBKHGDZ"    column="XYHMBKHGDZ"    />
+        <result property="XYHMBSMGDZ"    column="XYHMBSMGDZ"    />
+        <result property="XYHMBIMGDZ"    column="XYHMBIMGDZ"    />
+        <result property="XYHMBCaHLGDZ"    column="XYHMBCaHLGDZ"    />
+        <result property="XYHMBAlHLGDZ"    column="XYHMBAlHLGDZ"    />
+        <result property="XYHMBSiHLGDZ"    column="XYHMBSiHLGDZ"    />
+        <result property="XYHMBFeHLGDZ"    column="XYHMBFeHLGDZ"    />
+        <result property="XYHMBKHSDSDZ"    column="XYHMBKHSDSDZ"    />
+        <result property="XYHMBSMSDSDZ"    column="XYHMBSMSDSDZ"    />
+        <result property="XYHMBIMSDSDZ"    column="XYHMBIMSDSDZ"    />
+        <result property="XYHMBCaHLSDSDZ"    column="XYHMBCaHLSDSDZ"    />
+        <result property="XYHMBAlHLSDSDZ"    column="XYHMBAlHLSDSDZ"    />
+        <result property="XYHMBSiHLSDSDZ"    column="XYHMBSiHLSDSDZ"    />
+        <result property="XYHMBFeHLSDGSDZ"    column="XYHMBFeHLSDGSDZ"    />
+        <result property="XXCCZSDZ"    column="XXCCZSDZ"    />
+        <result property="XXCCZFK"    column="XXCCZFK"    />
+        <result property="XXCCCSZDBZZ"    column="XXCCCSZDBZZ"    />
+        <result property="XXCCZZYHSDBZ"    column="XXCCZZYHSDBZ"    />
+        <result property="XXCXLZXLSDSDZ"    column="XXCXLZXLSDSDZ"    />
+        <result property="XXCXLZXLZDSDZ"    column="XXCXLZXLZDSDZ"    />
+        <result property="XXCXLZXLFK"    column="XXCXLZXLFK"    />
+        <result property="XXCKDZFMSDGD"    column="XXCKDZFMSDGD"    />
+        <result property="XXCKDZFMZDGD"    column="XXCKDZFMZDGD"    />
+        <result property="XXCKDZFMFK"    column="XXCKDZFMFK"    />
+        <result property="XXCKDZFMXX"    column="XXCKDZFMXX"    />
+        <result property="XXCKDZFMSX"    column="XXCKDZFMSX"    />
+        <result property="XXCCZSZDBZY"    column="XXCCZSZDBZY"    />
+        <result property="XXCCZYYHSDBZ"    column="XXCCZYYHSDBZ"    />
+        <result property="XXCXLYXLSDSDZ"    column="XXCXLYXLSDSDZ"    />
+        <result property="XXCXLYXLZDSDZ"    column="XXCXLYXLZDSDZ"    />
+        <result property="XXCXLYXLFK"    column="XXCXLYXLFK"    />
+        <result property="XXCKDYFMSDGD"    column="XXCKDYFMSDGD"    />
+        <result property="XXCKDYFMZDGD"    column="XXCKDYFMZDGD"    />
+        <result property="XXCKDYFMFK"    column="XXCKDYFMFK"    />
+        <result property="XXCKDYFMXX"    column="XXCKDYFMXX"    />
+        <result property="XXCKDYFMSX"    column="XXCKDYFMSX"    />
+        <result property="XRYSXLBZ"    column="XRYSXLBZ"    />
+        <result property="XRYSXLYHBZ"    column="XRYSXLYHBZ"    />
+        <result property="XYRCOSSZ"    column="XYRCOSSZ"    />
+        <result property="XYRCOYSZ"    column="XYRCOYSZ"    />
+        <result property="XYRCOFKZ"    column="XYRCOFKZ"    />
+        <result property="XSLXLLSDZ"    column="XSLXLLSDZ"    />
+        <result property="XRYSXLSSZ"    column="XRYSXLSSZ"    />
+        <result property="XSLXLLFKZ"    column="XSLXLLFKZ"    />
+        <result property="XSLXLZSSX"    column="XSLXLZSSX"    />
+        <result property="XSLXLZSXX"    column="XSLXLZSXX"    />
+        <result property="XGWFJZDKZBZW"    column="XGWFJZDKZBZW"    />
+        <result property="XGWFJYHBZW"    column="XGWFJYHBZW"    />
+        <result property="XGWFJZDXYYXBZW"    column="XGWFJZDXYYXBZW"    />
+        <result property="XGWFJYHKZQHBZW"    column="XGWFJYHKZQHBZW"    />
+        <result property="XGWFJZDFZBZW"    column="XGWFJZDFZBZW"    />
+        <result property="XGWFJYHFZBZW"    column="XGWFJYHFZBZW"    />
+        <result property="XGWFJFZGD"    column="XGWFJFZGD"    />
+        <result property="XGWFJXXGD"    column="XGWFJXXGD"    />
+        <result property="XYYHT"    column="XYYHT"    />
+        <result property="XGWFJZSGD"    column="XGWFJZSGD"    />
+        <result property="XGWFJZSZDZ"    column="XGWFJZSZDZ"    />
+        <result property="XGWFJZSFK"    column="XGWFJZSFK"    />
+        <result property="XGWFJJKFMGD"    column="XGWFJJKFMGD"    />
+        <result property="XGWFJJFZDZ"    column="XGWFJJFZDZ"    />
+        <result property="XGWFJJKFMFK"    column="XGWFJJKFMFK"    />
+        <result property="XGWFJCKFMGD"    column="XGWFJCKFMGD"    />
+        <result property="XGWFJCFZDZ"    column="XGWFJCFZDZ"    />
+        <result property="XGWFJCKFMFK"    column="XGWFJCKFMFK"    />
+        <result property="XYRFLFSZDBZ"    column="XYRFLFSZDBZ"    />
+        <result property="XYRFLFYHBZ"    column="XYRFLFYHBZ"    />
+        <result property="XCJWCSSZ"    column="XCJWCSSZ"    />
+        <result property="XCJWCZSZ"    column="XCJWCZSZ"    />
+        <result property="XAC5CKWD"    column="XAC5CKWD"    />
+        <result property="XBC5CKWD"    column="XBC5CKWD"    />
+        <result property="XCJWCFKZ"    column="XCJWCFKZ"    />
+        <result property="XYRFLFZSSZ"    column="XYRFLFZSSZ"    />
+        <result property="XYRFLFYSSZ"    column="XYRFLFYSSZ"    />
+        <result property="XYRFLFZYSZ"    column="XYRFLFZYSZ"    />
+        <result property="XYRFLFYYSZ"    column="XYRFLFYYSZ"    />
+        <result property="XYRFLFZKFK"    column="XYRFLFZKFK"    />
+        <result property="XYRFLFYKFK"    column="XYRFLFYKFK"    />
+        <result property="XFLTSX"    column="XFLTSX"    />
+        <result property="XFLTXX"    column="XFLTXX"    />
+        <result property="XFLFYTSX"    column="XFLFYTSX"    />
+        <result property="XFLFYTXX"    column="XFLFYTXX"    />
+        <result property="XFJLWDZDXYYXBZW"    column="XFJLWDZDXYYXBZW"    />
+        <result property="XFJLWDYHBZW"    column="XFJLWDYHBZW"    />
+        <result property="XYWWMSZDQH"    column="XYWWMSZDQH"    />
+        <result property="XFJLWDSDSDZ"    column="XFJLWDSDSDZ"    />
+        <result property="XFJLWDYHSDZ"    column="XFJLWDYHSDZ"    />
+        <result property="XFJLWDF"    column="XFJLWDF"    />
+        <result property="XYWWMLSDGDZ"    column="XYWWMLSDGDZ"    />
+        <result property="XYWWMLZDGDZ"    column="XYWWMLZDGDZ"    />
+        <result property="XYWWMLFKZ"    column="XYWWMLFKZ"    />
+        <result property="XFJLTSX"    column="XFJLTSX"    />
+        <result property="XFJLTXX"    column="XFJLTXX"    />
+        <result property="XFJLPMXXGD"    column="XFJLPMXXGD"    />
+        <result property="XFJLWDXXGD"    column="XFJLWDXXGD"    />
+        <result property="XYZSSZDQH"    column="XYZSSZDQH"    />
+        <result property="XYZSYHBZ"    column="XYZSYHBZ"    />
+        <result property="XYDLSSZ"    column="XYDLSSZ"    />
+        <result property="XYDLYSZ"    column="XYDLYSZ"    />
+        <result property="XYZJDL"    column="XYZJDL"    />
+        <result property="XYZSSDGD"    column="XYZSSDGD"    />
+        <result property="XYZSZDGD"    column="XYZSZDGD"    />
+        <result property="XYZDJSDFK"    column="XYZDJSDFK"    />
+        <result property="XYZSTSX"    column="XYZSTSX"    />
+        <result property="XYZSTXX"    column="XYZSTXX"    />
+        <result property="XYDLZSSX"    column="XYDLZSSX"    />
+        <result property="XYDLZSXX"    column="XYDLZSXX"    />
+        <result property="XSCDWDZDXYYXBZW"    column="XSCDWDZDXYYXBZW"    />
+        <result property="XSCDWDYHBZW"    column="XSCDWDYHBZW"    />
+        <result property="XYTWMSZDQH"    column="XYTWMSZDQH"    />
+        <result property="XSCDWDSDSDZ"    column="XSCDWDSDSDZ"    />
+        <result property="XSCDWDYHSDZ"    column="XSCDWDYHSDZ"    />
+        <result property="XSCDWDFK"    column="XSCDWDFK"    />
+        <result property="XYSWD"    column="XYSWD"    />
+        <result property="XYTZWD"    column="XYTZWD"    />
+        <result property="XYTWMLSDGDZ"    column="XYTWMLSDGDZ"    />
+        <result property="XYTWMLZDGDZ"    column="XYTWMLZDGDZ"    />
+        <result property="XYTWMLFKZ"    column="XYTWMLFKZ"    />
+        <result property="XYTPMTSX"    column="XYTPMTSX"    />
+        <result property="XYTPMTXX"    column="XYTPMTXX"    />
+        <result property="XSCDPMXXGD"    column="XSCDPMXXGD"    />
+        <result property="XSCDWDXXGD"    column="XSCDWDXXGD"    />
+        <result property="XYTPFJSZDQH"    column="XYTPFJSZDQH"    />
+        <result property="XYTFYYHQDBZW"    column="XYTFYYHQDBZW"    />
+        <result property="XYTFYSSZ"    column="XYTFYSSZ"    />
+        <result property="XYTFYYHSDZ"    column="XYTFYYHSDZ"    />
+        <result property="XYTFYFK"    column="XYTFYFK"    />
+        <result property="XYTPFJPLSDGD"    column="XYTPFJPLSDGD"    />
+        <result property="XYTPFJZDGD"    column="XYTPFJZDGD"    />
+        <result property="XYTPPLFK"    column="XYTPPLFK"    />
+        <result property="XYTFYTSX"    column="XYTFYTSX"    />
+        <result property="XYTFYTXX"    column="XYTFYTXX"    />
+        <result property="XYTPPTXX"    column="XYTPPTXX"    />
+        <result property="XYTPPTSX"    column="XYTPPTSX"    />
+        <result property="XBLJYDZDKZBZW"    column="XBLJYDZDKZBZW"    />
+        <result property="XBLJYDYHBZW"    column="XBLJYDYHBZW"    />
+        <result property="XBLJYSFYYHQDBZW"    column="XBLJYSFYYHQDBZW"    />
+        <result property="XBLJYSFYSSZ"    column="XBLJYSFYSSZ"    />
+        <result property="XBLJYSFYYHSDZ"    column="XBLJYSFYYHSDZ"    />
+        <result property="XBLJYSFYFK"    column="XBLJYSFYFK"    />
+        <result property="XBLJYDBSSDGD"    column="XBLJYDBSSDGD"    />
+        <result property="XBLJYDBSZDGD"    column="XBLJYDBSZDGD"    />
+        <result property="XBLJYDBSFK"    column="XBLJYDBSFK"    />
+        <result property="XBLJYDBSFKSX"    column="XBLJYDBSFKSX"    />
+        <result property="XBLJYDBSFKXX"    column="XBLJYDBSFKXX"    />
+        <result property="XCLQJSLWD"    column="XCLQJSLWD"    />
+        <result property="XLFJ1SZBZ"    column="XLFJ1SZBZ"    />
+        <result property="XLFJ1SYBZ"    column="XLFJ1SYBZ"    />
+        <result property="XLFLZS1SD"    column="XLFLZS1SD"    />
+        <result property="XLFJZS1ZD"    column="XLFJZS1ZD"    />
+        <result property="XLQ1FJZS"    column="XLQ1FJZS"    />
+        <result property="XLQ1FJZSXX"    column="XLQ1FJZSXX"    />
+        <result property="XLQ1FJZSSX"    column="XLQ1FJZSSX"    />
+        <result property="XLFJ2SZBZ"    column="XLFJ2SZBZ"    />
+        <result property="XLFJ2SYBZ"    column="XLFJ2SYBZ"    />
+        <result property="XBLJESFYSSZ"    column="XBLJESFYSSZ"    />
+        <result property="XBLJESFYYHSDZ"    column="XBLJESFYYHSDZ"    />
+        <result property="XBLJESFYFK"    column="XBLJESFYFK"    />
+        <result property="XLFLZS2SD"    column="XLFLZS2SD"    />
+        <result property="XLFJZS2ZD"    column="XLFJZS2ZD"    />
+        <result property="XLQ2FJZS"    column="XLQ2FJZS"    />
+        <result property="XLQ2FJZSXX"    column="XLQ2FJZSXX"    />
+        <result property="XLQ2FJZSSX"    column="XLQ2FJZSSX"    />
+        <result property="XLFJ3SZBZ"    column="XLFJ3SZBZ"    />
+        <result property="XLFJ3SYBZ"    column="XLFJ3SYBZ"    />
+        <result property="XBLJSSFYSSZ"    column="XBLJSSFYSSZ"    />
+        <result property="XBLJSSFYYHSDZ"    column="XBLJSSFYYHSDZ"    />
+        <result property="XBLJSSFYFK"    column="XBLJSSFYFK"    />
+        <result property="XLFLZS3SD"    column="XLFLZS3SD"    />
+        <result property="XLFJZS3ZD"    column="XLFJZS3ZD"    />
+        <result property="XLQ3FJZS"    column="XLQ3FJZS"    />
+        <result property="XLQ3FJZSXX"    column="XLQ3FJZSXX"    />
+        <result property="XLQ3FJZSSX"    column="XLQ3FJZSSX"    />
+        <result property="XLFJ4SZBZ"    column="XLFJ4SZBZ"    />
+        <result property="XLFJ4SYBZ"    column="XLFJ4SYBZ"    />
+        <result property="XBLJ4SFYSSZ"    column="XBLJ4SFYSSZ"    />
+        <result property="XBLJ4SFYYHSDZ"    column="XBLJ4SFYYHSDZ"    />
+        <result property="XBLJ4SFYFK"    column="XBLJ4SFYFK"    />
+        <result property="XLFLZS4SD"    column="XLFLZS4SD"    />
+        <result property="XLFJZS4ZD"    column="XLFJZS4ZD"    />
+        <result property="XLQ4FJZS"    column="XLQ4FJZS"    />
+        <result property="XLQ4FJZSXX"    column="XLQ4FJZSXX"    />
+        <result property="XLQ4FJZSSX"    column="XLQ4FJZSSX"    />
+        <result property="XMMTSZDXYYXBZW"    column="XMMTSZDXYYXBZW"    />
+        <result property="XMMTSYHBZW"    column="XMMTSYHBZW"    />
+        <result property="XMMRMTSSZDQHBZ"    column="XMMRMTSSZDQHBZ"    />
+        <result property="XMMTSSDSDZ"    column="XMMTSSDSDZ"    />
+        <result property="XMMTSZDSDZ"    column="XMMTSZDSDZ"    />
+        <result property="XMMTSYHSDZ"    column="XMMTSYHSDZ"    />
+        <result property="XMMXLLFK"    column="XMMXLLFK"    />
+        <result property="XMMZJDL"    column="XMMZJDL"    />
+        <result property="XTMFCCZ"    column="XTMFCCZ"    />
+        <result property="XWMFCCZ"    column="XWMFCCZ"    />
+        <result property="XMMXLLKZSX"    column="XMMXLLKZSX"    />
+        <result property="XMMXLLKZXX"    column="XMMXLLKZXX"    />
+        <result property="XMMLFFKDSZDQHBZ"    column="XMMLFFKDSZDQHBZ"    />
+        <result property="XMMCKWDFK"    column="XMMCKWDFK"    />
+        <result property="XCMWDSDSDZ"    column="XCMWDSDSDZ"    />
+        <result property="XCMWDYHSDZ"    column="XCMWDYHSDZ"    />
+        <result property="XMMRFF1KDZDGD"    column="XMMRFF1KDZDGD"    />
+        <result property="XMMLFFKDZDGD"    column="XMMLFFKDZDGD"    />
+        <result property="XMMRFF1KDSDGD"    column="XMMRFF1KDSDGD"    />
+        <result property="XMMLFFKDSDGD"    column="XMMLFFKDSDGD"    />
+        <result property="XMMRFF1KDFK"    column="XMMRFF1KDFK"    />
+        <result property="XMMRFF2KDFK"    column="XMMRFF2KDFK"    />
+        <result property="XMMLFFKDFK"    column="XMMLFFKDFK"    />
+        <result property="XMMRTSX"    column="XMMRTSX"    />
+        <result property="XMMRTXX"    column="XMMRTXX"    />
+        <result property="XMMLTSX"    column="XMMLTSX"    />
+        <result property="XMMLTXX"    column="XMMLTXX"    />
+        <result property="XRJHKTSDL"    column="XRJHKTSDL"    />
+        <result property="XXCTSJDLSDSDZ"    column="XXCTSJDLSDSDZ"    />
+        <result property="XXCTSJDLFK"    column="XXCTSJDLFK"    />
+        <result property="XYTDSCRKWD"    column="XYTDSCRKWD"    />
+        <result property="XYTDSCCKWD"    column="XYTDSCCKWD"    />
+        <result property="XYTDSCRKYL"    column="XYTDSCRKYL"    />
+        <result property="XYTDSCCKYL"    column="XYTDSCCKYL"    />
+        <result property="XRYTSJDL"    column="XRYTSJDL"    />
+        <result property="XRYTSJDL2"    column="XRYTSJDL2"    />
+        <result property="XRYTSJDLJZ"    column="XRYTSJDLJZ"    />
+        <result property="XRYTSJDLZH"    column="XRYTSJDLZH"    />
+        <result property="XRYSLXLLLJL"    column="XRYSLXLLLJL"    />
+        <result property="XC1ACKWD"    column="XC1ACKWD"    />
+        <result property="XC1BCKWD"    column="XC1BCKWD"    />
+        <result property="XC11A1XSJZ"    column="XC11A1XSJZ"    />
+        <result property="XC11A8XSJZ"    column="XC11A8XSJZ"    />
+        <result property="XC12B1XSJZ"    column="XC12B1XSJZ"    />
+        <result property="XC12B8XSJZ"    column="XC12B8XSJZ"    />
+        <result property="XC1ACKYL"    column="XC1ACKYL"    />
+        <result property="XC1BCKYL"    column="XC1BCKYL"    />
+        <result property="XC1AZTYA"    column="XC1AZTYA"    />
+        <result property="XC1BZTYA"    column="XC1BZTYA"    />
+        <result property="XC2ACKWD"    column="XC2ACKWD"    />
+        <result property="XC2BCKWD"    column="XC2BCKWD"    />
+        <result property="XC2ACKYL"    column="XC2ACKYL"    />
+        <result property="XC2BCKYL"    column="XC2BCKYL"    />
+        <result property="XC2AZTYA"    column="XC2AZTYA"    />
+        <result property="XC2BZTYA"    column="XC2BZTYA"    />
+        <result property="XC3ACKWD"    column="XC3ACKWD"    />
+        <result property="XC3BCKWD"    column="XC3BCKWD"    />
+        <result property="XC3ACKYL"    column="XC3ACKYL"    />
+        <result property="XC3BCKYL"    column="XC3BCKYL"    />
+        <result property="XC3AZTYA"    column="XC3AZTYA"    />
+        <result property="XC3BZTYA"    column="XC3BZTYA"    />
+        <result property="XAC4CKWD"    column="XAC4CKWD"    />
+        <result property="XBC4CKWD"    column="XBC4CKWD"    />
+        <result property="XAC4CKYL"    column="XAC4CKYL"    />
+        <result property="XBC4CKYL"    column="XBC4CKYL"    />
+        <result property="XC4AZTYL"    column="XC4AZTYL"    />
+        <result property="XC4BZTYL"    column="XC4BZTYL"    />
+        <result property="XC5ACKYL"    column="XC5ACKYL"    />
+        <result property="XC5BCKYL"    column="XC5BCKYL"    />
+        <result property="XC5AZTYL"    column="XC5AZTYL"    />
+        <result property="XC5BZTYL"    column="XC5BZTYL"    />
+        <result property="XC5AXLGWD"    column="XC5AXLGWD"    />
+        <result property="XC5BXLGWD"    column="XC5BXLGWD"    />
+        <result property="XFJLWD1JZ"    column="XFJLWD1JZ"    />
+        <result property="XFJLWD8JZ"    column="XFJLWD8JZ"    />
+        <result property="XFJLCKYL"    column="XFJLCKYL"    />
+        <result property="XFJLZBYL"    column="XFJLZBYL"    />
+        <result property="XFJLZBWD"    column="XFJLZBWD"    />
+        <result property="XYSWDYXSJZ"    column="XYSWDYXSJZ"    />
+        <result property="XYSWDBXSJZ"    column="XYSWDBXSJZ"    />
+        <result property="XYSYL"    column="XYSYL"    />
+        <result property="XSCFY"    column="XSCFY"    />
+        <result property="XSCFW"    column="XSCFW"    />
+        <result property="XYRQCOND"    column="XYRQCOND"    />
+        <result property="XFJLDDYHW"    column="XFJLDDYHW"    />
+        <result property="XHYL"    column="XHYL"    />
+        <result property="XYDYYHTHL"    column="XYDYYHTHL"    />
+        <result property="XDYHW"    column="XDYHW"    />
+        <result property="XYDYHL"    column="XYDYHL"    />
+        <result property="XYWPMFY"    column="XYWPMFY"    />
+        <result property="XYWPMFH"    column="XYWPMFH"    />
+        <result property="XYTPMFH"    column="XYTPMFH"    />
+        <result property="XYTPMFY"    column="XYTPMFY"    />
+        <result property="XWMCSDFK"    column="XWMCSDFK"    />
+        <result property="XTMCSDFK"    column="XTMCSDFK"    />
+        <result property="XTWMBL"    column="XTWMBL"    />
+        <result property="XGWFJJKYL"    column="XGWFJJKYL"    />
+        <result property="XGWFJCKYL"    column="XGWFJCKYL"    />
+        <result property="XGWFJDL"    column="XGWFJDL"    />
+        <result property="XYTZWDYXSJZ"    column="XYTZWDYXSJZ"    />
+        <result property="XYTZWDBXSJZ"    column="XYTZWDBXSJZ"    />
+        <result property="XECFW"    column="XECFW"    />
+        <result property="XECFY"    column="XECFY"    />
+        <result property="XYTPFJDL"    column="XYTPFJDL"    />
+        <result property="XTPFJFMKDSDGD"    column="XTPFJFMKDSDGD"    />
+        <result property="XTPFJFMKDFK"    column="XTPFJFMKDFK"    />
+        <result property="XSCDWDBY1FK"    column="XSCDWDBY1FK"    />
+        <result property="XSCDWDBY2FK"    column="XSCDWDBY2FK"    />
+        <result property="XSCDWDBY3FK"    column="XSCDWDBY3FK"    />
+        <result property="XSCDWDBY4FK"    column="XSCDWDBY4FK"    />
+        <result property="XSCDWDBY5FK"    column="XSCDWDBY5FK"    />
+        <result property="XBLJYDBYFK"    column="XBLJYDBYFK"    />
+        <result property="XBLJYDDL"    column="XBLJYDDL"    />
+        <result property="XBLJEDBYFK"    column="XBLJEDBYFK"    />
+        <result property="XBLJEDBSFK"    column="XBLJEDBSFK"    />
+        <result property="XBLJEDDL"    column="XBLJEDDL"    />
+        <result property="XBLJSDBYFK"    column="XBLJSDBYFK"    />
+        <result property="XBLJSDBSFK"    column="XBLJSDBSFK"    />
+        <result property="XBLJSDDL"    column="XBLJSDDL"    />
+        <result property="XBLJ5SFYFK"    column="XBLJ5SFYFK"    />
+        <result property="XBLJ6SFYFK"    column="XBLJ6SFYFK"    />
+        <result property="XBLJ7SFYFK"    column="XBLJ7SFYFK"    />
+        <result property="XBLJ8SFYFK"    column="XBLJ8SFYFK"    />
+        <result property="XFJLWDFZBLBY1"    column="XFJLWDFZBLBY1"    />
+        <result property="XRMWDFK"    column="XRMWDFK"    />
+        <result property="XMMXFJDL"    column="XMMXFJDL"    />
+        <result property="XMMXFJZS"    column="XMMXFJZS"    />
+        <result property="XMMYFJHZ"    column="XMMYFJHZ"    />
+        <result property="XMMYFJDL"    column="XMMYFJDL"    />
+        <result property="XMMBFRKWD"    column="XMMB/FRKWD"    />
+        <result property="XMMBFCKWD"    column="XMMB/FCKWD"    />
+        <result property="XMMTMFCWD"    column="XMMTMFCWD"    />
+        <result property="XMMWMFCWD"    column="XMMWMFCWD"    />
+        <result property="XMMRMYL"    column="XMMRMYL"    />
+        <result property="XMMCMYL"    column="XMMCMYL"    />
+        <result property="XMJYC"    column="XMJYC"    />
+        <result property="XMMCOHLFK"    column="XMMCOHLFK"    />
+        <result property="XMMZJMGWD"    column="XMMZJMGWD"    />
+        <result property="XMMQTFXYCO"    column="XMMQTFXYCO"    />
+        <result property="XMMQTFXYO2"    column="XMMQTFXYO2"    />
+        <result property="XMMB0FRKYL"    column="XMMB0FRKYL"    />
+        <result property="XMMB0FCKYL"    column="XMMB0FCKYL"    />
+        <result property="XMMB0FCY"    column="XMMB0FCY"    />
+        <result property="XLQFJ1FY"    column="XLQFJ1FY"    />
+        <result property="XLQFJ2FY"    column="XLQFJ2FY"    />
+        <result property="XLQFJ3FY"    column="XLQFJ3FY"    />
+        <result property="XLQFJ4FY"    column="XLQFJ4FY"    />
+        <result property="XLQFJ1DL"    column="XLQFJ1DL"    />
+        <result property="XLQFJ2DL"    column="XLQFJ2DL"    />
+        <result property="XLQFJ3DL"    column="XLQFJ3DL"    />
+        <result property="XLQFJ4DL"    column="XLQFJ4DL"    />
+        <result property="XEYHLPFL"    column="XEYHLPFL"    />
+        <result property="XEYHLZSPJZ"    column="XEYHLZSPJZ"    />
+        <result property="XDYHWPFL"    column="XDYHWPFL"    />
+        <result property="XDYHWZSPJZ"    column="XDYHWZSPJZ"    />
+        <result property="XASYL"    column="XASYL"    />
+        <result property="XXCCZJZ"    column="XXCCZJZ"    />
+        <result property="XYRCOJZ"    column="XYRCOJZ"    />
+        <result property="XYRWCJZ"    column="XYRWCJZ"    />
+        <result property="XFJLWDJZ"    column="XFJLWDJZ"    />
+        <result property="XYDLJZ"    column="XYDLJZ"    />
+        <result property="XSCDWDJZ"    column="XSCDWDJZ"    />
+        <result property="XYTFYJZ"    column="XYTFYJZ"    />
+        <result property="XBLJ1SFYJZ"    column="XBLJ1SFYJZ"    />
+        <result property="XBLJ2SFYJZ"    column="XBLJ2SFYJZ"    />
+        <result property="XBLJ3SFYJZ"    column="XBLJ3SFYJZ"    />
+        <result property="XBLJ4SFYJZ"    column="XBLJ4SFYJZ"    />
+        <result property="XMMZJDLJZ"    column="XMMZJDLJZ"    />
+        <result property="XMMCOHLFK2"    column="XMMCOHLFK2"    />
+        <result property="XGWFJPLSX"    column="XGWFJPLSX"    />
+        <result property="XGWFJPLXX"    column="XGWFJPLXX"    />
+        <result property="XMMRFF2KDSDGD"    column="XMMRFF2KDSDGD"    />
+        <result property="XSRSJ1"    column="XSRSJ1"    />
+        <result property="XSRSJ2"    column="XSRSJ2"    />
+        <result property="XSRSJ3"    column="XSRSJ3"    />
+        <result property="XSRSJ4"    column="XSRSJ4"    />
+        <result property="XSRSJ5"    column="XSRSJ5"    />
+        <result property="XSRSJ6"    column="XSRSJ6"    />
+        <result property="XNOXSZDBZ"    column="XNOXSZDBZ"    />
+        <result property="XASZDGD"    column="XASZDGD"    />
+        <result property="XASGDSX"    column="XASGDSX"    />
+        <result property="XASGDXX"    column="XASGDXX"    />
+        <result property="XNOXSDSDZ"    column="XNOXSDSDZ"    />
+    </resultMap>
+
+    <sql id="selectOutputtableVo">
+        select 采样时间, count_get, XCSLCSJ, XCMSLLD, XXD, XSF, XHYSCA, XHYSSI, XHYSAL, XHYSFE, XSLSLZKH1, XSLSLZIM1, XSLSLZSM1, XRYSLCSJ, XRYSLLD, XRYSLSF, XRYSLXD, XRYSLCA, XRYSLSI, XRYSLAL, XRYSLFE, XRJSLSLZKH, XRJSLSLZIM, XRJSLSLZSM, XFJL, XCMFCSJ, XCMMFSF, XCMMFXD, XMFRZ, XMFHF, XMFHFF, XMMFGDT, XCYSLCA, XCYSLSI, XCYSLAL, XCYSLFE, XCYSLCSJ, XSLSLZKH2, XSLSLZIM2, XSLSLZSM2, XCYSLHGXD, Xf_cao, XLSZ, XHF, XC3SHL, XC2SHL, XYXL, X28TQD, X3TQD, XHJCCSJ, XSLBCL, XMH, XYWBMH, XYTBMH, XSDMH, XCSNCSJ, XCMSNXD, XCMSNBBMJ, XCMSNLD, XCMSNSO2, XCAO, XFE2O3, XAL2O3, XSI02, XFXYYXZTBZW, XSLPLSZDQHBZWYH, XSLZDPLYXBZWYH, XSLPLYHBZW, XSLPLYHFZBZW, XCAJCZ, XSIJCZ, XALJCZ, XFEJCZ, XKHJCZ, XSMJCZ, XIMJCZ, XCAM5FZGDJZ, XSIM5FZGDJZ, XALM5FZGDJZ, XFEM5FZGDJZ, XKHM5FZGDJZ, XSMM5FZGDJZ, XIMM5FZGDJZ, XCAMXSJZ, XSIMXSJZ, XALMXSJZ, XFEMXSJZ, XKHMXSJZ, XSMMXSJZ, XIMMXSJZ, XKHSDMBZ, XSMSDMBZ, XIMSDMBZ, XYHMBKHGDZ, XYHMBSMGDZ, XYHMBIMGDZ, XYHMBCaHLGDZ, XYHMBAlHLGDZ, XYHMBSiHLGDZ, XYHMBFeHLGDZ, XYHMBKHSDSDZ, XYHMBSMSDSDZ, XYHMBIMSDSDZ, XYHMBCaHLSDSDZ, XYHMBAlHLSDSDZ, XYHMBSiHLSDSDZ, XYHMBFeHLSDGSDZ, XXCCZSDZ, XXCCZFK, XXCCCSZDBZZ, XXCCZZYHSDBZ, XXCXLZXLSDSDZ, XXCXLZXLZDSDZ, XXCXLZXLFK, XXCKDZFMSDGD, XXCKDZFMZDGD, XXCKDZFMFK, XXCKDZFMXX, XXCKDZFMSX, XXCCZSZDBZY, XXCCZYYHSDBZ, XXCXLYXLSDSDZ, XXCXLYXLZDSDZ, XXCXLYXLFK, XXCKDYFMSDGD, XXCKDYFMZDGD, XXCKDYFMFK, XXCKDYFMXX, XXCKDYFMSX, XRYSXLBZ, XRYSXLYHBZ, XYRCOSSZ, XYRCOYSZ, XYRCOFKZ, XSLXLLSDZ, XRYSXLSSZ, XSLXLLFKZ, XSLXLZSSX, XSLXLZSXX, XGWFJZDKZBZW, XGWFJYHBZW, XGWFJZDXYYXBZW, XGWFJYHKZQHBZW, XGWFJZDFZBZW, XGWFJYHFZBZW, XGWFJFZGD, XGWFJXXGD, XYYHT, XGWFJZSGD, XGWFJZSZDZ, XGWFJZSFK, XGWFJJKFMGD, XGWFJJFZDZ, XGWFJJKFMFK, XGWFJCKFMGD, XGWFJCFZDZ, XGWFJCKFMFK, XYRFLFSZDBZ, XYRFLFYHBZ, XCJWCSSZ, XCJWCZSZ, XAC5CKWD, XBC5CKWD, XCJWCFKZ, XYRFLFZSSZ, XYRFLFYSSZ, XYRFLFZYSZ, XYRFLFYYSZ, XYRFLFZKFK, XYRFLFYKFK, XFLTSX, XFLTXX, XFLFYTSX, XFLFYTXX, XFJLWDZDXYYXBZW, XFJLWDYHBZW, XYWWMSZDQH, XFJLWDSDSDZ, XFJLWDYHSDZ, XFJLWDF, XYWWMLSDGDZ, XYWWMLZDGDZ, XYWWMLFKZ, XFJLTSX, XFJLTXX, XFJLPMXXGD, XFJLWDXXGD, XYZSSZDQH, XYZSYHBZ, XYDLSSZ, XYDLYSZ, XYZJDL, XYZSSDGD, XYZSZDGD, XYZDJSDFK, XYZSTSX, XYZSTXX, XYDLZSSX, XYDLZSXX, XSCDWDZDXYYXBZW, XSCDWDYHBZW, XYTWMSZDQH, XSCDWDSDSDZ, XSCDWDYHSDZ, XSCDWDFK, XYSWD, XYTZWD, XYTWMLSDGDZ, XYTWMLZDGDZ, XYTWMLFKZ, XYTPMTSX, XYTPMTXX, XSCDPMXXGD, XSCDWDXXGD, XYTPFJSZDQH, XYTFYYHQDBZW, XYTFYSSZ, XYTFYYHSDZ, XYTFYFK, XYTPFJPLSDGD, XYTPFJZDGD, XYTPPLFK, XYTFYTSX, XYTFYTXX, XYTPPTXX, XYTPPTSX, XBLJYDZDKZBZW, XBLJYDYHBZW, XBLJYSFYYHQDBZW, XBLJYSFYSSZ, XBLJYSFYYHSDZ, XBLJYSFYFK, XBLJYDBSSDGD, XBLJYDBSZDGD, XBLJYDBSFK, XBLJYDBSFKSX, XBLJYDBSFKXX, XCLQJSLWD, XLFJ1SZBZ, XLFJ1SYBZ, XLFLZS1SD, XLFJZS1ZD, XLQ1FJZS, XLQ1FJZSXX, XLQ1FJZSSX, XLFJ2SZBZ, XLFJ2SYBZ, XBLJESFYSSZ, XBLJESFYYHSDZ, XBLJESFYFK, XLFLZS2SD, XLFJZS2ZD, XLQ2FJZS, XLQ2FJZSXX, XLQ2FJZSSX, XLFJ3SZBZ, XLFJ3SYBZ, XBLJSSFYSSZ, XBLJSSFYYHSDZ, XBLJSSFYFK, XLFLZS3SD, XLFJZS3ZD, XLQ3FJZS, XLQ3FJZSXX, XLQ3FJZSSX, XLFJ4SZBZ, XLFJ4SYBZ, XBLJ4SFYSSZ, XBLJ4SFYYHSDZ, XBLJ4SFYFK, XLFLZS4SD, XLFJZS4ZD, XLQ4FJZS, XLQ4FJZSXX, XLQ4FJZSSX, XMMTSZDXYYXBZW, XMMTSYHBZW, XMMRMTSSZDQHBZ, XMMTSSDSDZ, XMMTSZDSDZ, XMMTSYHSDZ, XMMXLLFK, XMMZJDL, XTMFCCZ, XWMFCCZ, XMMXLLKZSX, XMMXLLKZXX, XMMLFFKDSZDQHBZ, XMMCKWDFK, XCMWDSDSDZ, XCMWDYHSDZ, XMMRFF1KDZDGD, XMMLFFKDZDGD, XMMRFF1KDSDGD, XMMLFFKDSDGD, XMMRFF1KDFK, XMMRFF2KDFK, XMMLFFKDFK, XMMRTSX, XMMRTXX, XMMLTSX, XMMLTXX, XRJHKTSDL, XXCTSJDLSDSDZ, XXCTSJDLFK, XYTDSCRKWD, XYTDSCCKWD, XYTDSCRKYL, XYTDSCCKYL, XRYTSJDL, XRYTSJDL2, XRYTSJDLJZ, XRYTSJDLZH, XRYSLXLLLJL, XC1ACKWD, XC1BCKWD, XC11A1XSJZ, XC11A8XSJZ, XC12B1XSJZ, XC12B8XSJZ, XC1ACKYL, XC1BCKYL, XC1AZTYA, XC1BZTYA, XC2ACKWD, XC2BCKWD, XC2ACKYL, XC2BCKYL, XC2AZTYA, XC2BZTYA, XC3ACKWD, XC3BCKWD, XC3ACKYL, XC3BCKYL, XC3AZTYA, XC3BZTYA, XAC4CKWD, XBC4CKWD, XAC4CKYL, XBC4CKYL, XC4AZTYL, XC4BZTYL, XC5ACKYL, XC5BCKYL, XC5AZTYL, XC5BZTYL, XC5AXLGWD, XC5BXLGWD, XFJLWD1JZ, XFJLWD8JZ, XFJLCKYL, XFJLZBYL, XFJLZBWD, XYSWDYXSJZ, XYSWDBXSJZ, XYSYL, XSCFY, XSCFW, XYRQCOND, XFJLDDYHW, XHYL, XYDYYHTHL, XDYHW, XYDYHL, XYWPMFY, XYWPMFH, XYTPMFH, XYTPMFY, XWMCSDFK, XTMCSDFK, XTWMBL, XGWFJJKYL, XGWFJCKYL, XGWFJDL, XYTZWDYXSJZ, XYTZWDBXSJZ, XECFW, XECFY, XYTPFJDL, XTPFJFMKDSDGD, XTPFJFMKDFK, XSCDWDBY1FK, XSCDWDBY2FK, XSCDWDBY3FK, XSCDWDBY4FK, XSCDWDBY5FK, XBLJYDBYFK, XBLJYDDL, XBLJEDBYFK, XBLJEDBSFK, XBLJEDDL, XBLJSDBYFK, XBLJSDBSFK, XBLJSDDL, XBLJ5SFYFK, XBLJ6SFYFK, XBLJ7SFYFK, XBLJ8SFYFK, XFJLWDFZBLBY1, XRMWDFK, XMMXFJDL, XMMXFJZS, XMMYFJHZ, XMMYFJDL, XMMB/FRKWD, XMMB/FCKWD, XMMTMFCWD, XMMWMFCWD, XMMRMYL, XMMCMYL, XMJYC, XMMCOHLFK, XMMZJMGWD, XMMQTFXYCO, XMMQTFXYO2, XMMB0FRKYL, XMMB0FCKYL, XMMB0FCY, XLQFJ1FY, XLQFJ2FY, XLQFJ3FY, XLQFJ4FY, XLQFJ1DL, XLQFJ2DL, XLQFJ3DL, XLQFJ4DL, XEYHLPFL, XEYHLZSPJZ, XDYHWPFL, XDYHWZSPJZ, XASYL, XXCCZJZ, XYRCOJZ, XYRWCJZ, XFJLWDJZ, XYDLJZ, XSCDWDJZ, XYTFYJZ, XBLJ1SFYJZ, XBLJ2SFYJZ, XBLJ3SFYJZ, XBLJ4SFYJZ, XMMZJDLJZ, XMMCOHLFK2, XGWFJPLSX, XGWFJPLXX, XMMRFF2KDSDGD, XSRSJ1, XSRSJ2, XSRSJ3, XSRSJ4, XSRSJ5, XSRSJ6, XNOXSZDBZ, XASZDGD, XASGDSX, XASGDXX, XNOXSDSDZ from outputtable
+    </sql>
+
+    <select id="selectOutputtableList" parameterType="Outputtable" resultMap="OutputtableResult">
+        <include refid="selectOutputtableVo"/>
+        <where>  
+            <if test="采样时间 != null "> and 采样时间 = #{采样时间}</if>
+            <if test="countGet != null "> and count_get = #{countGet}</if>
+            <if test="XCSLCSJ != null "> and XCSLCSJ = #{XCSLCSJ}</if>
+            <if test="XCMSLLD != null "> and XCMSLLD = #{XCMSLLD}</if>
+            <if test="XXD != null "> and XXD = #{XXD}</if>
+            <if test="XSF != null "> and XSF = #{XSF}</if>
+            <if test="XHYSCA != null "> and XHYSCA = #{XHYSCA}</if>
+            <if test="XHYSSI != null "> and XHYSSI = #{XHYSSI}</if>
+            <if test="XHYSAL != null "> and XHYSAL = #{XHYSAL}</if>
+            <if test="XHYSFE != null "> and XHYSFE = #{XHYSFE}</if>
+            <if test="XSLSLZKH1 != null "> and XSLSLZKH1 = #{XSLSLZKH1}</if>
+            <if test="XSLSLZIM1 != null "> and XSLSLZIM1 = #{XSLSLZIM1}</if>
+            <if test="XSLSLZSM1 != null "> and XSLSLZSM1 = #{XSLSLZSM1}</if>
+            <if test="XRYSLCSJ != null "> and XRYSLCSJ = #{XRYSLCSJ}</if>
+            <if test="XRYSLLD != null "> and XRYSLLD = #{XRYSLLD}</if>
+            <if test="XRYSLSF != null "> and XRYSLSF = #{XRYSLSF}</if>
+            <if test="XRYSLXD != null "> and XRYSLXD = #{XRYSLXD}</if>
+            <if test="XRYSLCA != null "> and XRYSLCA = #{XRYSLCA}</if>
+            <if test="XRYSLSI != null "> and XRYSLSI = #{XRYSLSI}</if>
+            <if test="XRYSLAL != null "> and XRYSLAL = #{XRYSLAL}</if>
+            <if test="XRYSLFE != null "> and XRYSLFE = #{XRYSLFE}</if>
+            <if test="XRJSLSLZKH != null "> and XRJSLSLZKH = #{XRJSLSLZKH}</if>
+            <if test="XRJSLSLZIM != null "> and XRJSLSLZIM = #{XRJSLSLZIM}</if>
+            <if test="XRJSLSLZSM != null "> and XRJSLSLZSM = #{XRJSLSLZSM}</if>
+            <if test="XFJL != null "> and XFJL = #{XFJL}</if>
+            <if test="XCMFCSJ != null "> and XCMFCSJ = #{XCMFCSJ}</if>
+            <if test="XCMMFSF != null "> and XCMMFSF = #{XCMMFSF}</if>
+            <if test="XCMMFXD != null "> and XCMMFXD = #{XCMMFXD}</if>
+            <if test="XMFRZ != null "> and XMFRZ = #{XMFRZ}</if>
+            <if test="XMFHF != null "> and XMFHF = #{XMFHF}</if>
+            <if test="XMFHFF != null "> and XMFHFF = #{XMFHFF}</if>
+            <if test="XMMFGDT != null "> and XMMFGDT = #{XMMFGDT}</if>
+            <if test="XCYSLCA != null "> and XCYSLCA = #{XCYSLCA}</if>
+            <if test="XCYSLSI != null "> and XCYSLSI = #{XCYSLSI}</if>
+            <if test="XCYSLAL != null "> and XCYSLAL = #{XCYSLAL}</if>
+            <if test="XCYSLFE != null "> and XCYSLFE = #{XCYSLFE}</if>
+            <if test="XCYSLCSJ != null "> and XCYSLCSJ = #{XCYSLCSJ}</if>
+            <if test="XSLSLZKH2 != null "> and XSLSLZKH2 = #{XSLSLZKH2}</if>
+            <if test="XSLSLZIM2 != null "> and XSLSLZIM2 = #{XSLSLZIM2}</if>
+            <if test="XSLSLZSM2 != null "> and XSLSLZSM2 = #{XSLSLZSM2}</if>
+            <if test="XCYSLHGXD != null "> and XCYSLHGXD = #{XCYSLHGXD}</if>
+            <if test="xfCao != null "> and Xf_cao = #{xfCao}</if>
+            <if test="XLSZ != null "> and XLSZ = #{XLSZ}</if>
+            <if test="XHF != null "> and XHF = #{XHF}</if>
+            <if test="XC3SHL != null "> and XC3SHL = #{XC3SHL}</if>
+            <if test="XC2SHL != null "> and XC2SHL = #{XC2SHL}</if>
+            <if test="XYXL != null "> and XYXL = #{XYXL}</if>
+            <if test="X28TQD != null "> and X28TQD = #{X28TQD}</if>
+            <if test="X3TQD != null "> and X3TQD = #{X3TQD}</if>
+            <if test="XHJCCSJ != null "> and XHJCCSJ = #{XHJCCSJ}</if>
+            <if test="XSLBCL != null "> and XSLBCL = #{XSLBCL}</if>
+            <if test="XMH != null "> and XMH = #{XMH}</if>
+            <if test="XYWBMH != null "> and XYWBMH = #{XYWBMH}</if>
+            <if test="XYTBMH != null "> and XYTBMH = #{XYTBMH}</if>
+            <if test="XSDMH != null "> and XSDMH = #{XSDMH}</if>
+            <if test="XCSNCSJ != null "> and XCSNCSJ = #{XCSNCSJ}</if>
+            <if test="XCMSNXD != null "> and XCMSNXD = #{XCMSNXD}</if>
+            <if test="XCMSNBBMJ != null "> and XCMSNBBMJ = #{XCMSNBBMJ}</if>
+            <if test="XCMSNLD != null "> and XCMSNLD = #{XCMSNLD}</if>
+            <if test="XCMSNSO2 != null "> and XCMSNSO2 = #{XCMSNSO2}</if>
+            <if test="XCAO != null "> and XCAO = #{XCAO}</if>
+            <if test="XFE2O3 != null "> and XFE2O3 = #{XFE2O3}</if>
+            <if test="XAL2O3 != null "> and XAL2O3 = #{XAL2O3}</if>
+            <if test="XSI02 != null "> and XSI02 = #{XSI02}</if>
+            <if test="XFXYYXZTBZW != null "> and XFXYYXZTBZW = #{XFXYYXZTBZW}</if>
+            <if test="XSLPLSZDQHBZWYH != null "> and XSLPLSZDQHBZWYH = #{XSLPLSZDQHBZWYH}</if>
+            <if test="XSLZDPLYXBZWYH != null "> and XSLZDPLYXBZWYH = #{XSLZDPLYXBZWYH}</if>
+            <if test="XSLPLYHBZW != null "> and XSLPLYHBZW = #{XSLPLYHBZW}</if>
+            <if test="XSLPLYHFZBZW != null "> and XSLPLYHFZBZW = #{XSLPLYHFZBZW}</if>
+            <if test="XCAJCZ != null "> and XCAJCZ = #{XCAJCZ}</if>
+            <if test="XSIJCZ != null "> and XSIJCZ = #{XSIJCZ}</if>
+            <if test="XALJCZ != null "> and XALJCZ = #{XALJCZ}</if>
+            <if test="XFEJCZ != null "> and XFEJCZ = #{XFEJCZ}</if>
+            <if test="XKHJCZ != null "> and XKHJCZ = #{XKHJCZ}</if>
+            <if test="XSMJCZ != null "> and XSMJCZ = #{XSMJCZ}</if>
+            <if test="XIMJCZ != null "> and XIMJCZ = #{XIMJCZ}</if>
+            <if test="XCAM5FZGDJZ != null "> and XCAM5FZGDJZ = #{XCAM5FZGDJZ}</if>
+            <if test="XSIM5FZGDJZ != null "> and XSIM5FZGDJZ = #{XSIM5FZGDJZ}</if>
+            <if test="XALM5FZGDJZ != null "> and XALM5FZGDJZ = #{XALM5FZGDJZ}</if>
+            <if test="XFEM5FZGDJZ != null "> and XFEM5FZGDJZ = #{XFEM5FZGDJZ}</if>
+            <if test="XKHM5FZGDJZ != null "> and XKHM5FZGDJZ = #{XKHM5FZGDJZ}</if>
+            <if test="XSMM5FZGDJZ != null "> and XSMM5FZGDJZ = #{XSMM5FZGDJZ}</if>
+            <if test="XIMM5FZGDJZ != null "> and XIMM5FZGDJZ = #{XIMM5FZGDJZ}</if>
+            <if test="XCAMXSJZ != null "> and XCAMXSJZ = #{XCAMXSJZ}</if>
+            <if test="XSIMXSJZ != null "> and XSIMXSJZ = #{XSIMXSJZ}</if>
+            <if test="XALMXSJZ != null "> and XALMXSJZ = #{XALMXSJZ}</if>
+            <if test="XFEMXSJZ != null "> and XFEMXSJZ = #{XFEMXSJZ}</if>
+            <if test="XKHMXSJZ != null "> and XKHMXSJZ = #{XKHMXSJZ}</if>
+            <if test="XSMMXSJZ != null "> and XSMMXSJZ = #{XSMMXSJZ}</if>
+            <if test="XIMMXSJZ != null "> and XIMMXSJZ = #{XIMMXSJZ}</if>
+            <if test="XKHSDMBZ != null "> and XKHSDMBZ = #{XKHSDMBZ}</if>
+            <if test="XSMSDMBZ != null "> and XSMSDMBZ = #{XSMSDMBZ}</if>
+            <if test="XIMSDMBZ != null "> and XIMSDMBZ = #{XIMSDMBZ}</if>
+            <if test="XYHMBKHGDZ != null "> and XYHMBKHGDZ = #{XYHMBKHGDZ}</if>
+            <if test="XYHMBSMGDZ != null "> and XYHMBSMGDZ = #{XYHMBSMGDZ}</if>
+            <if test="XYHMBIMGDZ != null "> and XYHMBIMGDZ = #{XYHMBIMGDZ}</if>
+            <if test="XYHMBCaHLGDZ != null "> and XYHMBCaHLGDZ = #{XYHMBCaHLGDZ}</if>
+            <if test="XYHMBAlHLGDZ != null "> and XYHMBAlHLGDZ = #{XYHMBAlHLGDZ}</if>
+            <if test="XYHMBSiHLGDZ != null "> and XYHMBSiHLGDZ = #{XYHMBSiHLGDZ}</if>
+            <if test="XYHMBFeHLGDZ != null "> and XYHMBFeHLGDZ = #{XYHMBFeHLGDZ}</if>
+            <if test="XYHMBKHSDSDZ != null "> and XYHMBKHSDSDZ = #{XYHMBKHSDSDZ}</if>
+            <if test="XYHMBSMSDSDZ != null "> and XYHMBSMSDSDZ = #{XYHMBSMSDSDZ}</if>
+            <if test="XYHMBIMSDSDZ != null "> and XYHMBIMSDSDZ = #{XYHMBIMSDSDZ}</if>
+            <if test="XYHMBCaHLSDSDZ != null "> and XYHMBCaHLSDSDZ = #{XYHMBCaHLSDSDZ}</if>
+            <if test="XYHMBAlHLSDSDZ != null "> and XYHMBAlHLSDSDZ = #{XYHMBAlHLSDSDZ}</if>
+            <if test="XYHMBSiHLSDSDZ != null "> and XYHMBSiHLSDSDZ = #{XYHMBSiHLSDSDZ}</if>
+            <if test="XYHMBFeHLSDGSDZ != null "> and XYHMBFeHLSDGSDZ = #{XYHMBFeHLSDGSDZ}</if>
+            <if test="XXCCZSDZ != null "> and XXCCZSDZ = #{XXCCZSDZ}</if>
+            <if test="XXCCZFK != null "> and XXCCZFK = #{XXCCZFK}</if>
+            <if test="XXCCCSZDBZZ != null "> and XXCCCSZDBZZ = #{XXCCCSZDBZZ}</if>
+            <if test="XXCCZZYHSDBZ != null "> and XXCCZZYHSDBZ = #{XXCCZZYHSDBZ}</if>
+            <if test="XXCXLZXLSDSDZ != null "> and XXCXLZXLSDSDZ = #{XXCXLZXLSDSDZ}</if>
+            <if test="XXCXLZXLZDSDZ != null "> and XXCXLZXLZDSDZ = #{XXCXLZXLZDSDZ}</if>
+            <if test="XXCXLZXLFK != null "> and XXCXLZXLFK = #{XXCXLZXLFK}</if>
+            <if test="XXCKDZFMSDGD != null "> and XXCKDZFMSDGD = #{XXCKDZFMSDGD}</if>
+            <if test="XXCKDZFMZDGD != null "> and XXCKDZFMZDGD = #{XXCKDZFMZDGD}</if>
+            <if test="XXCKDZFMFK != null "> and XXCKDZFMFK = #{XXCKDZFMFK}</if>
+            <if test="XXCKDZFMXX != null "> and XXCKDZFMXX = #{XXCKDZFMXX}</if>
+            <if test="XXCKDZFMSX != null "> and XXCKDZFMSX = #{XXCKDZFMSX}</if>
+            <if test="XXCCZSZDBZY != null "> and XXCCZSZDBZY = #{XXCCZSZDBZY}</if>
+            <if test="XXCCZYYHSDBZ != null "> and XXCCZYYHSDBZ = #{XXCCZYYHSDBZ}</if>
+            <if test="XXCXLYXLSDSDZ != null "> and XXCXLYXLSDSDZ = #{XXCXLYXLSDSDZ}</if>
+            <if test="XXCXLYXLZDSDZ != null "> and XXCXLYXLZDSDZ = #{XXCXLYXLZDSDZ}</if>
+            <if test="XXCXLYXLFK != null "> and XXCXLYXLFK = #{XXCXLYXLFK}</if>
+            <if test="XXCKDYFMSDGD != null "> and XXCKDYFMSDGD = #{XXCKDYFMSDGD}</if>
+            <if test="XXCKDYFMZDGD != null "> and XXCKDYFMZDGD = #{XXCKDYFMZDGD}</if>
+            <if test="XXCKDYFMFK != null "> and XXCKDYFMFK = #{XXCKDYFMFK}</if>
+            <if test="XXCKDYFMXX != null "> and XXCKDYFMXX = #{XXCKDYFMXX}</if>
+            <if test="XXCKDYFMSX != null "> and XXCKDYFMSX = #{XXCKDYFMSX}</if>
+            <if test="XRYSXLBZ != null "> and XRYSXLBZ = #{XRYSXLBZ}</if>
+            <if test="XRYSXLYHBZ != null "> and XRYSXLYHBZ = #{XRYSXLYHBZ}</if>
+            <if test="XYRCOSSZ != null "> and XYRCOSSZ = #{XYRCOSSZ}</if>
+            <if test="XYRCOYSZ != null "> and XYRCOYSZ = #{XYRCOYSZ}</if>
+            <if test="XYRCOFKZ != null "> and XYRCOFKZ = #{XYRCOFKZ}</if>
+            <if test="XSLXLLSDZ != null "> and XSLXLLSDZ = #{XSLXLLSDZ}</if>
+            <if test="XRYSXLSSZ != null "> and XRYSXLSSZ = #{XRYSXLSSZ}</if>
+            <if test="XSLXLLFKZ != null "> and XSLXLLFKZ = #{XSLXLLFKZ}</if>
+            <if test="XSLXLZSSX != null "> and XSLXLZSSX = #{XSLXLZSSX}</if>
+            <if test="XSLXLZSXX != null "> and XSLXLZSXX = #{XSLXLZSXX}</if>
+            <if test="XGWFJZDKZBZW != null "> and XGWFJZDKZBZW = #{XGWFJZDKZBZW}</if>
+            <if test="XGWFJYHBZW != null "> and XGWFJYHBZW = #{XGWFJYHBZW}</if>
+            <if test="XGWFJZDXYYXBZW != null "> and XGWFJZDXYYXBZW = #{XGWFJZDXYYXBZW}</if>
+            <if test="XGWFJYHKZQHBZW != null "> and XGWFJYHKZQHBZW = #{XGWFJYHKZQHBZW}</if>
+            <if test="XGWFJZDFZBZW != null "> and XGWFJZDFZBZW = #{XGWFJZDFZBZW}</if>
+            <if test="XGWFJYHFZBZW != null "> and XGWFJYHFZBZW = #{XGWFJYHFZBZW}</if>
+            <if test="XGWFJFZGD != null "> and XGWFJFZGD = #{XGWFJFZGD}</if>
+            <if test="XGWFJXXGD != null "> and XGWFJXXGD = #{XGWFJXXGD}</if>
+            <if test="XYYHT != null "> and XYYHT = #{XYYHT}</if>
+            <if test="XGWFJZSGD != null "> and XGWFJZSGD = #{XGWFJZSGD}</if>
+            <if test="XGWFJZSZDZ != null "> and XGWFJZSZDZ = #{XGWFJZSZDZ}</if>
+            <if test="XGWFJZSFK != null "> and XGWFJZSFK = #{XGWFJZSFK}</if>
+            <if test="XGWFJJKFMGD != null "> and XGWFJJKFMGD = #{XGWFJJKFMGD}</if>
+            <if test="XGWFJJFZDZ != null "> and XGWFJJFZDZ = #{XGWFJJFZDZ}</if>
+            <if test="XGWFJJKFMFK != null "> and XGWFJJKFMFK = #{XGWFJJKFMFK}</if>
+            <if test="XGWFJCKFMGD != null "> and XGWFJCKFMGD = #{XGWFJCKFMGD}</if>
+            <if test="XGWFJCFZDZ != null "> and XGWFJCFZDZ = #{XGWFJCFZDZ}</if>
+            <if test="XGWFJCKFMFK != null "> and XGWFJCKFMFK = #{XGWFJCKFMFK}</if>
+            <if test="XYRFLFSZDBZ != null "> and XYRFLFSZDBZ = #{XYRFLFSZDBZ}</if>
+            <if test="XYRFLFYHBZ != null "> and XYRFLFYHBZ = #{XYRFLFYHBZ}</if>
+            <if test="XCJWCSSZ != null "> and XCJWCSSZ = #{XCJWCSSZ}</if>
+            <if test="XCJWCZSZ != null "> and XCJWCZSZ = #{XCJWCZSZ}</if>
+            <if test="XAC5CKWD != null "> and XAC5CKWD = #{XAC5CKWD}</if>
+            <if test="XBC5CKWD != null "> and XBC5CKWD = #{XBC5CKWD}</if>
+            <if test="XCJWCFKZ != null "> and XCJWCFKZ = #{XCJWCFKZ}</if>
+            <if test="XYRFLFZSSZ != null "> and XYRFLFZSSZ = #{XYRFLFZSSZ}</if>
+            <if test="XYRFLFYSSZ != null "> and XYRFLFYSSZ = #{XYRFLFYSSZ}</if>
+            <if test="XYRFLFZYSZ != null "> and XYRFLFZYSZ = #{XYRFLFZYSZ}</if>
+            <if test="XYRFLFYYSZ != null "> and XYRFLFYYSZ = #{XYRFLFYYSZ}</if>
+            <if test="XYRFLFZKFK != null "> and XYRFLFZKFK = #{XYRFLFZKFK}</if>
+            <if test="XYRFLFYKFK != null "> and XYRFLFYKFK = #{XYRFLFYKFK}</if>
+            <if test="XFLTSX != null "> and XFLTSX = #{XFLTSX}</if>
+            <if test="XFLTXX != null "> and XFLTXX = #{XFLTXX}</if>
+            <if test="XFLFYTSX != null "> and XFLFYTSX = #{XFLFYTSX}</if>
+            <if test="XFLFYTXX != null "> and XFLFYTXX = #{XFLFYTXX}</if>
+            <if test="XFJLWDZDXYYXBZW != null "> and XFJLWDZDXYYXBZW = #{XFJLWDZDXYYXBZW}</if>
+            <if test="XFJLWDYHBZW != null "> and XFJLWDYHBZW = #{XFJLWDYHBZW}</if>
+            <if test="XYWWMSZDQH != null "> and XYWWMSZDQH = #{XYWWMSZDQH}</if>
+            <if test="XFJLWDSDSDZ != null "> and XFJLWDSDSDZ = #{XFJLWDSDSDZ}</if>
+            <if test="XFJLWDYHSDZ != null "> and XFJLWDYHSDZ = #{XFJLWDYHSDZ}</if>
+            <if test="XFJLWDF != null "> and XFJLWDF = #{XFJLWDF}</if>
+            <if test="XYWWMLSDGDZ != null "> and XYWWMLSDGDZ = #{XYWWMLSDGDZ}</if>
+            <if test="XYWWMLZDGDZ != null "> and XYWWMLZDGDZ = #{XYWWMLZDGDZ}</if>
+            <if test="XYWWMLFKZ != null "> and XYWWMLFKZ = #{XYWWMLFKZ}</if>
+            <if test="XFJLTSX != null "> and XFJLTSX = #{XFJLTSX}</if>
+            <if test="XFJLTXX != null "> and XFJLTXX = #{XFJLTXX}</if>
+            <if test="XFJLPMXXGD != null "> and XFJLPMXXGD = #{XFJLPMXXGD}</if>
+            <if test="XFJLWDXXGD != null "> and XFJLWDXXGD = #{XFJLWDXXGD}</if>
+            <if test="XYZSSZDQH != null "> and XYZSSZDQH = #{XYZSSZDQH}</if>
+            <if test="XYZSYHBZ != null "> and XYZSYHBZ = #{XYZSYHBZ}</if>
+            <if test="XYDLSSZ != null "> and XYDLSSZ = #{XYDLSSZ}</if>
+            <if test="XYDLYSZ != null "> and XYDLYSZ = #{XYDLYSZ}</if>
+            <if test="XYZJDL != null "> and XYZJDL = #{XYZJDL}</if>
+            <if test="XYZSSDGD != null "> and XYZSSDGD = #{XYZSSDGD}</if>
+            <if test="XYZSZDGD != null "> and XYZSZDGD = #{XYZSZDGD}</if>
+            <if test="XYZDJSDFK != null "> and XYZDJSDFK = #{XYZDJSDFK}</if>
+            <if test="XYZSTSX != null "> and XYZSTSX = #{XYZSTSX}</if>
+            <if test="XYZSTXX != null "> and XYZSTXX = #{XYZSTXX}</if>
+            <if test="XYDLZSSX != null "> and XYDLZSSX = #{XYDLZSSX}</if>
+            <if test="XYDLZSXX != null "> and XYDLZSXX = #{XYDLZSXX}</if>
+            <if test="XSCDWDZDXYYXBZW != null "> and XSCDWDZDXYYXBZW = #{XSCDWDZDXYYXBZW}</if>
+            <if test="XSCDWDYHBZW != null "> and XSCDWDYHBZW = #{XSCDWDYHBZW}</if>
+            <if test="XYTWMSZDQH != null "> and XYTWMSZDQH = #{XYTWMSZDQH}</if>
+            <if test="XSCDWDSDSDZ != null "> and XSCDWDSDSDZ = #{XSCDWDSDSDZ}</if>
+            <if test="XSCDWDYHSDZ != null "> and XSCDWDYHSDZ = #{XSCDWDYHSDZ}</if>
+            <if test="XSCDWDFK != null "> and XSCDWDFK = #{XSCDWDFK}</if>
+            <if test="XYSWD != null "> and XYSWD = #{XYSWD}</if>
+            <if test="XYTZWD != null "> and XYTZWD = #{XYTZWD}</if>
+            <if test="XYTWMLSDGDZ != null "> and XYTWMLSDGDZ = #{XYTWMLSDGDZ}</if>
+            <if test="XYTWMLZDGDZ != null "> and XYTWMLZDGDZ = #{XYTWMLZDGDZ}</if>
+            <if test="XYTWMLFKZ != null "> and XYTWMLFKZ = #{XYTWMLFKZ}</if>
+            <if test="XYTPMTSX != null "> and XYTPMTSX = #{XYTPMTSX}</if>
+            <if test="XYTPMTXX != null "> and XYTPMTXX = #{XYTPMTXX}</if>
+            <if test="XSCDPMXXGD != null "> and XSCDPMXXGD = #{XSCDPMXXGD}</if>
+            <if test="XSCDWDXXGD != null "> and XSCDWDXXGD = #{XSCDWDXXGD}</if>
+            <if test="XYTPFJSZDQH != null "> and XYTPFJSZDQH = #{XYTPFJSZDQH}</if>
+            <if test="XYTFYYHQDBZW != null "> and XYTFYYHQDBZW = #{XYTFYYHQDBZW}</if>
+            <if test="XYTFYSSZ != null "> and XYTFYSSZ = #{XYTFYSSZ}</if>
+            <if test="XYTFYYHSDZ != null "> and XYTFYYHSDZ = #{XYTFYYHSDZ}</if>
+            <if test="XYTFYFK != null "> and XYTFYFK = #{XYTFYFK}</if>
+            <if test="XYTPFJPLSDGD != null "> and XYTPFJPLSDGD = #{XYTPFJPLSDGD}</if>
+            <if test="XYTPFJZDGD != null "> and XYTPFJZDGD = #{XYTPFJZDGD}</if>
+            <if test="XYTPPLFK != null "> and XYTPPLFK = #{XYTPPLFK}</if>
+            <if test="XYTFYTSX != null "> and XYTFYTSX = #{XYTFYTSX}</if>
+            <if test="XYTFYTXX != null "> and XYTFYTXX = #{XYTFYTXX}</if>
+            <if test="XYTPPTXX != null "> and XYTPPTXX = #{XYTPPTXX}</if>
+            <if test="XYTPPTSX != null "> and XYTPPTSX = #{XYTPPTSX}</if>
+            <if test="XBLJYDZDKZBZW != null "> and XBLJYDZDKZBZW = #{XBLJYDZDKZBZW}</if>
+            <if test="XBLJYDYHBZW != null "> and XBLJYDYHBZW = #{XBLJYDYHBZW}</if>
+            <if test="XBLJYSFYYHQDBZW != null "> and XBLJYSFYYHQDBZW = #{XBLJYSFYYHQDBZW}</if>
+            <if test="XBLJYSFYSSZ != null "> and XBLJYSFYSSZ = #{XBLJYSFYSSZ}</if>
+            <if test="XBLJYSFYYHSDZ != null "> and XBLJYSFYYHSDZ = #{XBLJYSFYYHSDZ}</if>
+            <if test="XBLJYSFYFK != null "> and XBLJYSFYFK = #{XBLJYSFYFK}</if>
+            <if test="XBLJYDBSSDGD != null "> and XBLJYDBSSDGD = #{XBLJYDBSSDGD}</if>
+            <if test="XBLJYDBSZDGD != null "> and XBLJYDBSZDGD = #{XBLJYDBSZDGD}</if>
+            <if test="XBLJYDBSFK != null "> and XBLJYDBSFK = #{XBLJYDBSFK}</if>
+            <if test="XBLJYDBSFKSX != null "> and XBLJYDBSFKSX = #{XBLJYDBSFKSX}</if>
+            <if test="XBLJYDBSFKXX != null "> and XBLJYDBSFKXX = #{XBLJYDBSFKXX}</if>
+            <if test="XCLQJSLWD != null "> and XCLQJSLWD = #{XCLQJSLWD}</if>
+            <if test="XLFJ1SZBZ != null "> and XLFJ1SZBZ = #{XLFJ1SZBZ}</if>
+            <if test="XLFJ1SYBZ != null "> and XLFJ1SYBZ = #{XLFJ1SYBZ}</if>
+            <if test="XLFLZS1SD != null "> and XLFLZS1SD = #{XLFLZS1SD}</if>
+            <if test="XLFJZS1ZD != null "> and XLFJZS1ZD = #{XLFJZS1ZD}</if>
+            <if test="XLQ1FJZS != null "> and XLQ1FJZS = #{XLQ1FJZS}</if>
+            <if test="XLQ1FJZSXX != null "> and XLQ1FJZSXX = #{XLQ1FJZSXX}</if>
+            <if test="XLQ1FJZSSX != null "> and XLQ1FJZSSX = #{XLQ1FJZSSX}</if>
+            <if test="XLFJ2SZBZ != null "> and XLFJ2SZBZ = #{XLFJ2SZBZ}</if>
+            <if test="XLFJ2SYBZ != null "> and XLFJ2SYBZ = #{XLFJ2SYBZ}</if>
+            <if test="XBLJESFYSSZ != null "> and XBLJESFYSSZ = #{XBLJESFYSSZ}</if>
+            <if test="XBLJESFYYHSDZ != null "> and XBLJESFYYHSDZ = #{XBLJESFYYHSDZ}</if>
+            <if test="XBLJESFYFK != null "> and XBLJESFYFK = #{XBLJESFYFK}</if>
+            <if test="XLFLZS2SD != null "> and XLFLZS2SD = #{XLFLZS2SD}</if>
+            <if test="XLFJZS2ZD != null "> and XLFJZS2ZD = #{XLFJZS2ZD}</if>
+            <if test="XLQ2FJZS != null "> and XLQ2FJZS = #{XLQ2FJZS}</if>
+            <if test="XLQ2FJZSXX != null "> and XLQ2FJZSXX = #{XLQ2FJZSXX}</if>
+            <if test="XLQ2FJZSSX != null "> and XLQ2FJZSSX = #{XLQ2FJZSSX}</if>
+            <if test="XLFJ3SZBZ != null "> and XLFJ3SZBZ = #{XLFJ3SZBZ}</if>
+            <if test="XLFJ3SYBZ != null "> and XLFJ3SYBZ = #{XLFJ3SYBZ}</if>
+            <if test="XBLJSSFYSSZ != null "> and XBLJSSFYSSZ = #{XBLJSSFYSSZ}</if>
+            <if test="XBLJSSFYYHSDZ != null "> and XBLJSSFYYHSDZ = #{XBLJSSFYYHSDZ}</if>
+            <if test="XBLJSSFYFK != null "> and XBLJSSFYFK = #{XBLJSSFYFK}</if>
+            <if test="XLFLZS3SD != null "> and XLFLZS3SD = #{XLFLZS3SD}</if>
+            <if test="XLFJZS3ZD != null "> and XLFJZS3ZD = #{XLFJZS3ZD}</if>
+            <if test="XLQ3FJZS != null "> and XLQ3FJZS = #{XLQ3FJZS}</if>
+            <if test="XLQ3FJZSXX != null "> and XLQ3FJZSXX = #{XLQ3FJZSXX}</if>
+            <if test="XLQ3FJZSSX != null "> and XLQ3FJZSSX = #{XLQ3FJZSSX}</if>
+            <if test="XLFJ4SZBZ != null "> and XLFJ4SZBZ = #{XLFJ4SZBZ}</if>
+            <if test="XLFJ4SYBZ != null "> and XLFJ4SYBZ = #{XLFJ4SYBZ}</if>
+            <if test="XBLJ4SFYSSZ != null "> and XBLJ4SFYSSZ = #{XBLJ4SFYSSZ}</if>
+            <if test="XBLJ4SFYYHSDZ != null "> and XBLJ4SFYYHSDZ = #{XBLJ4SFYYHSDZ}</if>
+            <if test="XBLJ4SFYFK != null "> and XBLJ4SFYFK = #{XBLJ4SFYFK}</if>
+            <if test="XLFLZS4SD != null "> and XLFLZS4SD = #{XLFLZS4SD}</if>
+            <if test="XLFJZS4ZD != null "> and XLFJZS4ZD = #{XLFJZS4ZD}</if>
+            <if test="XLQ4FJZS != null "> and XLQ4FJZS = #{XLQ4FJZS}</if>
+            <if test="XLQ4FJZSXX != null "> and XLQ4FJZSXX = #{XLQ4FJZSXX}</if>
+            <if test="XLQ4FJZSSX != null "> and XLQ4FJZSSX = #{XLQ4FJZSSX}</if>
+            <if test="XMMTSZDXYYXBZW != null "> and XMMTSZDXYYXBZW = #{XMMTSZDXYYXBZW}</if>
+            <if test="XMMTSYHBZW != null "> and XMMTSYHBZW = #{XMMTSYHBZW}</if>
+            <if test="XMMRMTSSZDQHBZ != null "> and XMMRMTSSZDQHBZ = #{XMMRMTSSZDQHBZ}</if>
+            <if test="XMMTSSDSDZ != null "> and XMMTSSDSDZ = #{XMMTSSDSDZ}</if>
+            <if test="XMMTSZDSDZ != null "> and XMMTSZDSDZ = #{XMMTSZDSDZ}</if>
+            <if test="XMMTSYHSDZ != null "> and XMMTSYHSDZ = #{XMMTSYHSDZ}</if>
+            <if test="XMMXLLFK != null "> and XMMXLLFK = #{XMMXLLFK}</if>
+            <if test="XMMZJDL != null "> and XMMZJDL = #{XMMZJDL}</if>
+            <if test="XTMFCCZ != null "> and XTMFCCZ = #{XTMFCCZ}</if>
+            <if test="XWMFCCZ != null "> and XWMFCCZ = #{XWMFCCZ}</if>
+            <if test="XMMXLLKZSX != null "> and XMMXLLKZSX = #{XMMXLLKZSX}</if>
+            <if test="XMMXLLKZXX != null "> and XMMXLLKZXX = #{XMMXLLKZXX}</if>
+            <if test="XMMLFFKDSZDQHBZ != null "> and XMMLFFKDSZDQHBZ = #{XMMLFFKDSZDQHBZ}</if>
+            <if test="XMMCKWDFK != null "> and XMMCKWDFK = #{XMMCKWDFK}</if>
+            <if test="XCMWDSDSDZ != null "> and XCMWDSDSDZ = #{XCMWDSDSDZ}</if>
+            <if test="XCMWDYHSDZ != null "> and XCMWDYHSDZ = #{XCMWDYHSDZ}</if>
+            <if test="XMMRFF1KDZDGD != null "> and XMMRFF1KDZDGD = #{XMMRFF1KDZDGD}</if>
+            <if test="XMMLFFKDZDGD != null "> and XMMLFFKDZDGD = #{XMMLFFKDZDGD}</if>
+            <if test="XMMRFF1KDSDGD != null "> and XMMRFF1KDSDGD = #{XMMRFF1KDSDGD}</if>
+            <if test="XMMLFFKDSDGD != null "> and XMMLFFKDSDGD = #{XMMLFFKDSDGD}</if>
+            <if test="XMMRFF1KDFK != null "> and XMMRFF1KDFK = #{XMMRFF1KDFK}</if>
+            <if test="XMMRFF2KDFK != null "> and XMMRFF2KDFK = #{XMMRFF2KDFK}</if>
+            <if test="XMMLFFKDFK != null "> and XMMLFFKDFK = #{XMMLFFKDFK}</if>
+            <if test="XMMRTSX != null "> and XMMRTSX = #{XMMRTSX}</if>
+            <if test="XMMRTXX != null "> and XMMRTXX = #{XMMRTXX}</if>
+            <if test="XMMLTSX != null "> and XMMLTSX = #{XMMLTSX}</if>
+            <if test="XMMLTXX != null "> and XMMLTXX = #{XMMLTXX}</if>
+            <if test="XRJHKTSDL != null "> and XRJHKTSDL = #{XRJHKTSDL}</if>
+            <if test="XXCTSJDLSDSDZ != null "> and XXCTSJDLSDSDZ = #{XXCTSJDLSDSDZ}</if>
+            <if test="XXCTSJDLFK != null "> and XXCTSJDLFK = #{XXCTSJDLFK}</if>
+            <if test="XYTDSCRKWD != null "> and XYTDSCRKWD = #{XYTDSCRKWD}</if>
+            <if test="XYTDSCCKWD != null "> and XYTDSCCKWD = #{XYTDSCCKWD}</if>
+            <if test="XYTDSCRKYL != null "> and XYTDSCRKYL = #{XYTDSCRKYL}</if>
+            <if test="XYTDSCCKYL != null "> and XYTDSCCKYL = #{XYTDSCCKYL}</if>
+            <if test="XRYTSJDL != null "> and XRYTSJDL = #{XRYTSJDL}</if>
+            <if test="XRYTSJDL2 != null "> and XRYTSJDL2 = #{XRYTSJDL2}</if>
+            <if test="XRYTSJDLJZ != null "> and XRYTSJDLJZ = #{XRYTSJDLJZ}</if>
+            <if test="XRYTSJDLZH != null "> and XRYTSJDLZH = #{XRYTSJDLZH}</if>
+            <if test="XRYSLXLLLJL != null "> and XRYSLXLLLJL = #{XRYSLXLLLJL}</if>
+            <if test="XC1ACKWD != null "> and XC1ACKWD = #{XC1ACKWD}</if>
+            <if test="XC1BCKWD != null "> and XC1BCKWD = #{XC1BCKWD}</if>
+            <if test="XC11A1XSJZ != null "> and XC11A1XSJZ = #{XC11A1XSJZ}</if>
+            <if test="XC11A8XSJZ != null "> and XC11A8XSJZ = #{XC11A8XSJZ}</if>
+            <if test="XC12B1XSJZ != null "> and XC12B1XSJZ = #{XC12B1XSJZ}</if>
+            <if test="XC12B8XSJZ != null "> and XC12B8XSJZ = #{XC12B8XSJZ}</if>
+            <if test="XC1ACKYL != null "> and XC1ACKYL = #{XC1ACKYL}</if>
+            <if test="XC1BCKYL != null "> and XC1BCKYL = #{XC1BCKYL}</if>
+            <if test="XC1AZTYA != null "> and XC1AZTYA = #{XC1AZTYA}</if>
+            <if test="XC1BZTYA != null "> and XC1BZTYA = #{XC1BZTYA}</if>
+            <if test="XC2ACKWD != null "> and XC2ACKWD = #{XC2ACKWD}</if>
+            <if test="XC2BCKWD != null "> and XC2BCKWD = #{XC2BCKWD}</if>
+            <if test="XC2ACKYL != null "> and XC2ACKYL = #{XC2ACKYL}</if>
+            <if test="XC2BCKYL != null "> and XC2BCKYL = #{XC2BCKYL}</if>
+            <if test="XC2AZTYA != null "> and XC2AZTYA = #{XC2AZTYA}</if>
+            <if test="XC2BZTYA != null "> and XC2BZTYA = #{XC2BZTYA}</if>
+            <if test="XC3ACKWD != null "> and XC3ACKWD = #{XC3ACKWD}</if>
+            <if test="XC3BCKWD != null "> and XC3BCKWD = #{XC3BCKWD}</if>
+            <if test="XC3ACKYL != null "> and XC3ACKYL = #{XC3ACKYL}</if>
+            <if test="XC3BCKYL != null "> and XC3BCKYL = #{XC3BCKYL}</if>
+            <if test="XC3AZTYA != null "> and XC3AZTYA = #{XC3AZTYA}</if>
+            <if test="XC3BZTYA != null "> and XC3BZTYA = #{XC3BZTYA}</if>
+            <if test="XAC4CKWD != null "> and XAC4CKWD = #{XAC4CKWD}</if>
+            <if test="XBC4CKWD != null "> and XBC4CKWD = #{XBC4CKWD}</if>
+            <if test="XAC4CKYL != null "> and XAC4CKYL = #{XAC4CKYL}</if>
+            <if test="XBC4CKYL != null "> and XBC4CKYL = #{XBC4CKYL}</if>
+            <if test="XC4AZTYL != null "> and XC4AZTYL = #{XC4AZTYL}</if>
+            <if test="XC4BZTYL != null "> and XC4BZTYL = #{XC4BZTYL}</if>
+            <if test="XC5ACKYL != null "> and XC5ACKYL = #{XC5ACKYL}</if>
+            <if test="XC5BCKYL != null "> and XC5BCKYL = #{XC5BCKYL}</if>
+            <if test="XC5AZTYL != null "> and XC5AZTYL = #{XC5AZTYL}</if>
+            <if test="XC5BZTYL != null "> and XC5BZTYL = #{XC5BZTYL}</if>
+            <if test="XC5AXLGWD != null "> and XC5AXLGWD = #{XC5AXLGWD}</if>
+            <if test="XC5BXLGWD != null "> and XC5BXLGWD = #{XC5BXLGWD}</if>
+            <if test="XFJLWD1JZ != null "> and XFJLWD1JZ = #{XFJLWD1JZ}</if>
+            <if test="XFJLWD8JZ != null "> and XFJLWD8JZ = #{XFJLWD8JZ}</if>
+            <if test="XFJLCKYL != null "> and XFJLCKYL = #{XFJLCKYL}</if>
+            <if test="XFJLZBYL != null "> and XFJLZBYL = #{XFJLZBYL}</if>
+            <if test="XFJLZBWD != null "> and XFJLZBWD = #{XFJLZBWD}</if>
+            <if test="XYSWDYXSJZ != null "> and XYSWDYXSJZ = #{XYSWDYXSJZ}</if>
+            <if test="XYSWDBXSJZ != null "> and XYSWDBXSJZ = #{XYSWDBXSJZ}</if>
+            <if test="XYSYL != null "> and XYSYL = #{XYSYL}</if>
+            <if test="XSCFY != null "> and XSCFY = #{XSCFY}</if>
+            <if test="XSCFW != null "> and XSCFW = #{XSCFW}</if>
+            <if test="XYRQCOND != null "> and XYRQCOND = #{XYRQCOND}</if>
+            <if test="XFJLDDYHW != null "> and XFJLDDYHW = #{XFJLDDYHW}</if>
+            <if test="XHYL != null "> and XHYL = #{XHYL}</if>
+            <if test="XYDYYHTHL != null "> and XYDYYHTHL = #{XYDYYHTHL}</if>
+            <if test="XDYHW != null "> and XDYHW = #{XDYHW}</if>
+            <if test="XYDYHL != null "> and XYDYHL = #{XYDYHL}</if>
+            <if test="XYWPMFY != null "> and XYWPMFY = #{XYWPMFY}</if>
+            <if test="XYWPMFH != null "> and XYWPMFH = #{XYWPMFH}</if>
+            <if test="XYTPMFH != null "> and XYTPMFH = #{XYTPMFH}</if>
+            <if test="XYTPMFY != null "> and XYTPMFY = #{XYTPMFY}</if>
+            <if test="XWMCSDFK != null "> and XWMCSDFK = #{XWMCSDFK}</if>
+            <if test="XTMCSDFK != null "> and XTMCSDFK = #{XTMCSDFK}</if>
+            <if test="XTWMBL != null "> and XTWMBL = #{XTWMBL}</if>
+            <if test="XGWFJJKYL != null "> and XGWFJJKYL = #{XGWFJJKYL}</if>
+            <if test="XGWFJCKYL != null "> and XGWFJCKYL = #{XGWFJCKYL}</if>
+            <if test="XGWFJDL != null "> and XGWFJDL = #{XGWFJDL}</if>
+            <if test="XYTZWDYXSJZ != null "> and XYTZWDYXSJZ = #{XYTZWDYXSJZ}</if>
+            <if test="XYTZWDBXSJZ != null "> and XYTZWDBXSJZ = #{XYTZWDBXSJZ}</if>
+            <if test="XECFW != null "> and XECFW = #{XECFW}</if>
+            <if test="XECFY != null "> and XECFY = #{XECFY}</if>
+            <if test="XYTPFJDL != null "> and XYTPFJDL = #{XYTPFJDL}</if>
+            <if test="XTPFJFMKDSDGD != null "> and XTPFJFMKDSDGD = #{XTPFJFMKDSDGD}</if>
+            <if test="XTPFJFMKDFK != null "> and XTPFJFMKDFK = #{XTPFJFMKDFK}</if>
+            <if test="XSCDWDBY1FK != null "> and XSCDWDBY1FK = #{XSCDWDBY1FK}</if>
+            <if test="XSCDWDBY2FK != null "> and XSCDWDBY2FK = #{XSCDWDBY2FK}</if>
+            <if test="XSCDWDBY3FK != null "> and XSCDWDBY3FK = #{XSCDWDBY3FK}</if>
+            <if test="XSCDWDBY4FK != null "> and XSCDWDBY4FK = #{XSCDWDBY4FK}</if>
+            <if test="XSCDWDBY5FK != null "> and XSCDWDBY5FK = #{XSCDWDBY5FK}</if>
+            <if test="XBLJYDBYFK != null "> and XBLJYDBYFK = #{XBLJYDBYFK}</if>
+            <if test="XBLJYDDL != null "> and XBLJYDDL = #{XBLJYDDL}</if>
+            <if test="XBLJEDBYFK != null "> and XBLJEDBYFK = #{XBLJEDBYFK}</if>
+            <if test="XBLJEDBSFK != null "> and XBLJEDBSFK = #{XBLJEDBSFK}</if>
+            <if test="XBLJEDDL != null "> and XBLJEDDL = #{XBLJEDDL}</if>
+            <if test="XBLJSDBYFK != null "> and XBLJSDBYFK = #{XBLJSDBYFK}</if>
+            <if test="XBLJSDBSFK != null "> and XBLJSDBSFK = #{XBLJSDBSFK}</if>
+            <if test="XBLJSDDL != null "> and XBLJSDDL = #{XBLJSDDL}</if>
+            <if test="XBLJ5SFYFK != null "> and XBLJ5SFYFK = #{XBLJ5SFYFK}</if>
+            <if test="XBLJ6SFYFK != null "> and XBLJ6SFYFK = #{XBLJ6SFYFK}</if>
+            <if test="XBLJ7SFYFK != null "> and XBLJ7SFYFK = #{XBLJ7SFYFK}</if>
+            <if test="XBLJ8SFYFK != null "> and XBLJ8SFYFK = #{XBLJ8SFYFK}</if>
+            <if test="XFJLWDFZBLBY1 != null "> and XFJLWDFZBLBY1 = #{XFJLWDFZBLBY1}</if>
+            <if test="XRMWDFK != null "> and XRMWDFK = #{XRMWDFK}</if>
+            <if test="XMMXFJDL != null "> and XMMXFJDL = #{XMMXFJDL}</if>
+            <if test="XMMXFJZS != null "> and XMMXFJZS = #{XMMXFJZS}</if>
+            <if test="XMMYFJHZ != null "> and XMMYFJHZ = #{XMMYFJHZ}</if>
+            <if test="XMMYFJDL != null "> and XMMYFJDL = #{XMMYFJDL}</if>
+            <if test="XMMB/FRKWD != null "> and XMMB/FRKWD = #{XMMBFRKWD}</if>
+            <if test="XMMB/FCKWD != null "> and XMMB/FCKWD = #{XMMBFCKWD}</if>
+            <if test="XMMTMFCWD != null "> and XMMTMFCWD = #{XMMTMFCWD}</if>
+            <if test="XMMWMFCWD != null "> and XMMWMFCWD = #{XMMWMFCWD}</if>
+            <if test="XMMRMYL != null "> and XMMRMYL = #{XMMRMYL}</if>
+            <if test="XMMCMYL != null "> and XMMCMYL = #{XMMCMYL}</if>
+            <if test="XMJYC != null "> and XMJYC = #{XMJYC}</if>
+            <if test="XMMCOHLFK != null "> and XMMCOHLFK = #{XMMCOHLFK}</if>
+            <if test="XMMZJMGWD != null "> and XMMZJMGWD = #{XMMZJMGWD}</if>
+            <if test="XMMQTFXYCO != null "> and XMMQTFXYCO = #{XMMQTFXYCO}</if>
+            <if test="XMMQTFXYO2 != null "> and XMMQTFXYO2 = #{XMMQTFXYO2}</if>
+            <if test="XMMB0FRKYL != null "> and XMMB0FRKYL = #{XMMB0FRKYL}</if>
+            <if test="XMMB0FCKYL != null "> and XMMB0FCKYL = #{XMMB0FCKYL}</if>
+            <if test="XMMB0FCY != null "> and XMMB0FCY = #{XMMB0FCY}</if>
+            <if test="XLQFJ1FY != null "> and XLQFJ1FY = #{XLQFJ1FY}</if>
+            <if test="XLQFJ2FY != null "> and XLQFJ2FY = #{XLQFJ2FY}</if>
+            <if test="XLQFJ3FY != null "> and XLQFJ3FY = #{XLQFJ3FY}</if>
+            <if test="XLQFJ4FY != null "> and XLQFJ4FY = #{XLQFJ4FY}</if>
+            <if test="XLQFJ1DL != null "> and XLQFJ1DL = #{XLQFJ1DL}</if>
+            <if test="XLQFJ2DL != null "> and XLQFJ2DL = #{XLQFJ2DL}</if>
+            <if test="XLQFJ3DL != null "> and XLQFJ3DL = #{XLQFJ3DL}</if>
+            <if test="XLQFJ4DL != null "> and XLQFJ4DL = #{XLQFJ4DL}</if>
+            <if test="XEYHLPFL != null "> and XEYHLPFL = #{XEYHLPFL}</if>
+            <if test="XEYHLZSPJZ != null "> and XEYHLZSPJZ = #{XEYHLZSPJZ}</if>
+            <if test="XDYHWPFL != null "> and XDYHWPFL = #{XDYHWPFL}</if>
+            <if test="XDYHWZSPJZ != null "> and XDYHWZSPJZ = #{XDYHWZSPJZ}</if>
+            <if test="XASYL != null "> and XASYL = #{XASYL}</if>
+            <if test="XXCCZJZ != null "> and XXCCZJZ = #{XXCCZJZ}</if>
+            <if test="XYRCOJZ != null "> and XYRCOJZ = #{XYRCOJZ}</if>
+            <if test="XYRWCJZ != null "> and XYRWCJZ = #{XYRWCJZ}</if>
+            <if test="XFJLWDJZ != null "> and XFJLWDJZ = #{XFJLWDJZ}</if>
+            <if test="XYDLJZ != null "> and XYDLJZ = #{XYDLJZ}</if>
+            <if test="XSCDWDJZ != null "> and XSCDWDJZ = #{XSCDWDJZ}</if>
+            <if test="XYTFYJZ != null "> and XYTFYJZ = #{XYTFYJZ}</if>
+            <if test="XBLJ1SFYJZ != null "> and XBLJ1SFYJZ = #{XBLJ1SFYJZ}</if>
+            <if test="XBLJ2SFYJZ != null "> and XBLJ2SFYJZ = #{XBLJ2SFYJZ}</if>
+            <if test="XBLJ3SFYJZ != null "> and XBLJ3SFYJZ = #{XBLJ3SFYJZ}</if>
+            <if test="XBLJ4SFYJZ != null "> and XBLJ4SFYJZ = #{XBLJ4SFYJZ}</if>
+            <if test="XMMZJDLJZ != null "> and XMMZJDLJZ = #{XMMZJDLJZ}</if>
+            <if test="XMMCOHLFK2 != null "> and XMMCOHLFK2 = #{XMMCOHLFK2}</if>
+            <if test="XGWFJPLSX != null "> and XGWFJPLSX = #{XGWFJPLSX}</if>
+            <if test="XGWFJPLXX != null "> and XGWFJPLXX = #{XGWFJPLXX}</if>
+            <if test="XMMRFF2KDSDGD != null "> and XMMRFF2KDSDGD = #{XMMRFF2KDSDGD}</if>
+            <if test="XSRSJ1 != null "> and XSRSJ1 = #{XSRSJ1}</if>
+            <if test="XSRSJ2 != null "> and XSRSJ2 = #{XSRSJ2}</if>
+            <if test="XSRSJ3 != null "> and XSRSJ3 = #{XSRSJ3}</if>
+            <if test="XSRSJ4 != null "> and XSRSJ4 = #{XSRSJ4}</if>
+            <if test="XSRSJ5 != null "> and XSRSJ5 = #{XSRSJ5}</if>
+            <if test="XSRSJ6 != null "> and XSRSJ6 = #{XSRSJ6}</if>
+            <if test="XNOXSZDBZ != null "> and XNOXSZDBZ = #{XNOXSZDBZ}</if>
+            <if test="XASZDGD != null "> and XASZDGD = #{XASZDGD}</if>
+            <if test="XASGDSX != null "> and XASGDSX = #{XASGDSX}</if>
+            <if test="XASGDXX != null "> and XASGDXX = #{XASGDXX}</if>
+            <if test="XNOXSDSDZ != null "> and XNOXSDSDZ = #{XNOXSDSDZ}</if>
+        </where>
+    </select>
+    
+    <select id="selectOutputtableBy采样时间" parameterType="Date" resultMap="OutputtableResult">
+        <include refid="selectOutputtableVo"/>
+        where 采样时间 = #{采样时间}
+    </select>
+
+    <insert id="insertOutputtable" parameterType="Outputtable">
+        insert into outputtable
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="采样时间 != null">采样时间,</if>
+            <if test="countGet != null">count_get,</if>
+            <if test="XCSLCSJ != null">XCSLCSJ,</if>
+            <if test="XCMSLLD != null">XCMSLLD,</if>
+            <if test="XXD != null">XXD,</if>
+            <if test="XSF != null">XSF,</if>
+            <if test="XHYSCA != null">XHYSCA,</if>
+            <if test="XHYSSI != null">XHYSSI,</if>
+            <if test="XHYSAL != null">XHYSAL,</if>
+            <if test="XHYSFE != null">XHYSFE,</if>
+            <if test="XSLSLZKH1 != null">XSLSLZKH1,</if>
+            <if test="XSLSLZIM1 != null">XSLSLZIM1,</if>
+            <if test="XSLSLZSM1 != null">XSLSLZSM1,</if>
+            <if test="XRYSLCSJ != null">XRYSLCSJ,</if>
+            <if test="XRYSLLD != null">XRYSLLD,</if>
+            <if test="XRYSLSF != null">XRYSLSF,</if>
+            <if test="XRYSLXD != null">XRYSLXD,</if>
+            <if test="XRYSLCA != null">XRYSLCA,</if>
+            <if test="XRYSLSI != null">XRYSLSI,</if>
+            <if test="XRYSLAL != null">XRYSLAL,</if>
+            <if test="XRYSLFE != null">XRYSLFE,</if>
+            <if test="XRJSLSLZKH != null">XRJSLSLZKH,</if>
+            <if test="XRJSLSLZIM != null">XRJSLSLZIM,</if>
+            <if test="XRJSLSLZSM != null">XRJSLSLZSM,</if>
+            <if test="XFJL != null">XFJL,</if>
+            <if test="XCMFCSJ != null">XCMFCSJ,</if>
+            <if test="XCMMFSF != null">XCMMFSF,</if>
+            <if test="XCMMFXD != null">XCMMFXD,</if>
+            <if test="XMFRZ != null">XMFRZ,</if>
+            <if test="XMFHF != null">XMFHF,</if>
+            <if test="XMFHFF != null">XMFHFF,</if>
+            <if test="XMMFGDT != null">XMMFGDT,</if>
+            <if test="XCYSLCA != null">XCYSLCA,</if>
+            <if test="XCYSLSI != null">XCYSLSI,</if>
+            <if test="XCYSLAL != null">XCYSLAL,</if>
+            <if test="XCYSLFE != null">XCYSLFE,</if>
+            <if test="XCYSLCSJ != null">XCYSLCSJ,</if>
+            <if test="XSLSLZKH2 != null">XSLSLZKH2,</if>
+            <if test="XSLSLZIM2 != null">XSLSLZIM2,</if>
+            <if test="XSLSLZSM2 != null">XSLSLZSM2,</if>
+            <if test="XCYSLHGXD != null">XCYSLHGXD,</if>
+            <if test="xfCao != null">Xf_cao,</if>
+            <if test="XLSZ != null">XLSZ,</if>
+            <if test="XHF != null">XHF,</if>
+            <if test="XC3SHL != null">XC3SHL,</if>
+            <if test="XC2SHL != null">XC2SHL,</if>
+            <if test="XYXL != null">XYXL,</if>
+            <if test="X28TQD != null">X28TQD,</if>
+            <if test="X3TQD != null">X3TQD,</if>
+            <if test="XHJCCSJ != null">XHJCCSJ,</if>
+            <if test="XSLBCL != null">XSLBCL,</if>
+            <if test="XMH != null">XMH,</if>
+            <if test="XYWBMH != null">XYWBMH,</if>
+            <if test="XYTBMH != null">XYTBMH,</if>
+            <if test="XSDMH != null">XSDMH,</if>
+            <if test="XCSNCSJ != null">XCSNCSJ,</if>
+            <if test="XCMSNXD != null">XCMSNXD,</if>
+            <if test="XCMSNBBMJ != null">XCMSNBBMJ,</if>
+            <if test="XCMSNLD != null">XCMSNLD,</if>
+            <if test="XCMSNSO2 != null">XCMSNSO2,</if>
+            <if test="XCAO != null">XCAO,</if>
+            <if test="XFE2O3 != null">XFE2O3,</if>
+            <if test="XAL2O3 != null">XAL2O3,</if>
+            <if test="XSI02 != null">XSI02,</if>
+            <if test="XFXYYXZTBZW != null">XFXYYXZTBZW,</if>
+            <if test="XSLPLSZDQHBZWYH != null">XSLPLSZDQHBZWYH,</if>
+            <if test="XSLZDPLYXBZWYH != null">XSLZDPLYXBZWYH,</if>
+            <if test="XSLPLYHBZW != null">XSLPLYHBZW,</if>
+            <if test="XSLPLYHFZBZW != null">XSLPLYHFZBZW,</if>
+            <if test="XCAJCZ != null">XCAJCZ,</if>
+            <if test="XSIJCZ != null">XSIJCZ,</if>
+            <if test="XALJCZ != null">XALJCZ,</if>
+            <if test="XFEJCZ != null">XFEJCZ,</if>
+            <if test="XKHJCZ != null">XKHJCZ,</if>
+            <if test="XSMJCZ != null">XSMJCZ,</if>
+            <if test="XIMJCZ != null">XIMJCZ,</if>
+            <if test="XCAM5FZGDJZ != null">XCAM5FZGDJZ,</if>
+            <if test="XSIM5FZGDJZ != null">XSIM5FZGDJZ,</if>
+            <if test="XALM5FZGDJZ != null">XALM5FZGDJZ,</if>
+            <if test="XFEM5FZGDJZ != null">XFEM5FZGDJZ,</if>
+            <if test="XKHM5FZGDJZ != null">XKHM5FZGDJZ,</if>
+            <if test="XSMM5FZGDJZ != null">XSMM5FZGDJZ,</if>
+            <if test="XIMM5FZGDJZ != null">XIMM5FZGDJZ,</if>
+            <if test="XCAMXSJZ != null">XCAMXSJZ,</if>
+            <if test="XSIMXSJZ != null">XSIMXSJZ,</if>
+            <if test="XALMXSJZ != null">XALMXSJZ,</if>
+            <if test="XFEMXSJZ != null">XFEMXSJZ,</if>
+            <if test="XKHMXSJZ != null">XKHMXSJZ,</if>
+            <if test="XSMMXSJZ != null">XSMMXSJZ,</if>
+            <if test="XIMMXSJZ != null">XIMMXSJZ,</if>
+            <if test="XKHSDMBZ != null">XKHSDMBZ,</if>
+            <if test="XSMSDMBZ != null">XSMSDMBZ,</if>
+            <if test="XIMSDMBZ != null">XIMSDMBZ,</if>
+            <if test="XYHMBKHGDZ != null">XYHMBKHGDZ,</if>
+            <if test="XYHMBSMGDZ != null">XYHMBSMGDZ,</if>
+            <if test="XYHMBIMGDZ != null">XYHMBIMGDZ,</if>
+            <if test="XYHMBCaHLGDZ != null">XYHMBCaHLGDZ,</if>
+            <if test="XYHMBAlHLGDZ != null">XYHMBAlHLGDZ,</if>
+            <if test="XYHMBSiHLGDZ != null">XYHMBSiHLGDZ,</if>
+            <if test="XYHMBFeHLGDZ != null">XYHMBFeHLGDZ,</if>
+            <if test="XYHMBKHSDSDZ != null">XYHMBKHSDSDZ,</if>
+            <if test="XYHMBSMSDSDZ != null">XYHMBSMSDSDZ,</if>
+            <if test="XYHMBIMSDSDZ != null">XYHMBIMSDSDZ,</if>
+            <if test="XYHMBCaHLSDSDZ != null">XYHMBCaHLSDSDZ,</if>
+            <if test="XYHMBAlHLSDSDZ != null">XYHMBAlHLSDSDZ,</if>
+            <if test="XYHMBSiHLSDSDZ != null">XYHMBSiHLSDSDZ,</if>
+            <if test="XYHMBFeHLSDGSDZ != null">XYHMBFeHLSDGSDZ,</if>
+            <if test="XXCCZSDZ != null">XXCCZSDZ,</if>
+            <if test="XXCCZFK != null">XXCCZFK,</if>
+            <if test="XXCCCSZDBZZ != null">XXCCCSZDBZZ,</if>
+            <if test="XXCCZZYHSDBZ != null">XXCCZZYHSDBZ,</if>
+            <if test="XXCXLZXLSDSDZ != null">XXCXLZXLSDSDZ,</if>
+            <if test="XXCXLZXLZDSDZ != null">XXCXLZXLZDSDZ,</if>
+            <if test="XXCXLZXLFK != null">XXCXLZXLFK,</if>
+            <if test="XXCKDZFMSDGD != null">XXCKDZFMSDGD,</if>
+            <if test="XXCKDZFMZDGD != null">XXCKDZFMZDGD,</if>
+            <if test="XXCKDZFMFK != null">XXCKDZFMFK,</if>
+            <if test="XXCKDZFMXX != null">XXCKDZFMXX,</if>
+            <if test="XXCKDZFMSX != null">XXCKDZFMSX,</if>
+            <if test="XXCCZSZDBZY != null">XXCCZSZDBZY,</if>
+            <if test="XXCCZYYHSDBZ != null">XXCCZYYHSDBZ,</if>
+            <if test="XXCXLYXLSDSDZ != null">XXCXLYXLSDSDZ,</if>
+            <if test="XXCXLYXLZDSDZ != null">XXCXLYXLZDSDZ,</if>
+            <if test="XXCXLYXLFK != null">XXCXLYXLFK,</if>
+            <if test="XXCKDYFMSDGD != null">XXCKDYFMSDGD,</if>
+            <if test="XXCKDYFMZDGD != null">XXCKDYFMZDGD,</if>
+            <if test="XXCKDYFMFK != null">XXCKDYFMFK,</if>
+            <if test="XXCKDYFMXX != null">XXCKDYFMXX,</if>
+            <if test="XXCKDYFMSX != null">XXCKDYFMSX,</if>
+            <if test="XRYSXLBZ != null">XRYSXLBZ,</if>
+            <if test="XRYSXLYHBZ != null">XRYSXLYHBZ,</if>
+            <if test="XYRCOSSZ != null">XYRCOSSZ,</if>
+            <if test="XYRCOYSZ != null">XYRCOYSZ,</if>
+            <if test="XYRCOFKZ != null">XYRCOFKZ,</if>
+            <if test="XSLXLLSDZ != null">XSLXLLSDZ,</if>
+            <if test="XRYSXLSSZ != null">XRYSXLSSZ,</if>
+            <if test="XSLXLLFKZ != null">XSLXLLFKZ,</if>
+            <if test="XSLXLZSSX != null">XSLXLZSSX,</if>
+            <if test="XSLXLZSXX != null">XSLXLZSXX,</if>
+            <if test="XGWFJZDKZBZW != null">XGWFJZDKZBZW,</if>
+            <if test="XGWFJYHBZW != null">XGWFJYHBZW,</if>
+            <if test="XGWFJZDXYYXBZW != null">XGWFJZDXYYXBZW,</if>
+            <if test="XGWFJYHKZQHBZW != null">XGWFJYHKZQHBZW,</if>
+            <if test="XGWFJZDFZBZW != null">XGWFJZDFZBZW,</if>
+            <if test="XGWFJYHFZBZW != null">XGWFJYHFZBZW,</if>
+            <if test="XGWFJFZGD != null">XGWFJFZGD,</if>
+            <if test="XGWFJXXGD != null">XGWFJXXGD,</if>
+            <if test="XYYHT != null">XYYHT,</if>
+            <if test="XGWFJZSGD != null">XGWFJZSGD,</if>
+            <if test="XGWFJZSZDZ != null">XGWFJZSZDZ,</if>
+            <if test="XGWFJZSFK != null">XGWFJZSFK,</if>
+            <if test="XGWFJJKFMGD != null">XGWFJJKFMGD,</if>
+            <if test="XGWFJJFZDZ != null">XGWFJJFZDZ,</if>
+            <if test="XGWFJJKFMFK != null">XGWFJJKFMFK,</if>
+            <if test="XGWFJCKFMGD != null">XGWFJCKFMGD,</if>
+            <if test="XGWFJCFZDZ != null">XGWFJCFZDZ,</if>
+            <if test="XGWFJCKFMFK != null">XGWFJCKFMFK,</if>
+            <if test="XYRFLFSZDBZ != null">XYRFLFSZDBZ,</if>
+            <if test="XYRFLFYHBZ != null">XYRFLFYHBZ,</if>
+            <if test="XCJWCSSZ != null">XCJWCSSZ,</if>
+            <if test="XCJWCZSZ != null">XCJWCZSZ,</if>
+            <if test="XAC5CKWD != null">XAC5CKWD,</if>
+            <if test="XBC5CKWD != null">XBC5CKWD,</if>
+            <if test="XCJWCFKZ != null">XCJWCFKZ,</if>
+            <if test="XYRFLFZSSZ != null">XYRFLFZSSZ,</if>
+            <if test="XYRFLFYSSZ != null">XYRFLFYSSZ,</if>
+            <if test="XYRFLFZYSZ != null">XYRFLFZYSZ,</if>
+            <if test="XYRFLFYYSZ != null">XYRFLFYYSZ,</if>
+            <if test="XYRFLFZKFK != null">XYRFLFZKFK,</if>
+            <if test="XYRFLFYKFK != null">XYRFLFYKFK,</if>
+            <if test="XFLTSX != null">XFLTSX,</if>
+            <if test="XFLTXX != null">XFLTXX,</if>
+            <if test="XFLFYTSX != null">XFLFYTSX,</if>
+            <if test="XFLFYTXX != null">XFLFYTXX,</if>
+            <if test="XFJLWDZDXYYXBZW != null">XFJLWDZDXYYXBZW,</if>
+            <if test="XFJLWDYHBZW != null">XFJLWDYHBZW,</if>
+            <if test="XYWWMSZDQH != null">XYWWMSZDQH,</if>
+            <if test="XFJLWDSDSDZ != null">XFJLWDSDSDZ,</if>
+            <if test="XFJLWDYHSDZ != null">XFJLWDYHSDZ,</if>
+            <if test="XFJLWDF != null">XFJLWDF,</if>
+            <if test="XYWWMLSDGDZ != null">XYWWMLSDGDZ,</if>
+            <if test="XYWWMLZDGDZ != null">XYWWMLZDGDZ,</if>
+            <if test="XYWWMLFKZ != null">XYWWMLFKZ,</if>
+            <if test="XFJLTSX != null">XFJLTSX,</if>
+            <if test="XFJLTXX != null">XFJLTXX,</if>
+            <if test="XFJLPMXXGD != null">XFJLPMXXGD,</if>
+            <if test="XFJLWDXXGD != null">XFJLWDXXGD,</if>
+            <if test="XYZSSZDQH != null">XYZSSZDQH,</if>
+            <if test="XYZSYHBZ != null">XYZSYHBZ,</if>
+            <if test="XYDLSSZ != null">XYDLSSZ,</if>
+            <if test="XYDLYSZ != null">XYDLYSZ,</if>
+            <if test="XYZJDL != null">XYZJDL,</if>
+            <if test="XYZSSDGD != null">XYZSSDGD,</if>
+            <if test="XYZSZDGD != null">XYZSZDGD,</if>
+            <if test="XYZDJSDFK != null">XYZDJSDFK,</if>
+            <if test="XYZSTSX != null">XYZSTSX,</if>
+            <if test="XYZSTXX != null">XYZSTXX,</if>
+            <if test="XYDLZSSX != null">XYDLZSSX,</if>
+            <if test="XYDLZSXX != null">XYDLZSXX,</if>
+            <if test="XSCDWDZDXYYXBZW != null">XSCDWDZDXYYXBZW,</if>
+            <if test="XSCDWDYHBZW != null">XSCDWDYHBZW,</if>
+            <if test="XYTWMSZDQH != null">XYTWMSZDQH,</if>
+            <if test="XSCDWDSDSDZ != null">XSCDWDSDSDZ,</if>
+            <if test="XSCDWDYHSDZ != null">XSCDWDYHSDZ,</if>
+            <if test="XSCDWDFK != null">XSCDWDFK,</if>
+            <if test="XYSWD != null">XYSWD,</if>
+            <if test="XYTZWD != null">XYTZWD,</if>
+            <if test="XYTWMLSDGDZ != null">XYTWMLSDGDZ,</if>
+            <if test="XYTWMLZDGDZ != null">XYTWMLZDGDZ,</if>
+            <if test="XYTWMLFKZ != null">XYTWMLFKZ,</if>
+            <if test="XYTPMTSX != null">XYTPMTSX,</if>
+            <if test="XYTPMTXX != null">XYTPMTXX,</if>
+            <if test="XSCDPMXXGD != null">XSCDPMXXGD,</if>
+            <if test="XSCDWDXXGD != null">XSCDWDXXGD,</if>
+            <if test="XYTPFJSZDQH != null">XYTPFJSZDQH,</if>
+            <if test="XYTFYYHQDBZW != null">XYTFYYHQDBZW,</if>
+            <if test="XYTFYSSZ != null">XYTFYSSZ,</if>
+            <if test="XYTFYYHSDZ != null">XYTFYYHSDZ,</if>
+            <if test="XYTFYFK != null">XYTFYFK,</if>
+            <if test="XYTPFJPLSDGD != null">XYTPFJPLSDGD,</if>
+            <if test="XYTPFJZDGD != null">XYTPFJZDGD,</if>
+            <if test="XYTPPLFK != null">XYTPPLFK,</if>
+            <if test="XYTFYTSX != null">XYTFYTSX,</if>
+            <if test="XYTFYTXX != null">XYTFYTXX,</if>
+            <if test="XYTPPTXX != null">XYTPPTXX,</if>
+            <if test="XYTPPTSX != null">XYTPPTSX,</if>
+            <if test="XBLJYDZDKZBZW != null">XBLJYDZDKZBZW,</if>
+            <if test="XBLJYDYHBZW != null">XBLJYDYHBZW,</if>
+            <if test="XBLJYSFYYHQDBZW != null">XBLJYSFYYHQDBZW,</if>
+            <if test="XBLJYSFYSSZ != null">XBLJYSFYSSZ,</if>
+            <if test="XBLJYSFYYHSDZ != null">XBLJYSFYYHSDZ,</if>
+            <if test="XBLJYSFYFK != null">XBLJYSFYFK,</if>
+            <if test="XBLJYDBSSDGD != null">XBLJYDBSSDGD,</if>
+            <if test="XBLJYDBSZDGD != null">XBLJYDBSZDGD,</if>
+            <if test="XBLJYDBSFK != null">XBLJYDBSFK,</if>
+            <if test="XBLJYDBSFKSX != null">XBLJYDBSFKSX,</if>
+            <if test="XBLJYDBSFKXX != null">XBLJYDBSFKXX,</if>
+            <if test="XCLQJSLWD != null">XCLQJSLWD,</if>
+            <if test="XLFJ1SZBZ != null">XLFJ1SZBZ,</if>
+            <if test="XLFJ1SYBZ != null">XLFJ1SYBZ,</if>
+            <if test="XLFLZS1SD != null">XLFLZS1SD,</if>
+            <if test="XLFJZS1ZD != null">XLFJZS1ZD,</if>
+            <if test="XLQ1FJZS != null">XLQ1FJZS,</if>
+            <if test="XLQ1FJZSXX != null">XLQ1FJZSXX,</if>
+            <if test="XLQ1FJZSSX != null">XLQ1FJZSSX,</if>
+            <if test="XLFJ2SZBZ != null">XLFJ2SZBZ,</if>
+            <if test="XLFJ2SYBZ != null">XLFJ2SYBZ,</if>
+            <if test="XBLJESFYSSZ != null">XBLJESFYSSZ,</if>
+            <if test="XBLJESFYYHSDZ != null">XBLJESFYYHSDZ,</if>
+            <if test="XBLJESFYFK != null">XBLJESFYFK,</if>
+            <if test="XLFLZS2SD != null">XLFLZS2SD,</if>
+            <if test="XLFJZS2ZD != null">XLFJZS2ZD,</if>
+            <if test="XLQ2FJZS != null">XLQ2FJZS,</if>
+            <if test="XLQ2FJZSXX != null">XLQ2FJZSXX,</if>
+            <if test="XLQ2FJZSSX != null">XLQ2FJZSSX,</if>
+            <if test="XLFJ3SZBZ != null">XLFJ3SZBZ,</if>
+            <if test="XLFJ3SYBZ != null">XLFJ3SYBZ,</if>
+            <if test="XBLJSSFYSSZ != null">XBLJSSFYSSZ,</if>
+            <if test="XBLJSSFYYHSDZ != null">XBLJSSFYYHSDZ,</if>
+            <if test="XBLJSSFYFK != null">XBLJSSFYFK,</if>
+            <if test="XLFLZS3SD != null">XLFLZS3SD,</if>
+            <if test="XLFJZS3ZD != null">XLFJZS3ZD,</if>
+            <if test="XLQ3FJZS != null">XLQ3FJZS,</if>
+            <if test="XLQ3FJZSXX != null">XLQ3FJZSXX,</if>
+            <if test="XLQ3FJZSSX != null">XLQ3FJZSSX,</if>
+            <if test="XLFJ4SZBZ != null">XLFJ4SZBZ,</if>
+            <if test="XLFJ4SYBZ != null">XLFJ4SYBZ,</if>
+            <if test="XBLJ4SFYSSZ != null">XBLJ4SFYSSZ,</if>
+            <if test="XBLJ4SFYYHSDZ != null">XBLJ4SFYYHSDZ,</if>
+            <if test="XBLJ4SFYFK != null">XBLJ4SFYFK,</if>
+            <if test="XLFLZS4SD != null">XLFLZS4SD,</if>
+            <if test="XLFJZS4ZD != null">XLFJZS4ZD,</if>
+            <if test="XLQ4FJZS != null">XLQ4FJZS,</if>
+            <if test="XLQ4FJZSXX != null">XLQ4FJZSXX,</if>
+            <if test="XLQ4FJZSSX != null">XLQ4FJZSSX,</if>
+            <if test="XMMTSZDXYYXBZW != null">XMMTSZDXYYXBZW,</if>
+            <if test="XMMTSYHBZW != null">XMMTSYHBZW,</if>
+            <if test="XMMRMTSSZDQHBZ != null">XMMRMTSSZDQHBZ,</if>
+            <if test="XMMTSSDSDZ != null">XMMTSSDSDZ,</if>
+            <if test="XMMTSZDSDZ != null">XMMTSZDSDZ,</if>
+            <if test="XMMTSYHSDZ != null">XMMTSYHSDZ,</if>
+            <if test="XMMXLLFK != null">XMMXLLFK,</if>
+            <if test="XMMZJDL != null">XMMZJDL,</if>
+            <if test="XTMFCCZ != null">XTMFCCZ,</if>
+            <if test="XWMFCCZ != null">XWMFCCZ,</if>
+            <if test="XMMXLLKZSX != null">XMMXLLKZSX,</if>
+            <if test="XMMXLLKZXX != null">XMMXLLKZXX,</if>
+            <if test="XMMLFFKDSZDQHBZ != null">XMMLFFKDSZDQHBZ,</if>
+            <if test="XMMCKWDFK != null">XMMCKWDFK,</if>
+            <if test="XCMWDSDSDZ != null">XCMWDSDSDZ,</if>
+            <if test="XCMWDYHSDZ != null">XCMWDYHSDZ,</if>
+            <if test="XMMRFF1KDZDGD != null">XMMRFF1KDZDGD,</if>
+            <if test="XMMLFFKDZDGD != null">XMMLFFKDZDGD,</if>
+            <if test="XMMRFF1KDSDGD != null">XMMRFF1KDSDGD,</if>
+            <if test="XMMLFFKDSDGD != null">XMMLFFKDSDGD,</if>
+            <if test="XMMRFF1KDFK != null">XMMRFF1KDFK,</if>
+            <if test="XMMRFF2KDFK != null">XMMRFF2KDFK,</if>
+            <if test="XMMLFFKDFK != null">XMMLFFKDFK,</if>
+            <if test="XMMRTSX != null">XMMRTSX,</if>
+            <if test="XMMRTXX != null">XMMRTXX,</if>
+            <if test="XMMLTSX != null">XMMLTSX,</if>
+            <if test="XMMLTXX != null">XMMLTXX,</if>
+            <if test="XRJHKTSDL != null">XRJHKTSDL,</if>
+            <if test="XXCTSJDLSDSDZ != null">XXCTSJDLSDSDZ,</if>
+            <if test="XXCTSJDLFK != null">XXCTSJDLFK,</if>
+            <if test="XYTDSCRKWD != null">XYTDSCRKWD,</if>
+            <if test="XYTDSCCKWD != null">XYTDSCCKWD,</if>
+            <if test="XYTDSCRKYL != null">XYTDSCRKYL,</if>
+            <if test="XYTDSCCKYL != null">XYTDSCCKYL,</if>
+            <if test="XRYTSJDL != null">XRYTSJDL,</if>
+            <if test="XRYTSJDL2 != null">XRYTSJDL2,</if>
+            <if test="XRYTSJDLJZ != null">XRYTSJDLJZ,</if>
+            <if test="XRYTSJDLZH != null">XRYTSJDLZH,</if>
+            <if test="XRYSLXLLLJL != null">XRYSLXLLLJL,</if>
+            <if test="XC1ACKWD != null">XC1ACKWD,</if>
+            <if test="XC1BCKWD != null">XC1BCKWD,</if>
+            <if test="XC11A1XSJZ != null">XC11A1XSJZ,</if>
+            <if test="XC11A8XSJZ != null">XC11A8XSJZ,</if>
+            <if test="XC12B1XSJZ != null">XC12B1XSJZ,</if>
+            <if test="XC12B8XSJZ != null">XC12B8XSJZ,</if>
+            <if test="XC1ACKYL != null">XC1ACKYL,</if>
+            <if test="XC1BCKYL != null">XC1BCKYL,</if>
+            <if test="XC1AZTYA != null">XC1AZTYA,</if>
+            <if test="XC1BZTYA != null">XC1BZTYA,</if>
+            <if test="XC2ACKWD != null">XC2ACKWD,</if>
+            <if test="XC2BCKWD != null">XC2BCKWD,</if>
+            <if test="XC2ACKYL != null">XC2ACKYL,</if>
+            <if test="XC2BCKYL != null">XC2BCKYL,</if>
+            <if test="XC2AZTYA != null">XC2AZTYA,</if>
+            <if test="XC2BZTYA != null">XC2BZTYA,</if>
+            <if test="XC3ACKWD != null">XC3ACKWD,</if>
+            <if test="XC3BCKWD != null">XC3BCKWD,</if>
+            <if test="XC3ACKYL != null">XC3ACKYL,</if>
+            <if test="XC3BCKYL != null">XC3BCKYL,</if>
+            <if test="XC3AZTYA != null">XC3AZTYA,</if>
+            <if test="XC3BZTYA != null">XC3BZTYA,</if>
+            <if test="XAC4CKWD != null">XAC4CKWD,</if>
+            <if test="XBC4CKWD != null">XBC4CKWD,</if>
+            <if test="XAC4CKYL != null">XAC4CKYL,</if>
+            <if test="XBC4CKYL != null">XBC4CKYL,</if>
+            <if test="XC4AZTYL != null">XC4AZTYL,</if>
+            <if test="XC4BZTYL != null">XC4BZTYL,</if>
+            <if test="XC5ACKYL != null">XC5ACKYL,</if>
+            <if test="XC5BCKYL != null">XC5BCKYL,</if>
+            <if test="XC5AZTYL != null">XC5AZTYL,</if>
+            <if test="XC5BZTYL != null">XC5BZTYL,</if>
+            <if test="XC5AXLGWD != null">XC5AXLGWD,</if>
+            <if test="XC5BXLGWD != null">XC5BXLGWD,</if>
+            <if test="XFJLWD1JZ != null">XFJLWD1JZ,</if>
+            <if test="XFJLWD8JZ != null">XFJLWD8JZ,</if>
+            <if test="XFJLCKYL != null">XFJLCKYL,</if>
+            <if test="XFJLZBYL != null">XFJLZBYL,</if>
+            <if test="XFJLZBWD != null">XFJLZBWD,</if>
+            <if test="XYSWDYXSJZ != null">XYSWDYXSJZ,</if>
+            <if test="XYSWDBXSJZ != null">XYSWDBXSJZ,</if>
+            <if test="XYSYL != null">XYSYL,</if>
+            <if test="XSCFY != null">XSCFY,</if>
+            <if test="XSCFW != null">XSCFW,</if>
+            <if test="XYRQCOND != null">XYRQCOND,</if>
+            <if test="XFJLDDYHW != null">XFJLDDYHW,</if>
+            <if test="XHYL != null">XHYL,</if>
+            <if test="XYDYYHTHL != null">XYDYYHTHL,</if>
+            <if test="XDYHW != null">XDYHW,</if>
+            <if test="XYDYHL != null">XYDYHL,</if>
+            <if test="XYWPMFY != null">XYWPMFY,</if>
+            <if test="XYWPMFH != null">XYWPMFH,</if>
+            <if test="XYTPMFH != null">XYTPMFH,</if>
+            <if test="XYTPMFY != null">XYTPMFY,</if>
+            <if test="XWMCSDFK != null">XWMCSDFK,</if>
+            <if test="XTMCSDFK != null">XTMCSDFK,</if>
+            <if test="XTWMBL != null">XTWMBL,</if>
+            <if test="XGWFJJKYL != null">XGWFJJKYL,</if>
+            <if test="XGWFJCKYL != null">XGWFJCKYL,</if>
+            <if test="XGWFJDL != null">XGWFJDL,</if>
+            <if test="XYTZWDYXSJZ != null">XYTZWDYXSJZ,</if>
+            <if test="XYTZWDBXSJZ != null">XYTZWDBXSJZ,</if>
+            <if test="XECFW != null">XECFW,</if>
+            <if test="XECFY != null">XECFY,</if>
+            <if test="XYTPFJDL != null">XYTPFJDL,</if>
+            <if test="XTPFJFMKDSDGD != null">XTPFJFMKDSDGD,</if>
+            <if test="XTPFJFMKDFK != null">XTPFJFMKDFK,</if>
+            <if test="XSCDWDBY1FK != null">XSCDWDBY1FK,</if>
+            <if test="XSCDWDBY2FK != null">XSCDWDBY2FK,</if>
+            <if test="XSCDWDBY3FK != null">XSCDWDBY3FK,</if>
+            <if test="XSCDWDBY4FK != null">XSCDWDBY4FK,</if>
+            <if test="XSCDWDBY5FK != null">XSCDWDBY5FK,</if>
+            <if test="XBLJYDBYFK != null">XBLJYDBYFK,</if>
+            <if test="XBLJYDDL != null">XBLJYDDL,</if>
+            <if test="XBLJEDBYFK != null">XBLJEDBYFK,</if>
+            <if test="XBLJEDBSFK != null">XBLJEDBSFK,</if>
+            <if test="XBLJEDDL != null">XBLJEDDL,</if>
+            <if test="XBLJSDBYFK != null">XBLJSDBYFK,</if>
+            <if test="XBLJSDBSFK != null">XBLJSDBSFK,</if>
+            <if test="XBLJSDDL != null">XBLJSDDL,</if>
+            <if test="XBLJ5SFYFK != null">XBLJ5SFYFK,</if>
+            <if test="XBLJ6SFYFK != null">XBLJ6SFYFK,</if>
+            <if test="XBLJ7SFYFK != null">XBLJ7SFYFK,</if>
+            <if test="XBLJ8SFYFK != null">XBLJ8SFYFK,</if>
+            <if test="XFJLWDFZBLBY1 != null">XFJLWDFZBLBY1,</if>
+            <if test="XRMWDFK != null">XRMWDFK,</if>
+            <if test="XMMXFJDL != null">XMMXFJDL,</if>
+            <if test="XMMXFJZS != null">XMMXFJZS,</if>
+            <if test="XMMYFJHZ != null">XMMYFJHZ,</if>
+            <if test="XMMYFJDL != null">XMMYFJDL,</if>
+            <if test="XMMBFRKWD != null">XMMB/FRKWD,</if>
+            <if test="XMMBFCKWD != null">XMMB/FCKWD,</if>
+            <if test="XMMTMFCWD != null">XMMTMFCWD,</if>
+            <if test="XMMWMFCWD != null">XMMWMFCWD,</if>
+            <if test="XMMRMYL != null">XMMRMYL,</if>
+            <if test="XMMCMYL != null">XMMCMYL,</if>
+            <if test="XMJYC != null">XMJYC,</if>
+            <if test="XMMCOHLFK != null">XMMCOHLFK,</if>
+            <if test="XMMZJMGWD != null">XMMZJMGWD,</if>
+            <if test="XMMQTFXYCO != null">XMMQTFXYCO,</if>
+            <if test="XMMQTFXYO2 != null">XMMQTFXYO2,</if>
+            <if test="XMMB0FRKYL != null">XMMB0FRKYL,</if>
+            <if test="XMMB0FCKYL != null">XMMB0FCKYL,</if>
+            <if test="XMMB0FCY != null">XMMB0FCY,</if>
+            <if test="XLQFJ1FY != null">XLQFJ1FY,</if>
+            <if test="XLQFJ2FY != null">XLQFJ2FY,</if>
+            <if test="XLQFJ3FY != null">XLQFJ3FY,</if>
+            <if test="XLQFJ4FY != null">XLQFJ4FY,</if>
+            <if test="XLQFJ1DL != null">XLQFJ1DL,</if>
+            <if test="XLQFJ2DL != null">XLQFJ2DL,</if>
+            <if test="XLQFJ3DL != null">XLQFJ3DL,</if>
+            <if test="XLQFJ4DL != null">XLQFJ4DL,</if>
+            <if test="XEYHLPFL != null">XEYHLPFL,</if>
+            <if test="XEYHLZSPJZ != null">XEYHLZSPJZ,</if>
+            <if test="XDYHWPFL != null">XDYHWPFL,</if>
+            <if test="XDYHWZSPJZ != null">XDYHWZSPJZ,</if>
+            <if test="XASYL != null">XASYL,</if>
+            <if test="XXCCZJZ != null">XXCCZJZ,</if>
+            <if test="XYRCOJZ != null">XYRCOJZ,</if>
+            <if test="XYRWCJZ != null">XYRWCJZ,</if>
+            <if test="XFJLWDJZ != null">XFJLWDJZ,</if>
+            <if test="XYDLJZ != null">XYDLJZ,</if>
+            <if test="XSCDWDJZ != null">XSCDWDJZ,</if>
+            <if test="XYTFYJZ != null">XYTFYJZ,</if>
+            <if test="XBLJ1SFYJZ != null">XBLJ1SFYJZ,</if>
+            <if test="XBLJ2SFYJZ != null">XBLJ2SFYJZ,</if>
+            <if test="XBLJ3SFYJZ != null">XBLJ3SFYJZ,</if>
+            <if test="XBLJ4SFYJZ != null">XBLJ4SFYJZ,</if>
+            <if test="XMMZJDLJZ != null">XMMZJDLJZ,</if>
+            <if test="XMMCOHLFK2 != null">XMMCOHLFK2,</if>
+            <if test="XGWFJPLSX != null">XGWFJPLSX,</if>
+            <if test="XGWFJPLXX != null">XGWFJPLXX,</if>
+            <if test="XMMRFF2KDSDGD != null">XMMRFF2KDSDGD,</if>
+            <if test="XSRSJ1 != null">XSRSJ1,</if>
+            <if test="XSRSJ2 != null">XSRSJ2,</if>
+            <if test="XSRSJ3 != null">XSRSJ3,</if>
+            <if test="XSRSJ4 != null">XSRSJ4,</if>
+            <if test="XSRSJ5 != null">XSRSJ5,</if>
+            <if test="XSRSJ6 != null">XSRSJ6,</if>
+            <if test="XNOXSZDBZ != null">XNOXSZDBZ,</if>
+            <if test="XASZDGD != null">XASZDGD,</if>
+            <if test="XASGDSX != null">XASGDSX,</if>
+            <if test="XASGDXX != null">XASGDXX,</if>
+            <if test="XNOXSDSDZ != null">XNOXSDSDZ,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="采样时间 != null">#{采样时间},</if>
+            <if test="countGet != null">#{countGet},</if>
+            <if test="XCSLCSJ != null">#{XCSLCSJ},</if>
+            <if test="XCMSLLD != null">#{XCMSLLD},</if>
+            <if test="XXD != null">#{XXD},</if>
+            <if test="XSF != null">#{XSF},</if>
+            <if test="XHYSCA != null">#{XHYSCA},</if>
+            <if test="XHYSSI != null">#{XHYSSI},</if>
+            <if test="XHYSAL != null">#{XHYSAL},</if>
+            <if test="XHYSFE != null">#{XHYSFE},</if>
+            <if test="XSLSLZKH1 != null">#{XSLSLZKH1},</if>
+            <if test="XSLSLZIM1 != null">#{XSLSLZIM1},</if>
+            <if test="XSLSLZSM1 != null">#{XSLSLZSM1},</if>
+            <if test="XRYSLCSJ != null">#{XRYSLCSJ},</if>
+            <if test="XRYSLLD != null">#{XRYSLLD},</if>
+            <if test="XRYSLSF != null">#{XRYSLSF},</if>
+            <if test="XRYSLXD != null">#{XRYSLXD},</if>
+            <if test="XRYSLCA != null">#{XRYSLCA},</if>
+            <if test="XRYSLSI != null">#{XRYSLSI},</if>
+            <if test="XRYSLAL != null">#{XRYSLAL},</if>
+            <if test="XRYSLFE != null">#{XRYSLFE},</if>
+            <if test="XRJSLSLZKH != null">#{XRJSLSLZKH},</if>
+            <if test="XRJSLSLZIM != null">#{XRJSLSLZIM},</if>
+            <if test="XRJSLSLZSM != null">#{XRJSLSLZSM},</if>
+            <if test="XFJL != null">#{XFJL},</if>
+            <if test="XCMFCSJ != null">#{XCMFCSJ},</if>
+            <if test="XCMMFSF != null">#{XCMMFSF},</if>
+            <if test="XCMMFXD != null">#{XCMMFXD},</if>
+            <if test="XMFRZ != null">#{XMFRZ},</if>
+            <if test="XMFHF != null">#{XMFHF},</if>
+            <if test="XMFHFF != null">#{XMFHFF},</if>
+            <if test="XMMFGDT != null">#{XMMFGDT},</if>
+            <if test="XCYSLCA != null">#{XCYSLCA},</if>
+            <if test="XCYSLSI != null">#{XCYSLSI},</if>
+            <if test="XCYSLAL != null">#{XCYSLAL},</if>
+            <if test="XCYSLFE != null">#{XCYSLFE},</if>
+            <if test="XCYSLCSJ != null">#{XCYSLCSJ},</if>
+            <if test="XSLSLZKH2 != null">#{XSLSLZKH2},</if>
+            <if test="XSLSLZIM2 != null">#{XSLSLZIM2},</if>
+            <if test="XSLSLZSM2 != null">#{XSLSLZSM2},</if>
+            <if test="XCYSLHGXD != null">#{XCYSLHGXD},</if>
+            <if test="xfCao != null">#{xfCao},</if>
+            <if test="XLSZ != null">#{XLSZ},</if>
+            <if test="XHF != null">#{XHF},</if>
+            <if test="XC3SHL != null">#{XC3SHL},</if>
+            <if test="XC2SHL != null">#{XC2SHL},</if>
+            <if test="XYXL != null">#{XYXL},</if>
+            <if test="X28TQD != null">#{X28TQD},</if>
+            <if test="X3TQD != null">#{X3TQD},</if>
+            <if test="XHJCCSJ != null">#{XHJCCSJ},</if>
+            <if test="XSLBCL != null">#{XSLBCL},</if>
+            <if test="XMH != null">#{XMH},</if>
+            <if test="XYWBMH != null">#{XYWBMH},</if>
+            <if test="XYTBMH != null">#{XYTBMH},</if>
+            <if test="XSDMH != null">#{XSDMH},</if>
+            <if test="XCSNCSJ != null">#{XCSNCSJ},</if>
+            <if test="XCMSNXD != null">#{XCMSNXD},</if>
+            <if test="XCMSNBBMJ != null">#{XCMSNBBMJ},</if>
+            <if test="XCMSNLD != null">#{XCMSNLD},</if>
+            <if test="XCMSNSO2 != null">#{XCMSNSO2},</if>
+            <if test="XCAO != null">#{XCAO},</if>
+            <if test="XFE2O3 != null">#{XFE2O3},</if>
+            <if test="XAL2O3 != null">#{XAL2O3},</if>
+            <if test="XSI02 != null">#{XSI02},</if>
+            <if test="XFXYYXZTBZW != null">#{XFXYYXZTBZW},</if>
+            <if test="XSLPLSZDQHBZWYH != null">#{XSLPLSZDQHBZWYH},</if>
+            <if test="XSLZDPLYXBZWYH != null">#{XSLZDPLYXBZWYH},</if>
+            <if test="XSLPLYHBZW != null">#{XSLPLYHBZW},</if>
+            <if test="XSLPLYHFZBZW != null">#{XSLPLYHFZBZW},</if>
+            <if test="XCAJCZ != null">#{XCAJCZ},</if>
+            <if test="XSIJCZ != null">#{XSIJCZ},</if>
+            <if test="XALJCZ != null">#{XALJCZ},</if>
+            <if test="XFEJCZ != null">#{XFEJCZ},</if>
+            <if test="XKHJCZ != null">#{XKHJCZ},</if>
+            <if test="XSMJCZ != null">#{XSMJCZ},</if>
+            <if test="XIMJCZ != null">#{XIMJCZ},</if>
+            <if test="XCAM5FZGDJZ != null">#{XCAM5FZGDJZ},</if>
+            <if test="XSIM5FZGDJZ != null">#{XSIM5FZGDJZ},</if>
+            <if test="XALM5FZGDJZ != null">#{XALM5FZGDJZ},</if>
+            <if test="XFEM5FZGDJZ != null">#{XFEM5FZGDJZ},</if>
+            <if test="XKHM5FZGDJZ != null">#{XKHM5FZGDJZ},</if>
+            <if test="XSMM5FZGDJZ != null">#{XSMM5FZGDJZ},</if>
+            <if test="XIMM5FZGDJZ != null">#{XIMM5FZGDJZ},</if>
+            <if test="XCAMXSJZ != null">#{XCAMXSJZ},</if>
+            <if test="XSIMXSJZ != null">#{XSIMXSJZ},</if>
+            <if test="XALMXSJZ != null">#{XALMXSJZ},</if>
+            <if test="XFEMXSJZ != null">#{XFEMXSJZ},</if>
+            <if test="XKHMXSJZ != null">#{XKHMXSJZ},</if>
+            <if test="XSMMXSJZ != null">#{XSMMXSJZ},</if>
+            <if test="XIMMXSJZ != null">#{XIMMXSJZ},</if>
+            <if test="XKHSDMBZ != null">#{XKHSDMBZ},</if>
+            <if test="XSMSDMBZ != null">#{XSMSDMBZ},</if>
+            <if test="XIMSDMBZ != null">#{XIMSDMBZ},</if>
+            <if test="XYHMBKHGDZ != null">#{XYHMBKHGDZ},</if>
+            <if test="XYHMBSMGDZ != null">#{XYHMBSMGDZ},</if>
+            <if test="XYHMBIMGDZ != null">#{XYHMBIMGDZ},</if>
+            <if test="XYHMBCaHLGDZ != null">#{XYHMBCaHLGDZ},</if>
+            <if test="XYHMBAlHLGDZ != null">#{XYHMBAlHLGDZ},</if>
+            <if test="XYHMBSiHLGDZ != null">#{XYHMBSiHLGDZ},</if>
+            <if test="XYHMBFeHLGDZ != null">#{XYHMBFeHLGDZ},</if>
+            <if test="XYHMBKHSDSDZ != null">#{XYHMBKHSDSDZ},</if>
+            <if test="XYHMBSMSDSDZ != null">#{XYHMBSMSDSDZ},</if>
+            <if test="XYHMBIMSDSDZ != null">#{XYHMBIMSDSDZ},</if>
+            <if test="XYHMBCaHLSDSDZ != null">#{XYHMBCaHLSDSDZ},</if>
+            <if test="XYHMBAlHLSDSDZ != null">#{XYHMBAlHLSDSDZ},</if>
+            <if test="XYHMBSiHLSDSDZ != null">#{XYHMBSiHLSDSDZ},</if>
+            <if test="XYHMBFeHLSDGSDZ != null">#{XYHMBFeHLSDGSDZ},</if>
+            <if test="XXCCZSDZ != null">#{XXCCZSDZ},</if>
+            <if test="XXCCZFK != null">#{XXCCZFK},</if>
+            <if test="XXCCCSZDBZZ != null">#{XXCCCSZDBZZ},</if>
+            <if test="XXCCZZYHSDBZ != null">#{XXCCZZYHSDBZ},</if>
+            <if test="XXCXLZXLSDSDZ != null">#{XXCXLZXLSDSDZ},</if>
+            <if test="XXCXLZXLZDSDZ != null">#{XXCXLZXLZDSDZ},</if>
+            <if test="XXCXLZXLFK != null">#{XXCXLZXLFK},</if>
+            <if test="XXCKDZFMSDGD != null">#{XXCKDZFMSDGD},</if>
+            <if test="XXCKDZFMZDGD != null">#{XXCKDZFMZDGD},</if>
+            <if test="XXCKDZFMFK != null">#{XXCKDZFMFK},</if>
+            <if test="XXCKDZFMXX != null">#{XXCKDZFMXX},</if>
+            <if test="XXCKDZFMSX != null">#{XXCKDZFMSX},</if>
+            <if test="XXCCZSZDBZY != null">#{XXCCZSZDBZY},</if>
+            <if test="XXCCZYYHSDBZ != null">#{XXCCZYYHSDBZ},</if>
+            <if test="XXCXLYXLSDSDZ != null">#{XXCXLYXLSDSDZ},</if>
+            <if test="XXCXLYXLZDSDZ != null">#{XXCXLYXLZDSDZ},</if>
+            <if test="XXCXLYXLFK != null">#{XXCXLYXLFK},</if>
+            <if test="XXCKDYFMSDGD != null">#{XXCKDYFMSDGD},</if>
+            <if test="XXCKDYFMZDGD != null">#{XXCKDYFMZDGD},</if>
+            <if test="XXCKDYFMFK != null">#{XXCKDYFMFK},</if>
+            <if test="XXCKDYFMXX != null">#{XXCKDYFMXX},</if>
+            <if test="XXCKDYFMSX != null">#{XXCKDYFMSX},</if>
+            <if test="XRYSXLBZ != null">#{XRYSXLBZ},</if>
+            <if test="XRYSXLYHBZ != null">#{XRYSXLYHBZ},</if>
+            <if test="XYRCOSSZ != null">#{XYRCOSSZ},</if>
+            <if test="XYRCOYSZ != null">#{XYRCOYSZ},</if>
+            <if test="XYRCOFKZ != null">#{XYRCOFKZ},</if>
+            <if test="XSLXLLSDZ != null">#{XSLXLLSDZ},</if>
+            <if test="XRYSXLSSZ != null">#{XRYSXLSSZ},</if>
+            <if test="XSLXLLFKZ != null">#{XSLXLLFKZ},</if>
+            <if test="XSLXLZSSX != null">#{XSLXLZSSX},</if>
+            <if test="XSLXLZSXX != null">#{XSLXLZSXX},</if>
+            <if test="XGWFJZDKZBZW != null">#{XGWFJZDKZBZW},</if>
+            <if test="XGWFJYHBZW != null">#{XGWFJYHBZW},</if>
+            <if test="XGWFJZDXYYXBZW != null">#{XGWFJZDXYYXBZW},</if>
+            <if test="XGWFJYHKZQHBZW != null">#{XGWFJYHKZQHBZW},</if>
+            <if test="XGWFJZDFZBZW != null">#{XGWFJZDFZBZW},</if>
+            <if test="XGWFJYHFZBZW != null">#{XGWFJYHFZBZW},</if>
+            <if test="XGWFJFZGD != null">#{XGWFJFZGD},</if>
+            <if test="XGWFJXXGD != null">#{XGWFJXXGD},</if>
+            <if test="XYYHT != null">#{XYYHT},</if>
+            <if test="XGWFJZSGD != null">#{XGWFJZSGD},</if>
+            <if test="XGWFJZSZDZ != null">#{XGWFJZSZDZ},</if>
+            <if test="XGWFJZSFK != null">#{XGWFJZSFK},</if>
+            <if test="XGWFJJKFMGD != null">#{XGWFJJKFMGD},</if>
+            <if test="XGWFJJFZDZ != null">#{XGWFJJFZDZ},</if>
+            <if test="XGWFJJKFMFK != null">#{XGWFJJKFMFK},</if>
+            <if test="XGWFJCKFMGD != null">#{XGWFJCKFMGD},</if>
+            <if test="XGWFJCFZDZ != null">#{XGWFJCFZDZ},</if>
+            <if test="XGWFJCKFMFK != null">#{XGWFJCKFMFK},</if>
+            <if test="XYRFLFSZDBZ != null">#{XYRFLFSZDBZ},</if>
+            <if test="XYRFLFYHBZ != null">#{XYRFLFYHBZ},</if>
+            <if test="XCJWCSSZ != null">#{XCJWCSSZ},</if>
+            <if test="XCJWCZSZ != null">#{XCJWCZSZ},</if>
+            <if test="XAC5CKWD != null">#{XAC5CKWD},</if>
+            <if test="XBC5CKWD != null">#{XBC5CKWD},</if>
+            <if test="XCJWCFKZ != null">#{XCJWCFKZ},</if>
+            <if test="XYRFLFZSSZ != null">#{XYRFLFZSSZ},</if>
+            <if test="XYRFLFYSSZ != null">#{XYRFLFYSSZ},</if>
+            <if test="XYRFLFZYSZ != null">#{XYRFLFZYSZ},</if>
+            <if test="XYRFLFYYSZ != null">#{XYRFLFYYSZ},</if>
+            <if test="XYRFLFZKFK != null">#{XYRFLFZKFK},</if>
+            <if test="XYRFLFYKFK != null">#{XYRFLFYKFK},</if>
+            <if test="XFLTSX != null">#{XFLTSX},</if>
+            <if test="XFLTXX != null">#{XFLTXX},</if>
+            <if test="XFLFYTSX != null">#{XFLFYTSX},</if>
+            <if test="XFLFYTXX != null">#{XFLFYTXX},</if>
+            <if test="XFJLWDZDXYYXBZW != null">#{XFJLWDZDXYYXBZW},</if>
+            <if test="XFJLWDYHBZW != null">#{XFJLWDYHBZW},</if>
+            <if test="XYWWMSZDQH != null">#{XYWWMSZDQH},</if>
+            <if test="XFJLWDSDSDZ != null">#{XFJLWDSDSDZ},</if>
+            <if test="XFJLWDYHSDZ != null">#{XFJLWDYHSDZ},</if>
+            <if test="XFJLWDF != null">#{XFJLWDF},</if>
+            <if test="XYWWMLSDGDZ != null">#{XYWWMLSDGDZ},</if>
+            <if test="XYWWMLZDGDZ != null">#{XYWWMLZDGDZ},</if>
+            <if test="XYWWMLFKZ != null">#{XYWWMLFKZ},</if>
+            <if test="XFJLTSX != null">#{XFJLTSX},</if>
+            <if test="XFJLTXX != null">#{XFJLTXX},</if>
+            <if test="XFJLPMXXGD != null">#{XFJLPMXXGD},</if>
+            <if test="XFJLWDXXGD != null">#{XFJLWDXXGD},</if>
+            <if test="XYZSSZDQH != null">#{XYZSSZDQH},</if>
+            <if test="XYZSYHBZ != null">#{XYZSYHBZ},</if>
+            <if test="XYDLSSZ != null">#{XYDLSSZ},</if>
+            <if test="XYDLYSZ != null">#{XYDLYSZ},</if>
+            <if test="XYZJDL != null">#{XYZJDL},</if>
+            <if test="XYZSSDGD != null">#{XYZSSDGD},</if>
+            <if test="XYZSZDGD != null">#{XYZSZDGD},</if>
+            <if test="XYZDJSDFK != null">#{XYZDJSDFK},</if>
+            <if test="XYZSTSX != null">#{XYZSTSX},</if>
+            <if test="XYZSTXX != null">#{XYZSTXX},</if>
+            <if test="XYDLZSSX != null">#{XYDLZSSX},</if>
+            <if test="XYDLZSXX != null">#{XYDLZSXX},</if>
+            <if test="XSCDWDZDXYYXBZW != null">#{XSCDWDZDXYYXBZW},</if>
+            <if test="XSCDWDYHBZW != null">#{XSCDWDYHBZW},</if>
+            <if test="XYTWMSZDQH != null">#{XYTWMSZDQH},</if>
+            <if test="XSCDWDSDSDZ != null">#{XSCDWDSDSDZ},</if>
+            <if test="XSCDWDYHSDZ != null">#{XSCDWDYHSDZ},</if>
+            <if test="XSCDWDFK != null">#{XSCDWDFK},</if>
+            <if test="XYSWD != null">#{XYSWD},</if>
+            <if test="XYTZWD != null">#{XYTZWD},</if>
+            <if test="XYTWMLSDGDZ != null">#{XYTWMLSDGDZ},</if>
+            <if test="XYTWMLZDGDZ != null">#{XYTWMLZDGDZ},</if>
+            <if test="XYTWMLFKZ != null">#{XYTWMLFKZ},</if>
+            <if test="XYTPMTSX != null">#{XYTPMTSX},</if>
+            <if test="XYTPMTXX != null">#{XYTPMTXX},</if>
+            <if test="XSCDPMXXGD != null">#{XSCDPMXXGD},</if>
+            <if test="XSCDWDXXGD != null">#{XSCDWDXXGD},</if>
+            <if test="XYTPFJSZDQH != null">#{XYTPFJSZDQH},</if>
+            <if test="XYTFYYHQDBZW != null">#{XYTFYYHQDBZW},</if>
+            <if test="XYTFYSSZ != null">#{XYTFYSSZ},</if>
+            <if test="XYTFYYHSDZ != null">#{XYTFYYHSDZ},</if>
+            <if test="XYTFYFK != null">#{XYTFYFK},</if>
+            <if test="XYTPFJPLSDGD != null">#{XYTPFJPLSDGD},</if>
+            <if test="XYTPFJZDGD != null">#{XYTPFJZDGD},</if>
+            <if test="XYTPPLFK != null">#{XYTPPLFK},</if>
+            <if test="XYTFYTSX != null">#{XYTFYTSX},</if>
+            <if test="XYTFYTXX != null">#{XYTFYTXX},</if>
+            <if test="XYTPPTXX != null">#{XYTPPTXX},</if>
+            <if test="XYTPPTSX != null">#{XYTPPTSX},</if>
+            <if test="XBLJYDZDKZBZW != null">#{XBLJYDZDKZBZW},</if>
+            <if test="XBLJYDYHBZW != null">#{XBLJYDYHBZW},</if>
+            <if test="XBLJYSFYYHQDBZW != null">#{XBLJYSFYYHQDBZW},</if>
+            <if test="XBLJYSFYSSZ != null">#{XBLJYSFYSSZ},</if>
+            <if test="XBLJYSFYYHSDZ != null">#{XBLJYSFYYHSDZ},</if>
+            <if test="XBLJYSFYFK != null">#{XBLJYSFYFK},</if>
+            <if test="XBLJYDBSSDGD != null">#{XBLJYDBSSDGD},</if>
+            <if test="XBLJYDBSZDGD != null">#{XBLJYDBSZDGD},</if>
+            <if test="XBLJYDBSFK != null">#{XBLJYDBSFK},</if>
+            <if test="XBLJYDBSFKSX != null">#{XBLJYDBSFKSX},</if>
+            <if test="XBLJYDBSFKXX != null">#{XBLJYDBSFKXX},</if>
+            <if test="XCLQJSLWD != null">#{XCLQJSLWD},</if>
+            <if test="XLFJ1SZBZ != null">#{XLFJ1SZBZ},</if>
+            <if test="XLFJ1SYBZ != null">#{XLFJ1SYBZ},</if>
+            <if test="XLFLZS1SD != null">#{XLFLZS1SD},</if>
+            <if test="XLFJZS1ZD != null">#{XLFJZS1ZD},</if>
+            <if test="XLQ1FJZS != null">#{XLQ1FJZS},</if>
+            <if test="XLQ1FJZSXX != null">#{XLQ1FJZSXX},</if>
+            <if test="XLQ1FJZSSX != null">#{XLQ1FJZSSX},</if>
+            <if test="XLFJ2SZBZ != null">#{XLFJ2SZBZ},</if>
+            <if test="XLFJ2SYBZ != null">#{XLFJ2SYBZ},</if>
+            <if test="XBLJESFYSSZ != null">#{XBLJESFYSSZ},</if>
+            <if test="XBLJESFYYHSDZ != null">#{XBLJESFYYHSDZ},</if>
+            <if test="XBLJESFYFK != null">#{XBLJESFYFK},</if>
+            <if test="XLFLZS2SD != null">#{XLFLZS2SD},</if>
+            <if test="XLFJZS2ZD != null">#{XLFJZS2ZD},</if>
+            <if test="XLQ2FJZS != null">#{XLQ2FJZS},</if>
+            <if test="XLQ2FJZSXX != null">#{XLQ2FJZSXX},</if>
+            <if test="XLQ2FJZSSX != null">#{XLQ2FJZSSX},</if>
+            <if test="XLFJ3SZBZ != null">#{XLFJ3SZBZ},</if>
+            <if test="XLFJ3SYBZ != null">#{XLFJ3SYBZ},</if>
+            <if test="XBLJSSFYSSZ != null">#{XBLJSSFYSSZ},</if>
+            <if test="XBLJSSFYYHSDZ != null">#{XBLJSSFYYHSDZ},</if>
+            <if test="XBLJSSFYFK != null">#{XBLJSSFYFK},</if>
+            <if test="XLFLZS3SD != null">#{XLFLZS3SD},</if>
+            <if test="XLFJZS3ZD != null">#{XLFJZS3ZD},</if>
+            <if test="XLQ3FJZS != null">#{XLQ3FJZS},</if>
+            <if test="XLQ3FJZSXX != null">#{XLQ3FJZSXX},</if>
+            <if test="XLQ3FJZSSX != null">#{XLQ3FJZSSX},</if>
+            <if test="XLFJ4SZBZ != null">#{XLFJ4SZBZ},</if>
+            <if test="XLFJ4SYBZ != null">#{XLFJ4SYBZ},</if>
+            <if test="XBLJ4SFYSSZ != null">#{XBLJ4SFYSSZ},</if>
+            <if test="XBLJ4SFYYHSDZ != null">#{XBLJ4SFYYHSDZ},</if>
+            <if test="XBLJ4SFYFK != null">#{XBLJ4SFYFK},</if>
+            <if test="XLFLZS4SD != null">#{XLFLZS4SD},</if>
+            <if test="XLFJZS4ZD != null">#{XLFJZS4ZD},</if>
+            <if test="XLQ4FJZS != null">#{XLQ4FJZS},</if>
+            <if test="XLQ4FJZSXX != null">#{XLQ4FJZSXX},</if>
+            <if test="XLQ4FJZSSX != null">#{XLQ4FJZSSX},</if>
+            <if test="XMMTSZDXYYXBZW != null">#{XMMTSZDXYYXBZW},</if>
+            <if test="XMMTSYHBZW != null">#{XMMTSYHBZW},</if>
+            <if test="XMMRMTSSZDQHBZ != null">#{XMMRMTSSZDQHBZ},</if>
+            <if test="XMMTSSDSDZ != null">#{XMMTSSDSDZ},</if>
+            <if test="XMMTSZDSDZ != null">#{XMMTSZDSDZ},</if>
+            <if test="XMMTSYHSDZ != null">#{XMMTSYHSDZ},</if>
+            <if test="XMMXLLFK != null">#{XMMXLLFK},</if>
+            <if test="XMMZJDL != null">#{XMMZJDL},</if>
+            <if test="XTMFCCZ != null">#{XTMFCCZ},</if>
+            <if test="XWMFCCZ != null">#{XWMFCCZ},</if>
+            <if test="XMMXLLKZSX != null">#{XMMXLLKZSX},</if>
+            <if test="XMMXLLKZXX != null">#{XMMXLLKZXX},</if>
+            <if test="XMMLFFKDSZDQHBZ != null">#{XMMLFFKDSZDQHBZ},</if>
+            <if test="XMMCKWDFK != null">#{XMMCKWDFK},</if>
+            <if test="XCMWDSDSDZ != null">#{XCMWDSDSDZ},</if>
+            <if test="XCMWDYHSDZ != null">#{XCMWDYHSDZ},</if>
+            <if test="XMMRFF1KDZDGD != null">#{XMMRFF1KDZDGD},</if>
+            <if test="XMMLFFKDZDGD != null">#{XMMLFFKDZDGD},</if>
+            <if test="XMMRFF1KDSDGD != null">#{XMMRFF1KDSDGD},</if>
+            <if test="XMMLFFKDSDGD != null">#{XMMLFFKDSDGD},</if>
+            <if test="XMMRFF1KDFK != null">#{XMMRFF1KDFK},</if>
+            <if test="XMMRFF2KDFK != null">#{XMMRFF2KDFK},</if>
+            <if test="XMMLFFKDFK != null">#{XMMLFFKDFK},</if>
+            <if test="XMMRTSX != null">#{XMMRTSX},</if>
+            <if test="XMMRTXX != null">#{XMMRTXX},</if>
+            <if test="XMMLTSX != null">#{XMMLTSX},</if>
+            <if test="XMMLTXX != null">#{XMMLTXX},</if>
+            <if test="XRJHKTSDL != null">#{XRJHKTSDL},</if>
+            <if test="XXCTSJDLSDSDZ != null">#{XXCTSJDLSDSDZ},</if>
+            <if test="XXCTSJDLFK != null">#{XXCTSJDLFK},</if>
+            <if test="XYTDSCRKWD != null">#{XYTDSCRKWD},</if>
+            <if test="XYTDSCCKWD != null">#{XYTDSCCKWD},</if>
+            <if test="XYTDSCRKYL != null">#{XYTDSCRKYL},</if>
+            <if test="XYTDSCCKYL != null">#{XYTDSCCKYL},</if>
+            <if test="XRYTSJDL != null">#{XRYTSJDL},</if>
+            <if test="XRYTSJDL2 != null">#{XRYTSJDL2},</if>
+            <if test="XRYTSJDLJZ != null">#{XRYTSJDLJZ},</if>
+            <if test="XRYTSJDLZH != null">#{XRYTSJDLZH},</if>
+            <if test="XRYSLXLLLJL != null">#{XRYSLXLLLJL},</if>
+            <if test="XC1ACKWD != null">#{XC1ACKWD},</if>
+            <if test="XC1BCKWD != null">#{XC1BCKWD},</if>
+            <if test="XC11A1XSJZ != null">#{XC11A1XSJZ},</if>
+            <if test="XC11A8XSJZ != null">#{XC11A8XSJZ},</if>
+            <if test="XC12B1XSJZ != null">#{XC12B1XSJZ},</if>
+            <if test="XC12B8XSJZ != null">#{XC12B8XSJZ},</if>
+            <if test="XC1ACKYL != null">#{XC1ACKYL},</if>
+            <if test="XC1BCKYL != null">#{XC1BCKYL},</if>
+            <if test="XC1AZTYA != null">#{XC1AZTYA},</if>
+            <if test="XC1BZTYA != null">#{XC1BZTYA},</if>
+            <if test="XC2ACKWD != null">#{XC2ACKWD},</if>
+            <if test="XC2BCKWD != null">#{XC2BCKWD},</if>
+            <if test="XC2ACKYL != null">#{XC2ACKYL},</if>
+            <if test="XC2BCKYL != null">#{XC2BCKYL},</if>
+            <if test="XC2AZTYA != null">#{XC2AZTYA},</if>
+            <if test="XC2BZTYA != null">#{XC2BZTYA},</if>
+            <if test="XC3ACKWD != null">#{XC3ACKWD},</if>
+            <if test="XC3BCKWD != null">#{XC3BCKWD},</if>
+            <if test="XC3ACKYL != null">#{XC3ACKYL},</if>
+            <if test="XC3BCKYL != null">#{XC3BCKYL},</if>
+            <if test="XC3AZTYA != null">#{XC3AZTYA},</if>
+            <if test="XC3BZTYA != null">#{XC3BZTYA},</if>
+            <if test="XAC4CKWD != null">#{XAC4CKWD},</if>
+            <if test="XBC4CKWD != null">#{XBC4CKWD},</if>
+            <if test="XAC4CKYL != null">#{XAC4CKYL},</if>
+            <if test="XBC4CKYL != null">#{XBC4CKYL},</if>
+            <if test="XC4AZTYL != null">#{XC4AZTYL},</if>
+            <if test="XC4BZTYL != null">#{XC4BZTYL},</if>
+            <if test="XC5ACKYL != null">#{XC5ACKYL},</if>
+            <if test="XC5BCKYL != null">#{XC5BCKYL},</if>
+            <if test="XC5AZTYL != null">#{XC5AZTYL},</if>
+            <if test="XC5BZTYL != null">#{XC5BZTYL},</if>
+            <if test="XC5AXLGWD != null">#{XC5AXLGWD},</if>
+            <if test="XC5BXLGWD != null">#{XC5BXLGWD},</if>
+            <if test="XFJLWD1JZ != null">#{XFJLWD1JZ},</if>
+            <if test="XFJLWD8JZ != null">#{XFJLWD8JZ},</if>
+            <if test="XFJLCKYL != null">#{XFJLCKYL},</if>
+            <if test="XFJLZBYL != null">#{XFJLZBYL},</if>
+            <if test="XFJLZBWD != null">#{XFJLZBWD},</if>
+            <if test="XYSWDYXSJZ != null">#{XYSWDYXSJZ},</if>
+            <if test="XYSWDBXSJZ != null">#{XYSWDBXSJZ},</if>
+            <if test="XYSYL != null">#{XYSYL},</if>
+            <if test="XSCFY != null">#{XSCFY},</if>
+            <if test="XSCFW != null">#{XSCFW},</if>
+            <if test="XYRQCOND != null">#{XYRQCOND},</if>
+            <if test="XFJLDDYHW != null">#{XFJLDDYHW},</if>
+            <if test="XHYL != null">#{XHYL},</if>
+            <if test="XYDYYHTHL != null">#{XYDYYHTHL},</if>
+            <if test="XDYHW != null">#{XDYHW},</if>
+            <if test="XYDYHL != null">#{XYDYHL},</if>
+            <if test="XYWPMFY != null">#{XYWPMFY},</if>
+            <if test="XYWPMFH != null">#{XYWPMFH},</if>
+            <if test="XYTPMFH != null">#{XYTPMFH},</if>
+            <if test="XYTPMFY != null">#{XYTPMFY},</if>
+            <if test="XWMCSDFK != null">#{XWMCSDFK},</if>
+            <if test="XTMCSDFK != null">#{XTMCSDFK},</if>
+            <if test="XTWMBL != null">#{XTWMBL},</if>
+            <if test="XGWFJJKYL != null">#{XGWFJJKYL},</if>
+            <if test="XGWFJCKYL != null">#{XGWFJCKYL},</if>
+            <if test="XGWFJDL != null">#{XGWFJDL},</if>
+            <if test="XYTZWDYXSJZ != null">#{XYTZWDYXSJZ},</if>
+            <if test="XYTZWDBXSJZ != null">#{XYTZWDBXSJZ},</if>
+            <if test="XECFW != null">#{XECFW},</if>
+            <if test="XECFY != null">#{XECFY},</if>
+            <if test="XYTPFJDL != null">#{XYTPFJDL},</if>
+            <if test="XTPFJFMKDSDGD != null">#{XTPFJFMKDSDGD},</if>
+            <if test="XTPFJFMKDFK != null">#{XTPFJFMKDFK},</if>
+            <if test="XSCDWDBY1FK != null">#{XSCDWDBY1FK},</if>
+            <if test="XSCDWDBY2FK != null">#{XSCDWDBY2FK},</if>
+            <if test="XSCDWDBY3FK != null">#{XSCDWDBY3FK},</if>
+            <if test="XSCDWDBY4FK != null">#{XSCDWDBY4FK},</if>
+            <if test="XSCDWDBY5FK != null">#{XSCDWDBY5FK},</if>
+            <if test="XBLJYDBYFK != null">#{XBLJYDBYFK},</if>
+            <if test="XBLJYDDL != null">#{XBLJYDDL},</if>
+            <if test="XBLJEDBYFK != null">#{XBLJEDBYFK},</if>
+            <if test="XBLJEDBSFK != null">#{XBLJEDBSFK},</if>
+            <if test="XBLJEDDL != null">#{XBLJEDDL},</if>
+            <if test="XBLJSDBYFK != null">#{XBLJSDBYFK},</if>
+            <if test="XBLJSDBSFK != null">#{XBLJSDBSFK},</if>
+            <if test="XBLJSDDL != null">#{XBLJSDDL},</if>
+            <if test="XBLJ5SFYFK != null">#{XBLJ5SFYFK},</if>
+            <if test="XBLJ6SFYFK != null">#{XBLJ6SFYFK},</if>
+            <if test="XBLJ7SFYFK != null">#{XBLJ7SFYFK},</if>
+            <if test="XBLJ8SFYFK != null">#{XBLJ8SFYFK},</if>
+            <if test="XFJLWDFZBLBY1 != null">#{XFJLWDFZBLBY1},</if>
+            <if test="XRMWDFK != null">#{XRMWDFK},</if>
+            <if test="XMMXFJDL != null">#{XMMXFJDL},</if>
+            <if test="XMMXFJZS != null">#{XMMXFJZS},</if>
+            <if test="XMMYFJHZ != null">#{XMMYFJHZ},</if>
+            <if test="XMMYFJDL != null">#{XMMYFJDL},</if>
+            <if test="XMMBFRKWD != null">#{XMMB/FRKWD},</if>
+            <if test="XMMBFCKWD != null">#{XMMB/FCKWD},</if>
+            <if test="XMMTMFCWD != null">#{XMMTMFCWD},</if>
+            <if test="XMMWMFCWD != null">#{XMMWMFCWD},</if>
+            <if test="XMMRMYL != null">#{XMMRMYL},</if>
+            <if test="XMMCMYL != null">#{XMMCMYL},</if>
+            <if test="XMJYC != null">#{XMJYC},</if>
+            <if test="XMMCOHLFK != null">#{XMMCOHLFK},</if>
+            <if test="XMMZJMGWD != null">#{XMMZJMGWD},</if>
+            <if test="XMMQTFXYCO != null">#{XMMQTFXYCO},</if>
+            <if test="XMMQTFXYO2 != null">#{XMMQTFXYO2},</if>
+            <if test="XMMB0FRKYL != null">#{XMMB0FRKYL},</if>
+            <if test="XMMB0FCKYL != null">#{XMMB0FCKYL},</if>
+            <if test="XMMB0FCY != null">#{XMMB0FCY},</if>
+            <if test="XLQFJ1FY != null">#{XLQFJ1FY},</if>
+            <if test="XLQFJ2FY != null">#{XLQFJ2FY},</if>
+            <if test="XLQFJ3FY != null">#{XLQFJ3FY},</if>
+            <if test="XLQFJ4FY != null">#{XLQFJ4FY},</if>
+            <if test="XLQFJ1DL != null">#{XLQFJ1DL},</if>
+            <if test="XLQFJ2DL != null">#{XLQFJ2DL},</if>
+            <if test="XLQFJ3DL != null">#{XLQFJ3DL},</if>
+            <if test="XLQFJ4DL != null">#{XLQFJ4DL},</if>
+            <if test="XEYHLPFL != null">#{XEYHLPFL},</if>
+            <if test="XEYHLZSPJZ != null">#{XEYHLZSPJZ},</if>
+            <if test="XDYHWPFL != null">#{XDYHWPFL},</if>
+            <if test="XDYHWZSPJZ != null">#{XDYHWZSPJZ},</if>
+            <if test="XASYL != null">#{XASYL},</if>
+            <if test="XXCCZJZ != null">#{XXCCZJZ},</if>
+            <if test="XYRCOJZ != null">#{XYRCOJZ},</if>
+            <if test="XYRWCJZ != null">#{XYRWCJZ},</if>
+            <if test="XFJLWDJZ != null">#{XFJLWDJZ},</if>
+            <if test="XYDLJZ != null">#{XYDLJZ},</if>
+            <if test="XSCDWDJZ != null">#{XSCDWDJZ},</if>
+            <if test="XYTFYJZ != null">#{XYTFYJZ},</if>
+            <if test="XBLJ1SFYJZ != null">#{XBLJ1SFYJZ},</if>
+            <if test="XBLJ2SFYJZ != null">#{XBLJ2SFYJZ},</if>
+            <if test="XBLJ3SFYJZ != null">#{XBLJ3SFYJZ},</if>
+            <if test="XBLJ4SFYJZ != null">#{XBLJ4SFYJZ},</if>
+            <if test="XMMZJDLJZ != null">#{XMMZJDLJZ},</if>
+            <if test="XMMCOHLFK2 != null">#{XMMCOHLFK2},</if>
+            <if test="XGWFJPLSX != null">#{XGWFJPLSX},</if>
+            <if test="XGWFJPLXX != null">#{XGWFJPLXX},</if>
+            <if test="XMMRFF2KDSDGD != null">#{XMMRFF2KDSDGD},</if>
+            <if test="XSRSJ1 != null">#{XSRSJ1},</if>
+            <if test="XSRSJ2 != null">#{XSRSJ2},</if>
+            <if test="XSRSJ3 != null">#{XSRSJ3},</if>
+            <if test="XSRSJ4 != null">#{XSRSJ4},</if>
+            <if test="XSRSJ5 != null">#{XSRSJ5},</if>
+            <if test="XSRSJ6 != null">#{XSRSJ6},</if>
+            <if test="XNOXSZDBZ != null">#{XNOXSZDBZ},</if>
+            <if test="XASZDGD != null">#{XASZDGD},</if>
+            <if test="XASGDSX != null">#{XASGDSX},</if>
+            <if test="XASGDXX != null">#{XASGDXX},</if>
+            <if test="XNOXSDSDZ != null">#{XNOXSDSDZ},</if>
+         </trim>
+    </insert>
+
+    <update id="updateOutputtable" parameterType="Outputtable">
+        update outputtable
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="countGet != null">count_get = #{countGet},</if>
+            <if test="XCSLCSJ != null">XCSLCSJ = #{XCSLCSJ},</if>
+            <if test="XCMSLLD != null">XCMSLLD = #{XCMSLLD},</if>
+            <if test="XXD != null">XXD = #{XXD},</if>
+            <if test="XSF != null">XSF = #{XSF},</if>
+            <if test="XHYSCA != null">XHYSCA = #{XHYSCA},</if>
+            <if test="XHYSSI != null">XHYSSI = #{XHYSSI},</if>
+            <if test="XHYSAL != null">XHYSAL = #{XHYSAL},</if>
+            <if test="XHYSFE != null">XHYSFE = #{XHYSFE},</if>
+            <if test="XSLSLZKH1 != null">XSLSLZKH1 = #{XSLSLZKH1},</if>
+            <if test="XSLSLZIM1 != null">XSLSLZIM1 = #{XSLSLZIM1},</if>
+            <if test="XSLSLZSM1 != null">XSLSLZSM1 = #{XSLSLZSM1},</if>
+            <if test="XRYSLCSJ != null">XRYSLCSJ = #{XRYSLCSJ},</if>
+            <if test="XRYSLLD != null">XRYSLLD = #{XRYSLLD},</if>
+            <if test="XRYSLSF != null">XRYSLSF = #{XRYSLSF},</if>
+            <if test="XRYSLXD != null">XRYSLXD = #{XRYSLXD},</if>
+            <if test="XRYSLCA != null">XRYSLCA = #{XRYSLCA},</if>
+            <if test="XRYSLSI != null">XRYSLSI = #{XRYSLSI},</if>
+            <if test="XRYSLAL != null">XRYSLAL = #{XRYSLAL},</if>
+            <if test="XRYSLFE != null">XRYSLFE = #{XRYSLFE},</if>
+            <if test="XRJSLSLZKH != null">XRJSLSLZKH = #{XRJSLSLZKH},</if>
+            <if test="XRJSLSLZIM != null">XRJSLSLZIM = #{XRJSLSLZIM},</if>
+            <if test="XRJSLSLZSM != null">XRJSLSLZSM = #{XRJSLSLZSM},</if>
+            <if test="XFJL != null">XFJL = #{XFJL},</if>
+            <if test="XCMFCSJ != null">XCMFCSJ = #{XCMFCSJ},</if>
+            <if test="XCMMFSF != null">XCMMFSF = #{XCMMFSF},</if>
+            <if test="XCMMFXD != null">XCMMFXD = #{XCMMFXD},</if>
+            <if test="XMFRZ != null">XMFRZ = #{XMFRZ},</if>
+            <if test="XMFHF != null">XMFHF = #{XMFHF},</if>
+            <if test="XMFHFF != null">XMFHFF = #{XMFHFF},</if>
+            <if test="XMMFGDT != null">XMMFGDT = #{XMMFGDT},</if>
+            <if test="XCYSLCA != null">XCYSLCA = #{XCYSLCA},</if>
+            <if test="XCYSLSI != null">XCYSLSI = #{XCYSLSI},</if>
+            <if test="XCYSLAL != null">XCYSLAL = #{XCYSLAL},</if>
+            <if test="XCYSLFE != null">XCYSLFE = #{XCYSLFE},</if>
+            <if test="XCYSLCSJ != null">XCYSLCSJ = #{XCYSLCSJ},</if>
+            <if test="XSLSLZKH2 != null">XSLSLZKH2 = #{XSLSLZKH2},</if>
+            <if test="XSLSLZIM2 != null">XSLSLZIM2 = #{XSLSLZIM2},</if>
+            <if test="XSLSLZSM2 != null">XSLSLZSM2 = #{XSLSLZSM2},</if>
+            <if test="XCYSLHGXD != null">XCYSLHGXD = #{XCYSLHGXD},</if>
+            <if test="xfCao != null">Xf_cao = #{xfCao},</if>
+            <if test="XLSZ != null">XLSZ = #{XLSZ},</if>
+            <if test="XHF != null">XHF = #{XHF},</if>
+            <if test="XC3SHL != null">XC3SHL = #{XC3SHL},</if>
+            <if test="XC2SHL != null">XC2SHL = #{XC2SHL},</if>
+            <if test="XYXL != null">XYXL = #{XYXL},</if>
+            <if test="X28TQD != null">X28TQD = #{X28TQD},</if>
+            <if test="X3TQD != null">X3TQD = #{X3TQD},</if>
+            <if test="XHJCCSJ != null">XHJCCSJ = #{XHJCCSJ},</if>
+            <if test="XSLBCL != null">XSLBCL = #{XSLBCL},</if>
+            <if test="XMH != null">XMH = #{XMH},</if>
+            <if test="XYWBMH != null">XYWBMH = #{XYWBMH},</if>
+            <if test="XYTBMH != null">XYTBMH = #{XYTBMH},</if>
+            <if test="XSDMH != null">XSDMH = #{XSDMH},</if>
+            <if test="XCSNCSJ != null">XCSNCSJ = #{XCSNCSJ},</if>
+            <if test="XCMSNXD != null">XCMSNXD = #{XCMSNXD},</if>
+            <if test="XCMSNBBMJ != null">XCMSNBBMJ = #{XCMSNBBMJ},</if>
+            <if test="XCMSNLD != null">XCMSNLD = #{XCMSNLD},</if>
+            <if test="XCMSNSO2 != null">XCMSNSO2 = #{XCMSNSO2},</if>
+            <if test="XCAO != null">XCAO = #{XCAO},</if>
+            <if test="XFE2O3 != null">XFE2O3 = #{XFE2O3},</if>
+            <if test="XAL2O3 != null">XAL2O3 = #{XAL2O3},</if>
+            <if test="XSI02 != null">XSI02 = #{XSI02},</if>
+            <if test="XFXYYXZTBZW != null">XFXYYXZTBZW = #{XFXYYXZTBZW},</if>
+            <if test="XSLPLSZDQHBZWYH != null">XSLPLSZDQHBZWYH = #{XSLPLSZDQHBZWYH},</if>
+            <if test="XSLZDPLYXBZWYH != null">XSLZDPLYXBZWYH = #{XSLZDPLYXBZWYH},</if>
+            <if test="XSLPLYHBZW != null">XSLPLYHBZW = #{XSLPLYHBZW},</if>
+            <if test="XSLPLYHFZBZW != null">XSLPLYHFZBZW = #{XSLPLYHFZBZW},</if>
+            <if test="XCAJCZ != null">XCAJCZ = #{XCAJCZ},</if>
+            <if test="XSIJCZ != null">XSIJCZ = #{XSIJCZ},</if>
+            <if test="XALJCZ != null">XALJCZ = #{XALJCZ},</if>
+            <if test="XFEJCZ != null">XFEJCZ = #{XFEJCZ},</if>
+            <if test="XKHJCZ != null">XKHJCZ = #{XKHJCZ},</if>
+            <if test="XSMJCZ != null">XSMJCZ = #{XSMJCZ},</if>
+            <if test="XIMJCZ != null">XIMJCZ = #{XIMJCZ},</if>
+            <if test="XCAM5FZGDJZ != null">XCAM5FZGDJZ = #{XCAM5FZGDJZ},</if>
+            <if test="XSIM5FZGDJZ != null">XSIM5FZGDJZ = #{XSIM5FZGDJZ},</if>
+            <if test="XALM5FZGDJZ != null">XALM5FZGDJZ = #{XALM5FZGDJZ},</if>
+            <if test="XFEM5FZGDJZ != null">XFEM5FZGDJZ = #{XFEM5FZGDJZ},</if>
+            <if test="XKHM5FZGDJZ != null">XKHM5FZGDJZ = #{XKHM5FZGDJZ},</if>
+            <if test="XSMM5FZGDJZ != null">XSMM5FZGDJZ = #{XSMM5FZGDJZ},</if>
+            <if test="XIMM5FZGDJZ != null">XIMM5FZGDJZ = #{XIMM5FZGDJZ},</if>
+            <if test="XCAMXSJZ != null">XCAMXSJZ = #{XCAMXSJZ},</if>
+            <if test="XSIMXSJZ != null">XSIMXSJZ = #{XSIMXSJZ},</if>
+            <if test="XALMXSJZ != null">XALMXSJZ = #{XALMXSJZ},</if>
+            <if test="XFEMXSJZ != null">XFEMXSJZ = #{XFEMXSJZ},</if>
+            <if test="XKHMXSJZ != null">XKHMXSJZ = #{XKHMXSJZ},</if>
+            <if test="XSMMXSJZ != null">XSMMXSJZ = #{XSMMXSJZ},</if>
+            <if test="XIMMXSJZ != null">XIMMXSJZ = #{XIMMXSJZ},</if>
+            <if test="XKHSDMBZ != null">XKHSDMBZ = #{XKHSDMBZ},</if>
+            <if test="XSMSDMBZ != null">XSMSDMBZ = #{XSMSDMBZ},</if>
+            <if test="XIMSDMBZ != null">XIMSDMBZ = #{XIMSDMBZ},</if>
+            <if test="XYHMBKHGDZ != null">XYHMBKHGDZ = #{XYHMBKHGDZ},</if>
+            <if test="XYHMBSMGDZ != null">XYHMBSMGDZ = #{XYHMBSMGDZ},</if>
+            <if test="XYHMBIMGDZ != null">XYHMBIMGDZ = #{XYHMBIMGDZ},</if>
+            <if test="XYHMBCaHLGDZ != null">XYHMBCaHLGDZ = #{XYHMBCaHLGDZ},</if>
+            <if test="XYHMBAlHLGDZ != null">XYHMBAlHLGDZ = #{XYHMBAlHLGDZ},</if>
+            <if test="XYHMBSiHLGDZ != null">XYHMBSiHLGDZ = #{XYHMBSiHLGDZ},</if>
+            <if test="XYHMBFeHLGDZ != null">XYHMBFeHLGDZ = #{XYHMBFeHLGDZ},</if>
+            <if test="XYHMBKHSDSDZ != null">XYHMBKHSDSDZ = #{XYHMBKHSDSDZ},</if>
+            <if test="XYHMBSMSDSDZ != null">XYHMBSMSDSDZ = #{XYHMBSMSDSDZ},</if>
+            <if test="XYHMBIMSDSDZ != null">XYHMBIMSDSDZ = #{XYHMBIMSDSDZ},</if>
+            <if test="XYHMBCaHLSDSDZ != null">XYHMBCaHLSDSDZ = #{XYHMBCaHLSDSDZ},</if>
+            <if test="XYHMBAlHLSDSDZ != null">XYHMBAlHLSDSDZ = #{XYHMBAlHLSDSDZ},</if>
+            <if test="XYHMBSiHLSDSDZ != null">XYHMBSiHLSDSDZ = #{XYHMBSiHLSDSDZ},</if>
+            <if test="XYHMBFeHLSDGSDZ != null">XYHMBFeHLSDGSDZ = #{XYHMBFeHLSDGSDZ},</if>
+            <if test="XXCCZSDZ != null">XXCCZSDZ = #{XXCCZSDZ},</if>
+            <if test="XXCCZFK != null">XXCCZFK = #{XXCCZFK},</if>
+            <if test="XXCCCSZDBZZ != null">XXCCCSZDBZZ = #{XXCCCSZDBZZ},</if>
+            <if test="XXCCZZYHSDBZ != null">XXCCZZYHSDBZ = #{XXCCZZYHSDBZ},</if>
+            <if test="XXCXLZXLSDSDZ != null">XXCXLZXLSDSDZ = #{XXCXLZXLSDSDZ},</if>
+            <if test="XXCXLZXLZDSDZ != null">XXCXLZXLZDSDZ = #{XXCXLZXLZDSDZ},</if>
+            <if test="XXCXLZXLFK != null">XXCXLZXLFK = #{XXCXLZXLFK},</if>
+            <if test="XXCKDZFMSDGD != null">XXCKDZFMSDGD = #{XXCKDZFMSDGD},</if>
+            <if test="XXCKDZFMZDGD != null">XXCKDZFMZDGD = #{XXCKDZFMZDGD},</if>
+            <if test="XXCKDZFMFK != null">XXCKDZFMFK = #{XXCKDZFMFK},</if>
+            <if test="XXCKDZFMXX != null">XXCKDZFMXX = #{XXCKDZFMXX},</if>
+            <if test="XXCKDZFMSX != null">XXCKDZFMSX = #{XXCKDZFMSX},</if>
+            <if test="XXCCZSZDBZY != null">XXCCZSZDBZY = #{XXCCZSZDBZY},</if>
+            <if test="XXCCZYYHSDBZ != null">XXCCZYYHSDBZ = #{XXCCZYYHSDBZ},</if>
+            <if test="XXCXLYXLSDSDZ != null">XXCXLYXLSDSDZ = #{XXCXLYXLSDSDZ},</if>
+            <if test="XXCXLYXLZDSDZ != null">XXCXLYXLZDSDZ = #{XXCXLYXLZDSDZ},</if>
+            <if test="XXCXLYXLFK != null">XXCXLYXLFK = #{XXCXLYXLFK},</if>
+            <if test="XXCKDYFMSDGD != null">XXCKDYFMSDGD = #{XXCKDYFMSDGD},</if>
+            <if test="XXCKDYFMZDGD != null">XXCKDYFMZDGD = #{XXCKDYFMZDGD},</if>
+            <if test="XXCKDYFMFK != null">XXCKDYFMFK = #{XXCKDYFMFK},</if>
+            <if test="XXCKDYFMXX != null">XXCKDYFMXX = #{XXCKDYFMXX},</if>
+            <if test="XXCKDYFMSX != null">XXCKDYFMSX = #{XXCKDYFMSX},</if>
+            <if test="XRYSXLBZ != null">XRYSXLBZ = #{XRYSXLBZ},</if>
+            <if test="XRYSXLYHBZ != null">XRYSXLYHBZ = #{XRYSXLYHBZ},</if>
+            <if test="XYRCOSSZ != null">XYRCOSSZ = #{XYRCOSSZ},</if>
+            <if test="XYRCOYSZ != null">XYRCOYSZ = #{XYRCOYSZ},</if>
+            <if test="XYRCOFKZ != null">XYRCOFKZ = #{XYRCOFKZ},</if>
+            <if test="XSLXLLSDZ != null">XSLXLLSDZ = #{XSLXLLSDZ},</if>
+            <if test="XRYSXLSSZ != null">XRYSXLSSZ = #{XRYSXLSSZ},</if>
+            <if test="XSLXLLFKZ != null">XSLXLLFKZ = #{XSLXLLFKZ},</if>
+            <if test="XSLXLZSSX != null">XSLXLZSSX = #{XSLXLZSSX},</if>
+            <if test="XSLXLZSXX != null">XSLXLZSXX = #{XSLXLZSXX},</if>
+            <if test="XGWFJZDKZBZW != null">XGWFJZDKZBZW = #{XGWFJZDKZBZW},</if>
+            <if test="XGWFJYHBZW != null">XGWFJYHBZW = #{XGWFJYHBZW},</if>
+            <if test="XGWFJZDXYYXBZW != null">XGWFJZDXYYXBZW = #{XGWFJZDXYYXBZW},</if>
+            <if test="XGWFJYHKZQHBZW != null">XGWFJYHKZQHBZW = #{XGWFJYHKZQHBZW},</if>
+            <if test="XGWFJZDFZBZW != null">XGWFJZDFZBZW = #{XGWFJZDFZBZW},</if>
+            <if test="XGWFJYHFZBZW != null">XGWFJYHFZBZW = #{XGWFJYHFZBZW},</if>
+            <if test="XGWFJFZGD != null">XGWFJFZGD = #{XGWFJFZGD},</if>
+            <if test="XGWFJXXGD != null">XGWFJXXGD = #{XGWFJXXGD},</if>
+            <if test="XYYHT != null">XYYHT = #{XYYHT},</if>
+            <if test="XGWFJZSGD != null">XGWFJZSGD = #{XGWFJZSGD},</if>
+            <if test="XGWFJZSZDZ != null">XGWFJZSZDZ = #{XGWFJZSZDZ},</if>
+            <if test="XGWFJZSFK != null">XGWFJZSFK = #{XGWFJZSFK},</if>
+            <if test="XGWFJJKFMGD != null">XGWFJJKFMGD = #{XGWFJJKFMGD},</if>
+            <if test="XGWFJJFZDZ != null">XGWFJJFZDZ = #{XGWFJJFZDZ},</if>
+            <if test="XGWFJJKFMFK != null">XGWFJJKFMFK = #{XGWFJJKFMFK},</if>
+            <if test="XGWFJCKFMGD != null">XGWFJCKFMGD = #{XGWFJCKFMGD},</if>
+            <if test="XGWFJCFZDZ != null">XGWFJCFZDZ = #{XGWFJCFZDZ},</if>
+            <if test="XGWFJCKFMFK != null">XGWFJCKFMFK = #{XGWFJCKFMFK},</if>
+            <if test="XYRFLFSZDBZ != null">XYRFLFSZDBZ = #{XYRFLFSZDBZ},</if>
+            <if test="XYRFLFYHBZ != null">XYRFLFYHBZ = #{XYRFLFYHBZ},</if>
+            <if test="XCJWCSSZ != null">XCJWCSSZ = #{XCJWCSSZ},</if>
+            <if test="XCJWCZSZ != null">XCJWCZSZ = #{XCJWCZSZ},</if>
+            <if test="XAC5CKWD != null">XAC5CKWD = #{XAC5CKWD},</if>
+            <if test="XBC5CKWD != null">XBC5CKWD = #{XBC5CKWD},</if>
+            <if test="XCJWCFKZ != null">XCJWCFKZ = #{XCJWCFKZ},</if>
+            <if test="XYRFLFZSSZ != null">XYRFLFZSSZ = #{XYRFLFZSSZ},</if>
+            <if test="XYRFLFYSSZ != null">XYRFLFYSSZ = #{XYRFLFYSSZ},</if>
+            <if test="XYRFLFZYSZ != null">XYRFLFZYSZ = #{XYRFLFZYSZ},</if>
+            <if test="XYRFLFYYSZ != null">XYRFLFYYSZ = #{XYRFLFYYSZ},</if>
+            <if test="XYRFLFZKFK != null">XYRFLFZKFK = #{XYRFLFZKFK},</if>
+            <if test="XYRFLFYKFK != null">XYRFLFYKFK = #{XYRFLFYKFK},</if>
+            <if test="XFLTSX != null">XFLTSX = #{XFLTSX},</if>
+            <if test="XFLTXX != null">XFLTXX = #{XFLTXX},</if>
+            <if test="XFLFYTSX != null">XFLFYTSX = #{XFLFYTSX},</if>
+            <if test="XFLFYTXX != null">XFLFYTXX = #{XFLFYTXX},</if>
+            <if test="XFJLWDZDXYYXBZW != null">XFJLWDZDXYYXBZW = #{XFJLWDZDXYYXBZW},</if>
+            <if test="XFJLWDYHBZW != null">XFJLWDYHBZW = #{XFJLWDYHBZW},</if>
+            <if test="XYWWMSZDQH != null">XYWWMSZDQH = #{XYWWMSZDQH},</if>
+            <if test="XFJLWDSDSDZ != null">XFJLWDSDSDZ = #{XFJLWDSDSDZ},</if>
+            <if test="XFJLWDYHSDZ != null">XFJLWDYHSDZ = #{XFJLWDYHSDZ},</if>
+            <if test="XFJLWDF != null">XFJLWDF = #{XFJLWDF},</if>
+            <if test="XYWWMLSDGDZ != null">XYWWMLSDGDZ = #{XYWWMLSDGDZ},</if>
+            <if test="XYWWMLZDGDZ != null">XYWWMLZDGDZ = #{XYWWMLZDGDZ},</if>
+            <if test="XYWWMLFKZ != null">XYWWMLFKZ = #{XYWWMLFKZ},</if>
+            <if test="XFJLTSX != null">XFJLTSX = #{XFJLTSX},</if>
+            <if test="XFJLTXX != null">XFJLTXX = #{XFJLTXX},</if>
+            <if test="XFJLPMXXGD != null">XFJLPMXXGD = #{XFJLPMXXGD},</if>
+            <if test="XFJLWDXXGD != null">XFJLWDXXGD = #{XFJLWDXXGD},</if>
+            <if test="XYZSSZDQH != null">XYZSSZDQH = #{XYZSSZDQH},</if>
+            <if test="XYZSYHBZ != null">XYZSYHBZ = #{XYZSYHBZ},</if>
+            <if test="XYDLSSZ != null">XYDLSSZ = #{XYDLSSZ},</if>
+            <if test="XYDLYSZ != null">XYDLYSZ = #{XYDLYSZ},</if>
+            <if test="XYZJDL != null">XYZJDL = #{XYZJDL},</if>
+            <if test="XYZSSDGD != null">XYZSSDGD = #{XYZSSDGD},</if>
+            <if test="XYZSZDGD != null">XYZSZDGD = #{XYZSZDGD},</if>
+            <if test="XYZDJSDFK != null">XYZDJSDFK = #{XYZDJSDFK},</if>
+            <if test="XYZSTSX != null">XYZSTSX = #{XYZSTSX},</if>
+            <if test="XYZSTXX != null">XYZSTXX = #{XYZSTXX},</if>
+            <if test="XYDLZSSX != null">XYDLZSSX = #{XYDLZSSX},</if>
+            <if test="XYDLZSXX != null">XYDLZSXX = #{XYDLZSXX},</if>
+            <if test="XSCDWDZDXYYXBZW != null">XSCDWDZDXYYXBZW = #{XSCDWDZDXYYXBZW},</if>
+            <if test="XSCDWDYHBZW != null">XSCDWDYHBZW = #{XSCDWDYHBZW},</if>
+            <if test="XYTWMSZDQH != null">XYTWMSZDQH = #{XYTWMSZDQH},</if>
+            <if test="XSCDWDSDSDZ != null">XSCDWDSDSDZ = #{XSCDWDSDSDZ},</if>
+            <if test="XSCDWDYHSDZ != null">XSCDWDYHSDZ = #{XSCDWDYHSDZ},</if>
+            <if test="XSCDWDFK != null">XSCDWDFK = #{XSCDWDFK},</if>
+            <if test="XYSWD != null">XYSWD = #{XYSWD},</if>
+            <if test="XYTZWD != null">XYTZWD = #{XYTZWD},</if>
+            <if test="XYTWMLSDGDZ != null">XYTWMLSDGDZ = #{XYTWMLSDGDZ},</if>
+            <if test="XYTWMLZDGDZ != null">XYTWMLZDGDZ = #{XYTWMLZDGDZ},</if>
+            <if test="XYTWMLFKZ != null">XYTWMLFKZ = #{XYTWMLFKZ},</if>
+            <if test="XYTPMTSX != null">XYTPMTSX = #{XYTPMTSX},</if>
+            <if test="XYTPMTXX != null">XYTPMTXX = #{XYTPMTXX},</if>
+            <if test="XSCDPMXXGD != null">XSCDPMXXGD = #{XSCDPMXXGD},</if>
+            <if test="XSCDWDXXGD != null">XSCDWDXXGD = #{XSCDWDXXGD},</if>
+            <if test="XYTPFJSZDQH != null">XYTPFJSZDQH = #{XYTPFJSZDQH},</if>
+            <if test="XYTFYYHQDBZW != null">XYTFYYHQDBZW = #{XYTFYYHQDBZW},</if>
+            <if test="XYTFYSSZ != null">XYTFYSSZ = #{XYTFYSSZ},</if>
+            <if test="XYTFYYHSDZ != null">XYTFYYHSDZ = #{XYTFYYHSDZ},</if>
+            <if test="XYTFYFK != null">XYTFYFK = #{XYTFYFK},</if>
+            <if test="XYTPFJPLSDGD != null">XYTPFJPLSDGD = #{XYTPFJPLSDGD},</if>
+            <if test="XYTPFJZDGD != null">XYTPFJZDGD = #{XYTPFJZDGD},</if>
+            <if test="XYTPPLFK != null">XYTPPLFK = #{XYTPPLFK},</if>
+            <if test="XYTFYTSX != null">XYTFYTSX = #{XYTFYTSX},</if>
+            <if test="XYTFYTXX != null">XYTFYTXX = #{XYTFYTXX},</if>
+            <if test="XYTPPTXX != null">XYTPPTXX = #{XYTPPTXX},</if>
+            <if test="XYTPPTSX != null">XYTPPTSX = #{XYTPPTSX},</if>
+            <if test="XBLJYDZDKZBZW != null">XBLJYDZDKZBZW = #{XBLJYDZDKZBZW},</if>
+            <if test="XBLJYDYHBZW != null">XBLJYDYHBZW = #{XBLJYDYHBZW},</if>
+            <if test="XBLJYSFYYHQDBZW != null">XBLJYSFYYHQDBZW = #{XBLJYSFYYHQDBZW},</if>
+            <if test="XBLJYSFYSSZ != null">XBLJYSFYSSZ = #{XBLJYSFYSSZ},</if>
+            <if test="XBLJYSFYYHSDZ != null">XBLJYSFYYHSDZ = #{XBLJYSFYYHSDZ},</if>
+            <if test="XBLJYSFYFK != null">XBLJYSFYFK = #{XBLJYSFYFK},</if>
+            <if test="XBLJYDBSSDGD != null">XBLJYDBSSDGD = #{XBLJYDBSSDGD},</if>
+            <if test="XBLJYDBSZDGD != null">XBLJYDBSZDGD = #{XBLJYDBSZDGD},</if>
+            <if test="XBLJYDBSFK != null">XBLJYDBSFK = #{XBLJYDBSFK},</if>
+            <if test="XBLJYDBSFKSX != null">XBLJYDBSFKSX = #{XBLJYDBSFKSX},</if>
+            <if test="XBLJYDBSFKXX != null">XBLJYDBSFKXX = #{XBLJYDBSFKXX},</if>
+            <if test="XCLQJSLWD != null">XCLQJSLWD = #{XCLQJSLWD},</if>
+            <if test="XLFJ1SZBZ != null">XLFJ1SZBZ = #{XLFJ1SZBZ},</if>
+            <if test="XLFJ1SYBZ != null">XLFJ1SYBZ = #{XLFJ1SYBZ},</if>
+            <if test="XLFLZS1SD != null">XLFLZS1SD = #{XLFLZS1SD},</if>
+            <if test="XLFJZS1ZD != null">XLFJZS1ZD = #{XLFJZS1ZD},</if>
+            <if test="XLQ1FJZS != null">XLQ1FJZS = #{XLQ1FJZS},</if>
+            <if test="XLQ1FJZSXX != null">XLQ1FJZSXX = #{XLQ1FJZSXX},</if>
+            <if test="XLQ1FJZSSX != null">XLQ1FJZSSX = #{XLQ1FJZSSX},</if>
+            <if test="XLFJ2SZBZ != null">XLFJ2SZBZ = #{XLFJ2SZBZ},</if>
+            <if test="XLFJ2SYBZ != null">XLFJ2SYBZ = #{XLFJ2SYBZ},</if>
+            <if test="XBLJESFYSSZ != null">XBLJESFYSSZ = #{XBLJESFYSSZ},</if>
+            <if test="XBLJESFYYHSDZ != null">XBLJESFYYHSDZ = #{XBLJESFYYHSDZ},</if>
+            <if test="XBLJESFYFK != null">XBLJESFYFK = #{XBLJESFYFK},</if>
+            <if test="XLFLZS2SD != null">XLFLZS2SD = #{XLFLZS2SD},</if>
+            <if test="XLFJZS2ZD != null">XLFJZS2ZD = #{XLFJZS2ZD},</if>
+            <if test="XLQ2FJZS != null">XLQ2FJZS = #{XLQ2FJZS},</if>
+            <if test="XLQ2FJZSXX != null">XLQ2FJZSXX = #{XLQ2FJZSXX},</if>
+            <if test="XLQ2FJZSSX != null">XLQ2FJZSSX = #{XLQ2FJZSSX},</if>
+            <if test="XLFJ3SZBZ != null">XLFJ3SZBZ = #{XLFJ3SZBZ},</if>
+            <if test="XLFJ3SYBZ != null">XLFJ3SYBZ = #{XLFJ3SYBZ},</if>
+            <if test="XBLJSSFYSSZ != null">XBLJSSFYSSZ = #{XBLJSSFYSSZ},</if>
+            <if test="XBLJSSFYYHSDZ != null">XBLJSSFYYHSDZ = #{XBLJSSFYYHSDZ},</if>
+            <if test="XBLJSSFYFK != null">XBLJSSFYFK = #{XBLJSSFYFK},</if>
+            <if test="XLFLZS3SD != null">XLFLZS3SD = #{XLFLZS3SD},</if>
+            <if test="XLFJZS3ZD != null">XLFJZS3ZD = #{XLFJZS3ZD},</if>
+            <if test="XLQ3FJZS != null">XLQ3FJZS = #{XLQ3FJZS},</if>
+            <if test="XLQ3FJZSXX != null">XLQ3FJZSXX = #{XLQ3FJZSXX},</if>
+            <if test="XLQ3FJZSSX != null">XLQ3FJZSSX = #{XLQ3FJZSSX},</if>
+            <if test="XLFJ4SZBZ != null">XLFJ4SZBZ = #{XLFJ4SZBZ},</if>
+            <if test="XLFJ4SYBZ != null">XLFJ4SYBZ = #{XLFJ4SYBZ},</if>
+            <if test="XBLJ4SFYSSZ != null">XBLJ4SFYSSZ = #{XBLJ4SFYSSZ},</if>
+            <if test="XBLJ4SFYYHSDZ != null">XBLJ4SFYYHSDZ = #{XBLJ4SFYYHSDZ},</if>
+            <if test="XBLJ4SFYFK != null">XBLJ4SFYFK = #{XBLJ4SFYFK},</if>
+            <if test="XLFLZS4SD != null">XLFLZS4SD = #{XLFLZS4SD},</if>
+            <if test="XLFJZS4ZD != null">XLFJZS4ZD = #{XLFJZS4ZD},</if>
+            <if test="XLQ4FJZS != null">XLQ4FJZS = #{XLQ4FJZS},</if>
+            <if test="XLQ4FJZSXX != null">XLQ4FJZSXX = #{XLQ4FJZSXX},</if>
+            <if test="XLQ4FJZSSX != null">XLQ4FJZSSX = #{XLQ4FJZSSX},</if>
+            <if test="XMMTSZDXYYXBZW != null">XMMTSZDXYYXBZW = #{XMMTSZDXYYXBZW},</if>
+            <if test="XMMTSYHBZW != null">XMMTSYHBZW = #{XMMTSYHBZW},</if>
+            <if test="XMMRMTSSZDQHBZ != null">XMMRMTSSZDQHBZ = #{XMMRMTSSZDQHBZ},</if>
+            <if test="XMMTSSDSDZ != null">XMMTSSDSDZ = #{XMMTSSDSDZ},</if>
+            <if test="XMMTSZDSDZ != null">XMMTSZDSDZ = #{XMMTSZDSDZ},</if>
+            <if test="XMMTSYHSDZ != null">XMMTSYHSDZ = #{XMMTSYHSDZ},</if>
+            <if test="XMMXLLFK != null">XMMXLLFK = #{XMMXLLFK},</if>
+            <if test="XMMZJDL != null">XMMZJDL = #{XMMZJDL},</if>
+            <if test="XTMFCCZ != null">XTMFCCZ = #{XTMFCCZ},</if>
+            <if test="XWMFCCZ != null">XWMFCCZ = #{XWMFCCZ},</if>
+            <if test="XMMXLLKZSX != null">XMMXLLKZSX = #{XMMXLLKZSX},</if>
+            <if test="XMMXLLKZXX != null">XMMXLLKZXX = #{XMMXLLKZXX},</if>
+            <if test="XMMLFFKDSZDQHBZ != null">XMMLFFKDSZDQHBZ = #{XMMLFFKDSZDQHBZ},</if>
+            <if test="XMMCKWDFK != null">XMMCKWDFK = #{XMMCKWDFK},</if>
+            <if test="XCMWDSDSDZ != null">XCMWDSDSDZ = #{XCMWDSDSDZ},</if>
+            <if test="XCMWDYHSDZ != null">XCMWDYHSDZ = #{XCMWDYHSDZ},</if>
+            <if test="XMMRFF1KDZDGD != null">XMMRFF1KDZDGD = #{XMMRFF1KDZDGD},</if>
+            <if test="XMMLFFKDZDGD != null">XMMLFFKDZDGD = #{XMMLFFKDZDGD},</if>
+            <if test="XMMRFF1KDSDGD != null">XMMRFF1KDSDGD = #{XMMRFF1KDSDGD},</if>
+            <if test="XMMLFFKDSDGD != null">XMMLFFKDSDGD = #{XMMLFFKDSDGD},</if>
+            <if test="XMMRFF1KDFK != null">XMMRFF1KDFK = #{XMMRFF1KDFK},</if>
+            <if test="XMMRFF2KDFK != null">XMMRFF2KDFK = #{XMMRFF2KDFK},</if>
+            <if test="XMMLFFKDFK != null">XMMLFFKDFK = #{XMMLFFKDFK},</if>
+            <if test="XMMRTSX != null">XMMRTSX = #{XMMRTSX},</if>
+            <if test="XMMRTXX != null">XMMRTXX = #{XMMRTXX},</if>
+            <if test="XMMLTSX != null">XMMLTSX = #{XMMLTSX},</if>
+            <if test="XMMLTXX != null">XMMLTXX = #{XMMLTXX},</if>
+            <if test="XRJHKTSDL != null">XRJHKTSDL = #{XRJHKTSDL},</if>
+            <if test="XXCTSJDLSDSDZ != null">XXCTSJDLSDSDZ = #{XXCTSJDLSDSDZ},</if>
+            <if test="XXCTSJDLFK != null">XXCTSJDLFK = #{XXCTSJDLFK},</if>
+            <if test="XYTDSCRKWD != null">XYTDSCRKWD = #{XYTDSCRKWD},</if>
+            <if test="XYTDSCCKWD != null">XYTDSCCKWD = #{XYTDSCCKWD},</if>
+            <if test="XYTDSCRKYL != null">XYTDSCRKYL = #{XYTDSCRKYL},</if>
+            <if test="XYTDSCCKYL != null">XYTDSCCKYL = #{XYTDSCCKYL},</if>
+            <if test="XRYTSJDL != null">XRYTSJDL = #{XRYTSJDL},</if>
+            <if test="XRYTSJDL2 != null">XRYTSJDL2 = #{XRYTSJDL2},</if>
+            <if test="XRYTSJDLJZ != null">XRYTSJDLJZ = #{XRYTSJDLJZ},</if>
+            <if test="XRYTSJDLZH != null">XRYTSJDLZH = #{XRYTSJDLZH},</if>
+            <if test="XRYSLXLLLJL != null">XRYSLXLLLJL = #{XRYSLXLLLJL},</if>
+            <if test="XC1ACKWD != null">XC1ACKWD = #{XC1ACKWD},</if>
+            <if test="XC1BCKWD != null">XC1BCKWD = #{XC1BCKWD},</if>
+            <if test="XC11A1XSJZ != null">XC11A1XSJZ = #{XC11A1XSJZ},</if>
+            <if test="XC11A8XSJZ != null">XC11A8XSJZ = #{XC11A8XSJZ},</if>
+            <if test="XC12B1XSJZ != null">XC12B1XSJZ = #{XC12B1XSJZ},</if>
+            <if test="XC12B8XSJZ != null">XC12B8XSJZ = #{XC12B8XSJZ},</if>
+            <if test="XC1ACKYL != null">XC1ACKYL = #{XC1ACKYL},</if>
+            <if test="XC1BCKYL != null">XC1BCKYL = #{XC1BCKYL},</if>
+            <if test="XC1AZTYA != null">XC1AZTYA = #{XC1AZTYA},</if>
+            <if test="XC1BZTYA != null">XC1BZTYA = #{XC1BZTYA},</if>
+            <if test="XC2ACKWD != null">XC2ACKWD = #{XC2ACKWD},</if>
+            <if test="XC2BCKWD != null">XC2BCKWD = #{XC2BCKWD},</if>
+            <if test="XC2ACKYL != null">XC2ACKYL = #{XC2ACKYL},</if>
+            <if test="XC2BCKYL != null">XC2BCKYL = #{XC2BCKYL},</if>
+            <if test="XC2AZTYA != null">XC2AZTYA = #{XC2AZTYA},</if>
+            <if test="XC2BZTYA != null">XC2BZTYA = #{XC2BZTYA},</if>
+            <if test="XC3ACKWD != null">XC3ACKWD = #{XC3ACKWD},</if>
+            <if test="XC3BCKWD != null">XC3BCKWD = #{XC3BCKWD},</if>
+            <if test="XC3ACKYL != null">XC3ACKYL = #{XC3ACKYL},</if>
+            <if test="XC3BCKYL != null">XC3BCKYL = #{XC3BCKYL},</if>
+            <if test="XC3AZTYA != null">XC3AZTYA = #{XC3AZTYA},</if>
+            <if test="XC3BZTYA != null">XC3BZTYA = #{XC3BZTYA},</if>
+            <if test="XAC4CKWD != null">XAC4CKWD = #{XAC4CKWD},</if>
+            <if test="XBC4CKWD != null">XBC4CKWD = #{XBC4CKWD},</if>
+            <if test="XAC4CKYL != null">XAC4CKYL = #{XAC4CKYL},</if>
+            <if test="XBC4CKYL != null">XBC4CKYL = #{XBC4CKYL},</if>
+            <if test="XC4AZTYL != null">XC4AZTYL = #{XC4AZTYL},</if>
+            <if test="XC4BZTYL != null">XC4BZTYL = #{XC4BZTYL},</if>
+            <if test="XC5ACKYL != null">XC5ACKYL = #{XC5ACKYL},</if>
+            <if test="XC5BCKYL != null">XC5BCKYL = #{XC5BCKYL},</if>
+            <if test="XC5AZTYL != null">XC5AZTYL = #{XC5AZTYL},</if>
+            <if test="XC5BZTYL != null">XC5BZTYL = #{XC5BZTYL},</if>
+            <if test="XC5AXLGWD != null">XC5AXLGWD = #{XC5AXLGWD},</if>
+            <if test="XC5BXLGWD != null">XC5BXLGWD = #{XC5BXLGWD},</if>
+            <if test="XFJLWD1JZ != null">XFJLWD1JZ = #{XFJLWD1JZ},</if>
+            <if test="XFJLWD8JZ != null">XFJLWD8JZ = #{XFJLWD8JZ},</if>
+            <if test="XFJLCKYL != null">XFJLCKYL = #{XFJLCKYL},</if>
+            <if test="XFJLZBYL != null">XFJLZBYL = #{XFJLZBYL},</if>
+            <if test="XFJLZBWD != null">XFJLZBWD = #{XFJLZBWD},</if>
+            <if test="XYSWDYXSJZ != null">XYSWDYXSJZ = #{XYSWDYXSJZ},</if>
+            <if test="XYSWDBXSJZ != null">XYSWDBXSJZ = #{XYSWDBXSJZ},</if>
+            <if test="XYSYL != null">XYSYL = #{XYSYL},</if>
+            <if test="XSCFY != null">XSCFY = #{XSCFY},</if>
+            <if test="XSCFW != null">XSCFW = #{XSCFW},</if>
+            <if test="XYRQCOND != null">XYRQCOND = #{XYRQCOND},</if>
+            <if test="XFJLDDYHW != null">XFJLDDYHW = #{XFJLDDYHW},</if>
+            <if test="XHYL != null">XHYL = #{XHYL},</if>
+            <if test="XYDYYHTHL != null">XYDYYHTHL = #{XYDYYHTHL},</if>
+            <if test="XDYHW != null">XDYHW = #{XDYHW},</if>
+            <if test="XYDYHL != null">XYDYHL = #{XYDYHL},</if>
+            <if test="XYWPMFY != null">XYWPMFY = #{XYWPMFY},</if>
+            <if test="XYWPMFH != null">XYWPMFH = #{XYWPMFH},</if>
+            <if test="XYTPMFH != null">XYTPMFH = #{XYTPMFH},</if>
+            <if test="XYTPMFY != null">XYTPMFY = #{XYTPMFY},</if>
+            <if test="XWMCSDFK != null">XWMCSDFK = #{XWMCSDFK},</if>
+            <if test="XTMCSDFK != null">XTMCSDFK = #{XTMCSDFK},</if>
+            <if test="XTWMBL != null">XTWMBL = #{XTWMBL},</if>
+            <if test="XGWFJJKYL != null">XGWFJJKYL = #{XGWFJJKYL},</if>
+            <if test="XGWFJCKYL != null">XGWFJCKYL = #{XGWFJCKYL},</if>
+            <if test="XGWFJDL != null">XGWFJDL = #{XGWFJDL},</if>
+            <if test="XYTZWDYXSJZ != null">XYTZWDYXSJZ = #{XYTZWDYXSJZ},</if>
+            <if test="XYTZWDBXSJZ != null">XYTZWDBXSJZ = #{XYTZWDBXSJZ},</if>
+            <if test="XECFW != null">XECFW = #{XECFW},</if>
+            <if test="XECFY != null">XECFY = #{XECFY},</if>
+            <if test="XYTPFJDL != null">XYTPFJDL = #{XYTPFJDL},</if>
+            <if test="XTPFJFMKDSDGD != null">XTPFJFMKDSDGD = #{XTPFJFMKDSDGD},</if>
+            <if test="XTPFJFMKDFK != null">XTPFJFMKDFK = #{XTPFJFMKDFK},</if>
+            <if test="XSCDWDBY1FK != null">XSCDWDBY1FK = #{XSCDWDBY1FK},</if>
+            <if test="XSCDWDBY2FK != null">XSCDWDBY2FK = #{XSCDWDBY2FK},</if>
+            <if test="XSCDWDBY3FK != null">XSCDWDBY3FK = #{XSCDWDBY3FK},</if>
+            <if test="XSCDWDBY4FK != null">XSCDWDBY4FK = #{XSCDWDBY4FK},</if>
+            <if test="XSCDWDBY5FK != null">XSCDWDBY5FK = #{XSCDWDBY5FK},</if>
+            <if test="XBLJYDBYFK != null">XBLJYDBYFK = #{XBLJYDBYFK},</if>
+            <if test="XBLJYDDL != null">XBLJYDDL = #{XBLJYDDL},</if>
+            <if test="XBLJEDBYFK != null">XBLJEDBYFK = #{XBLJEDBYFK},</if>
+            <if test="XBLJEDBSFK != null">XBLJEDBSFK = #{XBLJEDBSFK},</if>
+            <if test="XBLJEDDL != null">XBLJEDDL = #{XBLJEDDL},</if>
+            <if test="XBLJSDBYFK != null">XBLJSDBYFK = #{XBLJSDBYFK},</if>
+            <if test="XBLJSDBSFK != null">XBLJSDBSFK = #{XBLJSDBSFK},</if>
+            <if test="XBLJSDDL != null">XBLJSDDL = #{XBLJSDDL},</if>
+            <if test="XBLJ5SFYFK != null">XBLJ5SFYFK = #{XBLJ5SFYFK},</if>
+            <if test="XBLJ6SFYFK != null">XBLJ6SFYFK = #{XBLJ6SFYFK},</if>
+            <if test="XBLJ7SFYFK != null">XBLJ7SFYFK = #{XBLJ7SFYFK},</if>
+            <if test="XBLJ8SFYFK != null">XBLJ8SFYFK = #{XBLJ8SFYFK},</if>
+            <if test="XFJLWDFZBLBY1 != null">XFJLWDFZBLBY1 = #{XFJLWDFZBLBY1},</if>
+            <if test="XRMWDFK != null">XRMWDFK = #{XRMWDFK},</if>
+            <if test="XMMXFJDL != null">XMMXFJDL = #{XMMXFJDL},</if>
+            <if test="XMMXFJZS != null">XMMXFJZS = #{XMMXFJZS},</if>
+            <if test="XMMYFJHZ != null">XMMYFJHZ = #{XMMYFJHZ},</if>
+            <if test="XMMYFJDL != null">XMMYFJDL = #{XMMYFJDL},</if>
+            <if test="XMMBFRKWD != null">XMMB/FRKWD = #{XMMB/FRKWD},</if>
+            <if test="XMMBFCKWD != null">XMMB/FCKWD = #{XMMB/FCKWD},</if>
+            <if test="XMMTMFCWD != null">XMMTMFCWD = #{XMMTMFCWD},</if>
+            <if test="XMMWMFCWD != null">XMMWMFCWD = #{XMMWMFCWD},</if>
+            <if test="XMMRMYL != null">XMMRMYL = #{XMMRMYL},</if>
+            <if test="XMMCMYL != null">XMMCMYL = #{XMMCMYL},</if>
+            <if test="XMJYC != null">XMJYC = #{XMJYC},</if>
+            <if test="XMMCOHLFK != null">XMMCOHLFK = #{XMMCOHLFK},</if>
+            <if test="XMMZJMGWD != null">XMMZJMGWD = #{XMMZJMGWD},</if>
+            <if test="XMMQTFXYCO != null">XMMQTFXYCO = #{XMMQTFXYCO},</if>
+            <if test="XMMQTFXYO2 != null">XMMQTFXYO2 = #{XMMQTFXYO2},</if>
+            <if test="XMMB0FRKYL != null">XMMB0FRKYL = #{XMMB0FRKYL},</if>
+            <if test="XMMB0FCKYL != null">XMMB0FCKYL = #{XMMB0FCKYL},</if>
+            <if test="XMMB0FCY != null">XMMB0FCY = #{XMMB0FCY},</if>
+            <if test="XLQFJ1FY != null">XLQFJ1FY = #{XLQFJ1FY},</if>
+            <if test="XLQFJ2FY != null">XLQFJ2FY = #{XLQFJ2FY},</if>
+            <if test="XLQFJ3FY != null">XLQFJ3FY = #{XLQFJ3FY},</if>
+            <if test="XLQFJ4FY != null">XLQFJ4FY = #{XLQFJ4FY},</if>
+            <if test="XLQFJ1DL != null">XLQFJ1DL = #{XLQFJ1DL},</if>
+            <if test="XLQFJ2DL != null">XLQFJ2DL = #{XLQFJ2DL},</if>
+            <if test="XLQFJ3DL != null">XLQFJ3DL = #{XLQFJ3DL},</if>
+            <if test="XLQFJ4DL != null">XLQFJ4DL = #{XLQFJ4DL},</if>
+            <if test="XEYHLPFL != null">XEYHLPFL = #{XEYHLPFL},</if>
+            <if test="XEYHLZSPJZ != null">XEYHLZSPJZ = #{XEYHLZSPJZ},</if>
+            <if test="XDYHWPFL != null">XDYHWPFL = #{XDYHWPFL},</if>
+            <if test="XDYHWZSPJZ != null">XDYHWZSPJZ = #{XDYHWZSPJZ},</if>
+            <if test="XASYL != null">XASYL = #{XASYL},</if>
+            <if test="XXCCZJZ != null">XXCCZJZ = #{XXCCZJZ},</if>
+            <if test="XYRCOJZ != null">XYRCOJZ = #{XYRCOJZ},</if>
+            <if test="XYRWCJZ != null">XYRWCJZ = #{XYRWCJZ},</if>
+            <if test="XFJLWDJZ != null">XFJLWDJZ = #{XFJLWDJZ},</if>
+            <if test="XYDLJZ != null">XYDLJZ = #{XYDLJZ},</if>
+            <if test="XSCDWDJZ != null">XSCDWDJZ = #{XSCDWDJZ},</if>
+            <if test="XYTFYJZ != null">XYTFYJZ = #{XYTFYJZ},</if>
+            <if test="XBLJ1SFYJZ != null">XBLJ1SFYJZ = #{XBLJ1SFYJZ},</if>
+            <if test="XBLJ2SFYJZ != null">XBLJ2SFYJZ = #{XBLJ2SFYJZ},</if>
+            <if test="XBLJ3SFYJZ != null">XBLJ3SFYJZ = #{XBLJ3SFYJZ},</if>
+            <if test="XBLJ4SFYJZ != null">XBLJ4SFYJZ = #{XBLJ4SFYJZ},</if>
+            <if test="XMMZJDLJZ != null">XMMZJDLJZ = #{XMMZJDLJZ},</if>
+            <if test="XMMCOHLFK2 != null">XMMCOHLFK2 = #{XMMCOHLFK2},</if>
+            <if test="XGWFJPLSX != null">XGWFJPLSX = #{XGWFJPLSX},</if>
+            <if test="XGWFJPLXX != null">XGWFJPLXX = #{XGWFJPLXX},</if>
+            <if test="XMMRFF2KDSDGD != null">XMMRFF2KDSDGD = #{XMMRFF2KDSDGD},</if>
+            <if test="XSRSJ1 != null">XSRSJ1 = #{XSRSJ1},</if>
+            <if test="XSRSJ2 != null">XSRSJ2 = #{XSRSJ2},</if>
+            <if test="XSRSJ3 != null">XSRSJ3 = #{XSRSJ3},</if>
+            <if test="XSRSJ4 != null">XSRSJ4 = #{XSRSJ4},</if>
+            <if test="XSRSJ5 != null">XSRSJ5 = #{XSRSJ5},</if>
+            <if test="XSRSJ6 != null">XSRSJ6 = #{XSRSJ6},</if>
+            <if test="XNOXSZDBZ != null">XNOXSZDBZ = #{XNOXSZDBZ},</if>
+            <if test="XASZDGD != null">XASZDGD = #{XASZDGD},</if>
+            <if test="XASGDSX != null">XASGDSX = #{XASGDSX},</if>
+            <if test="XASGDXX != null">XASGDXX = #{XASGDXX},</if>
+            <if test="XNOXSDSDZ != null">XNOXSDSDZ = #{XNOXSDSDZ},</if>
+        </trim>
+        where 采样时间 = #{采样时间}
+    </update>
+
+    <delete id="deleteOutputtableBy采样时间" parameterType="Date">
+        delete from outputtable where 采样时间 = #{采样时间}
+    </delete>
+
+    <delete id="deleteOutputtableBy采样时间s" parameterType="String">
+        delete from outputtable where 采样时间 in 
+        <foreach item="采样时间" collection="array" open="(" separator="," close=")">
+            #{采样时间}
+        </foreach>
+    </delete>
+</mapper>

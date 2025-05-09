@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.screen.mapper.OutputMes13Mapper">
+    
+    <resultMap type="OutputMes13" id="OutputMes13Result">
+        <result property="采样时间"    column="采样时间"    />
+        <result property="countGet"    column="count_get"    />
+        <result property="vDate1"    column="vDate1"    />
+        <result property="XMSB86"    column="XMSB86"    />
+        <result property="XMYZSJ87"    column="XMYZSJ87"    />
+        <result property="XMYZL88"    column="XMYZL88"    />
+        <result property="XMTSCL89"    column="XMTSCL89"    />
+    </resultMap>
+
+    <sql id="selectOutputMes13Vo">
+        select 采样时间, count_get, vDate1, XMSB86, XMYZSJ87, XMYZL88, XMTSCL89 from output_mes13
+    </sql>
+
+    <select id="selectOutputMes13List" parameterType="OutputMes13" resultMap="OutputMes13Result">
+        <include refid="selectOutputMes13Vo"/>
+        <where>  
+            <if test="采样时间 != null "> and 采样时间 = #{采样时间}</if>
+            <if test="countGet != null "> and count_get = #{countGet}</if>
+            <if test="vDate1 != null "> and vDate1 = #{vDate1}</if>
+            <if test="XMSB86 != null  and XMSB86 != ''"> and XMSB86 = #{XMSB86}</if>
+            <if test="XMYZSJ87 != null "> and XMYZSJ87 = #{XMYZSJ87}</if>
+            <if test="XMYZL88 != null "> and XMYZL88 = #{XMYZL88}</if>
+            <if test="XMTSCL89 != null "> and XMTSCL89 = #{XMTSCL89}</if>
+        </where>
+    </select>
+    
+    <select id="selectOutputMes13By采样时间" parameterType="Date" resultMap="OutputMes13Result">
+        <include refid="selectOutputMes13Vo"/>
+        where 采样时间 = #{采样时间}
+    </select>
+
+    <insert id="insertOutputMes13" parameterType="OutputMes13">
+        insert into output_mes13
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="采样时间 != null">采样时间,</if>
+            <if test="countGet != null">count_get,</if>
+            <if test="vDate1 != null">vDate1,</if>
+            <if test="XMSB86 != null">XMSB86,</if>
+            <if test="XMYZSJ87 != null">XMYZSJ87,</if>
+            <if test="XMYZL88 != null">XMYZL88,</if>
+            <if test="XMTSCL89 != null">XMTSCL89,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="采样时间 != null">#{采样时间},</if>
+            <if test="countGet != null">#{countGet},</if>
+            <if test="vDate1 != null">#{vDate1},</if>
+            <if test="XMSB86 != null">#{XMSB86},</if>
+            <if test="XMYZSJ87 != null">#{XMYZSJ87},</if>
+            <if test="XMYZL88 != null">#{XMYZL88},</if>
+            <if test="XMTSCL89 != null">#{XMTSCL89},</if>
+         </trim>
+    </insert>
+
+    <update id="updateOutputMes13" parameterType="OutputMes13">
+        update output_mes13
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="countGet != null">count_get = #{countGet},</if>
+            <if test="vDate1 != null">vDate1 = #{vDate1},</if>
+            <if test="XMSB86 != null">XMSB86 = #{XMSB86},</if>
+            <if test="XMYZSJ87 != null">XMYZSJ87 = #{XMYZSJ87},</if>
+            <if test="XMYZL88 != null">XMYZL88 = #{XMYZL88},</if>
+            <if test="XMTSCL89 != null">XMTSCL89 = #{XMTSCL89},</if>
+        </trim>
+        where 采样时间 = #{采样时间}
+    </update>
+
+    <delete id="deleteOutputMes13By采样时间" parameterType="Date">
+        delete from output_mes13 where 采样时间 = #{采样时间}
+    </delete>
+
+    <delete id="deleteOutputMes13By采样时间s" parameterType="String">
+        delete from output_mes13 where 采样时间 in 
+        <foreach item="采样时间" collection="array" open="(" separator="," close=")">
+            #{采样时间}
+        </foreach>
+    </delete>
+    <select id="getEquipment" resultType="com.ruoyi.screen.domain.OutputMes13">
+        select count_get, round(XMYZSJ87,2) ,CAST(round(XMYZL88,2)*100 AS CHAR) ,round(XMTSCL89,2)  from output_MES13;
+    </select>
+</mapper>

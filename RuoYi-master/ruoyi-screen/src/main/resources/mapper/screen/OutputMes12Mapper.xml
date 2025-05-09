@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.OutputMes12Mapper">
+    
+    <resultMap type="OutputMes12" id="OutputMes12Result">
+        <result property="采样时间"    column="采样时间"    />
+        <result property="countGet"    column="count_get"    />
+        <result property="vDate1"    column="vDate1"    />
+        <result property="XMBYMESGK1"    column="XMBYMESGK1"    />
+        <result property="XMBYMESGK2"    column="XMBYMESGK2"    />
+        <result property="XMBYMESGK3"    column="XMBYMESGK3"    />
+        <result property="XMBYMESGK4"    column="XMBYMESGK4"    />
+        <result property="XMBYMESGK5"    column="XMBYMESGK5"    />
+        <result property="XMBYMESGK6"    column="XMBYMESGK6"    />
+        <result property="XMBYMESGK7"    column="XMBYMESGK7"    />
+        <result property="XMBYMESGK8"    column="XMBYMESGK8"    />
+        <result property="XMBYMESGK9"    column="XMBYMESGK9"    />
+        <result property="XMBYMESGK10"    column="XMBYMESGK10"    />
+        <result property="XMBYMESGK11"    column="XMBYMESGK11"    />
+        <result property="XMBYMESGK12"    column="XMBYMESGK12"    />
+        <result property="XMBYMESGK13"    column="XMBYMESGK13"    />
+        <result property="XMBYMESGK14"    column="XMBYMESGK14"    />
+        <result property="XMBYMESGK15"    column="XMBYMESGK15"    />
+        <result property="XMBYMESGK16"    column="XMBYMESGK16"    />
+        <result property="XMBYMESGK17"    column="XMBYMESGK17"    />
+        <result property="XMBYMESGK18"    column="XMBYMESGK18"    />
+        <result property="XMBYMESGK19"    column="XMBYMESGK19"    />
+        <result property="XMBYMESGK20"    column="XMBYMESGK20"    />
+        <result property="XMBYMESGK21"    column="XMBYMESGK21"    />
+        <result property="XMBYMESGK22"    column="XMBYMESGK22"    />
+        <result property="XMBYMESGK23"    column="XMBYMESGK23"    />
+        <result property="XMBYMESGK24"    column="XMBYMESGK24"    />
+        <result property="XMBYMESGK25"    column="XMBYMESGK25"    />
+        <result property="XMBYMESGK26"    column="XMBYMESGK26"    />
+        <result property="XMBYMESGK27"    column="XMBYMESGK27"    />
+        <result property="XMBYMESGK28"    column="XMBYMESGK28"    />
+        <result property="XMBYMESGK29"    column="XMBYMESGK29"    />
+        <result property="XMBYMESGK30"    column="XMBYMESGK30"    />
+        <result property="XMBYMESGK31"    column="XMBYMESGK31"    />
+        <result property="XMBYMESGK32"    column="XMBYMESGK32"    />
+        <result property="XMBYMESGK33"    column="XMBYMESGK33"    />
+        <result property="XMBYMESGK34"    column="XMBYMESGK34"    />
+        <result property="XMBYMESGK35"    column="XMBYMESGK35"    />
+        <result property="XMBYMESGK36"    column="XMBYMESGK36"    />
+        <result property="XMBYMESGK37"    column="XMBYMESGK37"    />
+        <result property="XMBYMESGK38"    column="XMBYMESGK38"    />
+        <result property="XMBYMESGK39"    column="XMBYMESGK39"    />
+        <result property="XMBYMESGK40"    column="XMBYMESGK40"    />
+        <result property="XMBYMESGK41"    column="XMBYMESGK41"    />
+        <result property="XMBYMESGK42"    column="XMBYMESGK42"    />
+        <result property="XMBYMESGK43"    column="XMBYMESGK43"    />
+        <result property="XMBYMESGK44"    column="XMBYMESGK44"    />
+        <result property="XMBYMESGK45"    column="XMBYMESGK45"    />
+        <result property="XMBYMESGK46"    column="XMBYMESGK46"    />
+        <result property="XMBYMESGK47"    column="XMBYMESGK47"    />
+        <result property="XMBYMESGK48"    column="XMBYMESGK48"    />
+        <result property="XMBYMESGK49"    column="XMBYMESGK49"    />
+        <result property="XMBYMESGK50"    column="XMBYMESGK50"    />
+        <result property="XMBYMESGK51"    column="XMBYMESGK51"    />
+        <result property="XMBYMESGK52"    column="XMBYMESGK52"    />
+        <result property="XMBYMESGK53"    column="XMBYMESGK53"    />
+        <result property="XMBYMESGK54"    column="XMBYMESGK54"    />
+        <result property="XMBYMESGK55"    column="XMBYMESGK55"    />
+        <result property="XMBYMESGK56"    column="XMBYMESGK56"    />
+        <result property="XMBYMESGK57"    column="XMBYMESGK57"    />
+        <result property="XMBYMESGK58"    column="XMBYMESGK58"    />
+        <result property="XMBYMESGK59"    column="XMBYMESGK59"    />
+        <result property="XMBYMESGK60"    column="XMBYMESGK60"    />
+    </resultMap>
+
+    <sql id="selectOutputMes12Vo">
+        select 采样时间, count_get, vDate1, XMBYMESGK1, XMBYMESGK2, XMBYMESGK3, XMBYMESGK4, XMBYMESGK5, XMBYMESGK6, XMBYMESGK7, XMBYMESGK8, XMBYMESGK9, XMBYMESGK10, XMBYMESGK11, XMBYMESGK12, XMBYMESGK13, XMBYMESGK14, XMBYMESGK15, XMBYMESGK16, XMBYMESGK17, XMBYMESGK18, XMBYMESGK19, XMBYMESGK20, XMBYMESGK21, XMBYMESGK22, XMBYMESGK23, XMBYMESGK24, XMBYMESGK25, XMBYMESGK26, XMBYMESGK27, XMBYMESGK28, XMBYMESGK29, XMBYMESGK30, XMBYMESGK31, XMBYMESGK32, XMBYMESGK33, XMBYMESGK34, XMBYMESGK35, XMBYMESGK36, XMBYMESGK37, XMBYMESGK38, XMBYMESGK39, XMBYMESGK40, XMBYMESGK41, XMBYMESGK42, XMBYMESGK43, XMBYMESGK44, XMBYMESGK45, XMBYMESGK46, XMBYMESGK47, XMBYMESGK48, XMBYMESGK49, XMBYMESGK50, XMBYMESGK51, XMBYMESGK52, XMBYMESGK53, XMBYMESGK54, XMBYMESGK55, XMBYMESGK56, XMBYMESGK57, XMBYMESGK58, XMBYMESGK59, XMBYMESGK60 from output_mes12
+    </sql>
+
+    <select id="selectOutputMes12List" parameterType="OutputMes12" resultMap="OutputMes12Result">
+        <include refid="selectOutputMes12Vo"/>
+        <where>  
+            <if test="采样时间 != null "> and 采样时间 = #{采样时间}</if>
+            <if test="countGet != null "> and count_get = #{countGet}</if>
+            <if test="vDate1 != null "> and vDate1 = #{vDate1}</if>
+            <if test="XMBYMESGK1 != null "> and XMBYMESGK1 = #{XMBYMESGK1}</if>
+            <if test="XMBYMESGK2 != null "> and XMBYMESGK2 = #{XMBYMESGK2}</if>
+            <if test="XMBYMESGK3 != null "> and XMBYMESGK3 = #{XMBYMESGK3}</if>
+            <if test="XMBYMESGK4 != null "> and XMBYMESGK4 = #{XMBYMESGK4}</if>
+            <if test="XMBYMESGK5 != null "> and XMBYMESGK5 = #{XMBYMESGK5}</if>
+            <if test="XMBYMESGK6 != null "> and XMBYMESGK6 = #{XMBYMESGK6}</if>
+            <if test="XMBYMESGK7 != null "> and XMBYMESGK7 = #{XMBYMESGK7}</if>
+            <if test="XMBYMESGK8 != null "> and XMBYMESGK8 = #{XMBYMESGK8}</if>
+            <if test="XMBYMESGK9 != null "> and XMBYMESGK9 = #{XMBYMESGK9}</if>
+            <if test="XMBYMESGK10 != null "> and XMBYMESGK10 = #{XMBYMESGK10}</if>
+            <if test="XMBYMESGK11 != null "> and XMBYMESGK11 = #{XMBYMESGK11}</if>
+            <if test="XMBYMESGK12 != null "> and XMBYMESGK12 = #{XMBYMESGK12}</if>
+            <if test="XMBYMESGK13 != null "> and XMBYMESGK13 = #{XMBYMESGK13}</if>
+            <if test="XMBYMESGK14 != null "> and XMBYMESGK14 = #{XMBYMESGK14}</if>
+            <if test="XMBYMESGK15 != null "> and XMBYMESGK15 = #{XMBYMESGK15}</if>
+            <if test="XMBYMESGK16 != null "> and XMBYMESGK16 = #{XMBYMESGK16}</if>
+            <if test="XMBYMESGK17 != null "> and XMBYMESGK17 = #{XMBYMESGK17}</if>
+            <if test="XMBYMESGK18 != null "> and XMBYMESGK18 = #{XMBYMESGK18}</if>
+            <if test="XMBYMESGK19 != null "> and XMBYMESGK19 = #{XMBYMESGK19}</if>
+            <if test="XMBYMESGK20 != null "> and XMBYMESGK20 = #{XMBYMESGK20}</if>
+            <if test="XMBYMESGK21 != null "> and XMBYMESGK21 = #{XMBYMESGK21}</if>
+            <if test="XMBYMESGK22 != null "> and XMBYMESGK22 = #{XMBYMESGK22}</if>
+            <if test="XMBYMESGK23 != null "> and XMBYMESGK23 = #{XMBYMESGK23}</if>
+            <if test="XMBYMESGK24 != null "> and XMBYMESGK24 = #{XMBYMESGK24}</if>
+            <if test="XMBYMESGK25 != null "> and XMBYMESGK25 = #{XMBYMESGK25}</if>
+            <if test="XMBYMESGK26 != null "> and XMBYMESGK26 = #{XMBYMESGK26}</if>
+            <if test="XMBYMESGK27 != null "> and XMBYMESGK27 = #{XMBYMESGK27}</if>
+            <if test="XMBYMESGK28 != null "> and XMBYMESGK28 = #{XMBYMESGK28}</if>
+            <if test="XMBYMESGK29 != null "> and XMBYMESGK29 = #{XMBYMESGK29}</if>
+            <if test="XMBYMESGK30 != null "> and XMBYMESGK30 = #{XMBYMESGK30}</if>
+            <if test="XMBYMESGK31 != null "> and XMBYMESGK31 = #{XMBYMESGK31}</if>
+            <if test="XMBYMESGK32 != null "> and XMBYMESGK32 = #{XMBYMESGK32}</if>
+            <if test="XMBYMESGK33 != null "> and XMBYMESGK33 = #{XMBYMESGK33}</if>
+            <if test="XMBYMESGK34 != null "> and XMBYMESGK34 = #{XMBYMESGK34}</if>
+            <if test="XMBYMESGK35 != null "> and XMBYMESGK35 = #{XMBYMESGK35}</if>
+            <if test="XMBYMESGK36 != null "> and XMBYMESGK36 = #{XMBYMESGK36}</if>
+            <if test="XMBYMESGK37 != null "> and XMBYMESGK37 = #{XMBYMESGK37}</if>
+            <if test="XMBYMESGK38 != null "> and XMBYMESGK38 = #{XMBYMESGK38}</if>
+            <if test="XMBYMESGK39 != null "> and XMBYMESGK39 = #{XMBYMESGK39}</if>
+            <if test="XMBYMESGK40 != null "> and XMBYMESGK40 = #{XMBYMESGK40}</if>
+            <if test="XMBYMESGK41 != null "> and XMBYMESGK41 = #{XMBYMESGK41}</if>
+            <if test="XMBYMESGK42 != null "> and XMBYMESGK42 = #{XMBYMESGK42}</if>
+            <if test="XMBYMESGK43 != null "> and XMBYMESGK43 = #{XMBYMESGK43}</if>
+            <if test="XMBYMESGK44 != null "> and XMBYMESGK44 = #{XMBYMESGK44}</if>
+            <if test="XMBYMESGK45 != null "> and XMBYMESGK45 = #{XMBYMESGK45}</if>
+            <if test="XMBYMESGK46 != null "> and XMBYMESGK46 = #{XMBYMESGK46}</if>
+            <if test="XMBYMESGK47 != null "> and XMBYMESGK47 = #{XMBYMESGK47}</if>
+            <if test="XMBYMESGK48 != null "> and XMBYMESGK48 = #{XMBYMESGK48}</if>
+            <if test="XMBYMESGK49 != null "> and XMBYMESGK49 = #{XMBYMESGK49}</if>
+            <if test="XMBYMESGK50 != null "> and XMBYMESGK50 = #{XMBYMESGK50}</if>
+            <if test="XMBYMESGK51 != null "> and XMBYMESGK51 = #{XMBYMESGK51}</if>
+            <if test="XMBYMESGK52 != null "> and XMBYMESGK52 = #{XMBYMESGK52}</if>
+            <if test="XMBYMESGK53 != null "> and XMBYMESGK53 = #{XMBYMESGK53}</if>
+            <if test="XMBYMESGK54 != null "> and XMBYMESGK54 = #{XMBYMESGK54}</if>
+            <if test="XMBYMESGK55 != null "> and XMBYMESGK55 = #{XMBYMESGK55}</if>
+            <if test="XMBYMESGK56 != null "> and XMBYMESGK56 = #{XMBYMESGK56}</if>
+            <if test="XMBYMESGK57 != null "> and XMBYMESGK57 = #{XMBYMESGK57}</if>
+            <if test="XMBYMESGK58 != null "> and XMBYMESGK58 = #{XMBYMESGK58}</if>
+            <if test="XMBYMESGK59 != null "> and XMBYMESGK59 = #{XMBYMESGK59}</if>
+            <if test="XMBYMESGK60 != null "> and XMBYMESGK60 = #{XMBYMESGK60}</if>
+        </where>
+    </select>
+    
+    <select id="selectOutputMes12By采样时间" parameterType="Date" resultMap="OutputMes12Result">
+        <include refid="selectOutputMes12Vo"/>
+        where 采样时间 = #{采样时间}
+    </select>
+
+    <insert id="insertOutputMes12" parameterType="OutputMes12">
+        insert into output_mes12
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="采样时间 != null">采样时间,</if>
+            <if test="countGet != null">count_get,</if>
+            <if test="vDate1 != null">vDate1,</if>
+            <if test="XMBYMESGK1 != null">XMBYMESGK1,</if>
+            <if test="XMBYMESGK2 != null">XMBYMESGK2,</if>
+            <if test="XMBYMESGK3 != null">XMBYMESGK3,</if>
+            <if test="XMBYMESGK4 != null">XMBYMESGK4,</if>
+            <if test="XMBYMESGK5 != null">XMBYMESGK5,</if>
+            <if test="XMBYMESGK6 != null">XMBYMESGK6,</if>
+            <if test="XMBYMESGK7 != null">XMBYMESGK7,</if>
+            <if test="XMBYMESGK8 != null">XMBYMESGK8,</if>
+            <if test="XMBYMESGK9 != null">XMBYMESGK9,</if>
+            <if test="XMBYMESGK10 != null">XMBYMESGK10,</if>
+            <if test="XMBYMESGK11 != null">XMBYMESGK11,</if>
+            <if test="XMBYMESGK12 != null">XMBYMESGK12,</if>
+            <if test="XMBYMESGK13 != null">XMBYMESGK13,</if>
+            <if test="XMBYMESGK14 != null">XMBYMESGK14,</if>
+            <if test="XMBYMESGK15 != null">XMBYMESGK15,</if>
+            <if test="XMBYMESGK16 != null">XMBYMESGK16,</if>
+            <if test="XMBYMESGK17 != null">XMBYMESGK17,</if>
+            <if test="XMBYMESGK18 != null">XMBYMESGK18,</if>
+            <if test="XMBYMESGK19 != null">XMBYMESGK19,</if>
+            <if test="XMBYMESGK20 != null">XMBYMESGK20,</if>
+            <if test="XMBYMESGK21 != null">XMBYMESGK21,</if>
+            <if test="XMBYMESGK22 != null">XMBYMESGK22,</if>
+            <if test="XMBYMESGK23 != null">XMBYMESGK23,</if>
+            <if test="XMBYMESGK24 != null">XMBYMESGK24,</if>
+            <if test="XMBYMESGK25 != null">XMBYMESGK25,</if>
+            <if test="XMBYMESGK26 != null">XMBYMESGK26,</if>
+            <if test="XMBYMESGK27 != null">XMBYMESGK27,</if>
+            <if test="XMBYMESGK28 != null">XMBYMESGK28,</if>
+            <if test="XMBYMESGK29 != null">XMBYMESGK29,</if>
+            <if test="XMBYMESGK30 != null">XMBYMESGK30,</if>
+            <if test="XMBYMESGK31 != null">XMBYMESGK31,</if>
+            <if test="XMBYMESGK32 != null">XMBYMESGK32,</if>
+            <if test="XMBYMESGK33 != null">XMBYMESGK33,</if>
+            <if test="XMBYMESGK34 != null">XMBYMESGK34,</if>
+            <if test="XMBYMESGK35 != null">XMBYMESGK35,</if>
+            <if test="XMBYMESGK36 != null">XMBYMESGK36,</if>
+            <if test="XMBYMESGK37 != null">XMBYMESGK37,</if>
+            <if test="XMBYMESGK38 != null">XMBYMESGK38,</if>
+            <if test="XMBYMESGK39 != null">XMBYMESGK39,</if>
+            <if test="XMBYMESGK40 != null">XMBYMESGK40,</if>
+            <if test="XMBYMESGK41 != null">XMBYMESGK41,</if>
+            <if test="XMBYMESGK42 != null">XMBYMESGK42,</if>
+            <if test="XMBYMESGK43 != null">XMBYMESGK43,</if>
+            <if test="XMBYMESGK44 != null">XMBYMESGK44,</if>
+            <if test="XMBYMESGK45 != null">XMBYMESGK45,</if>
+            <if test="XMBYMESGK46 != null">XMBYMESGK46,</if>
+            <if test="XMBYMESGK47 != null">XMBYMESGK47,</if>
+            <if test="XMBYMESGK48 != null">XMBYMESGK48,</if>
+            <if test="XMBYMESGK49 != null">XMBYMESGK49,</if>
+            <if test="XMBYMESGK50 != null">XMBYMESGK50,</if>
+            <if test="XMBYMESGK51 != null">XMBYMESGK51,</if>
+            <if test="XMBYMESGK52 != null">XMBYMESGK52,</if>
+            <if test="XMBYMESGK53 != null">XMBYMESGK53,</if>
+            <if test="XMBYMESGK54 != null">XMBYMESGK54,</if>
+            <if test="XMBYMESGK55 != null">XMBYMESGK55,</if>
+            <if test="XMBYMESGK56 != null">XMBYMESGK56,</if>
+            <if test="XMBYMESGK57 != null">XMBYMESGK57,</if>
+            <if test="XMBYMESGK58 != null">XMBYMESGK58,</if>
+            <if test="XMBYMESGK59 != null">XMBYMESGK59,</if>
+            <if test="XMBYMESGK60 != null">XMBYMESGK60,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="采样时间 != null">#{采样时间},</if>
+            <if test="countGet != null">#{countGet},</if>
+            <if test="vDate1 != null">#{vDate1},</if>
+            <if test="XMBYMESGK1 != null">#{XMBYMESGK1},</if>
+            <if test="XMBYMESGK2 != null">#{XMBYMESGK2},</if>
+            <if test="XMBYMESGK3 != null">#{XMBYMESGK3},</if>
+            <if test="XMBYMESGK4 != null">#{XMBYMESGK4},</if>
+            <if test="XMBYMESGK5 != null">#{XMBYMESGK5},</if>
+            <if test="XMBYMESGK6 != null">#{XMBYMESGK6},</if>
+            <if test="XMBYMESGK7 != null">#{XMBYMESGK7},</if>
+            <if test="XMBYMESGK8 != null">#{XMBYMESGK8},</if>
+            <if test="XMBYMESGK9 != null">#{XMBYMESGK9},</if>
+            <if test="XMBYMESGK10 != null">#{XMBYMESGK10},</if>
+            <if test="XMBYMESGK11 != null">#{XMBYMESGK11},</if>
+            <if test="XMBYMESGK12 != null">#{XMBYMESGK12},</if>
+            <if test="XMBYMESGK13 != null">#{XMBYMESGK13},</if>
+            <if test="XMBYMESGK14 != null">#{XMBYMESGK14},</if>
+            <if test="XMBYMESGK15 != null">#{XMBYMESGK15},</if>
+            <if test="XMBYMESGK16 != null">#{XMBYMESGK16},</if>
+            <if test="XMBYMESGK17 != null">#{XMBYMESGK17},</if>
+            <if test="XMBYMESGK18 != null">#{XMBYMESGK18},</if>
+            <if test="XMBYMESGK19 != null">#{XMBYMESGK19},</if>
+            <if test="XMBYMESGK20 != null">#{XMBYMESGK20},</if>
+            <if test="XMBYMESGK21 != null">#{XMBYMESGK21},</if>
+            <if test="XMBYMESGK22 != null">#{XMBYMESGK22},</if>
+            <if test="XMBYMESGK23 != null">#{XMBYMESGK23},</if>
+            <if test="XMBYMESGK24 != null">#{XMBYMESGK24},</if>
+            <if test="XMBYMESGK25 != null">#{XMBYMESGK25},</if>
+            <if test="XMBYMESGK26 != null">#{XMBYMESGK26},</if>
+            <if test="XMBYMESGK27 != null">#{XMBYMESGK27},</if>
+            <if test="XMBYMESGK28 != null">#{XMBYMESGK28},</if>
+            <if test="XMBYMESGK29 != null">#{XMBYMESGK29},</if>
+            <if test="XMBYMESGK30 != null">#{XMBYMESGK30},</if>
+            <if test="XMBYMESGK31 != null">#{XMBYMESGK31},</if>
+            <if test="XMBYMESGK32 != null">#{XMBYMESGK32},</if>
+            <if test="XMBYMESGK33 != null">#{XMBYMESGK33},</if>
+            <if test="XMBYMESGK34 != null">#{XMBYMESGK34},</if>
+            <if test="XMBYMESGK35 != null">#{XMBYMESGK35},</if>
+            <if test="XMBYMESGK36 != null">#{XMBYMESGK36},</if>
+            <if test="XMBYMESGK37 != null">#{XMBYMESGK37},</if>
+            <if test="XMBYMESGK38 != null">#{XMBYMESGK38},</if>
+            <if test="XMBYMESGK39 != null">#{XMBYMESGK39},</if>
+            <if test="XMBYMESGK40 != null">#{XMBYMESGK40},</if>
+            <if test="XMBYMESGK41 != null">#{XMBYMESGK41},</if>
+            <if test="XMBYMESGK42 != null">#{XMBYMESGK42},</if>
+            <if test="XMBYMESGK43 != null">#{XMBYMESGK43},</if>
+            <if test="XMBYMESGK44 != null">#{XMBYMESGK44},</if>
+            <if test="XMBYMESGK45 != null">#{XMBYMESGK45},</if>
+            <if test="XMBYMESGK46 != null">#{XMBYMESGK46},</if>
+            <if test="XMBYMESGK47 != null">#{XMBYMESGK47},</if>
+            <if test="XMBYMESGK48 != null">#{XMBYMESGK48},</if>
+            <if test="XMBYMESGK49 != null">#{XMBYMESGK49},</if>
+            <if test="XMBYMESGK50 != null">#{XMBYMESGK50},</if>
+            <if test="XMBYMESGK51 != null">#{XMBYMESGK51},</if>
+            <if test="XMBYMESGK52 != null">#{XMBYMESGK52},</if>
+            <if test="XMBYMESGK53 != null">#{XMBYMESGK53},</if>
+            <if test="XMBYMESGK54 != null">#{XMBYMESGK54},</if>
+            <if test="XMBYMESGK55 != null">#{XMBYMESGK55},</if>
+            <if test="XMBYMESGK56 != null">#{XMBYMESGK56},</if>
+            <if test="XMBYMESGK57 != null">#{XMBYMESGK57},</if>
+            <if test="XMBYMESGK58 != null">#{XMBYMESGK58},</if>
+            <if test="XMBYMESGK59 != null">#{XMBYMESGK59},</if>
+            <if test="XMBYMESGK60 != null">#{XMBYMESGK60},</if>
+         </trim>
+    </insert>
+
+    <update id="updateOutputMes12" parameterType="OutputMes12">
+        update output_mes12
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="countGet != null">count_get = #{countGet},</if>
+            <if test="vDate1 != null">vDate1 = #{vDate1},</if>
+            <if test="XMBYMESGK1 != null">XMBYMESGK1 = #{XMBYMESGK1},</if>
+            <if test="XMBYMESGK2 != null">XMBYMESGK2 = #{XMBYMESGK2},</if>
+            <if test="XMBYMESGK3 != null">XMBYMESGK3 = #{XMBYMESGK3},</if>
+            <if test="XMBYMESGK4 != null">XMBYMESGK4 = #{XMBYMESGK4},</if>
+            <if test="XMBYMESGK5 != null">XMBYMESGK5 = #{XMBYMESGK5},</if>
+            <if test="XMBYMESGK6 != null">XMBYMESGK6 = #{XMBYMESGK6},</if>
+            <if test="XMBYMESGK7 != null">XMBYMESGK7 = #{XMBYMESGK7},</if>
+            <if test="XMBYMESGK8 != null">XMBYMESGK8 = #{XMBYMESGK8},</if>
+            <if test="XMBYMESGK9 != null">XMBYMESGK9 = #{XMBYMESGK9},</if>
+            <if test="XMBYMESGK10 != null">XMBYMESGK10 = #{XMBYMESGK10},</if>
+            <if test="XMBYMESGK11 != null">XMBYMESGK11 = #{XMBYMESGK11},</if>
+            <if test="XMBYMESGK12 != null">XMBYMESGK12 = #{XMBYMESGK12},</if>
+            <if test="XMBYMESGK13 != null">XMBYMESGK13 = #{XMBYMESGK13},</if>
+            <if test="XMBYMESGK14 != null">XMBYMESGK14 = #{XMBYMESGK14},</if>
+            <if test="XMBYMESGK15 != null">XMBYMESGK15 = #{XMBYMESGK15},</if>
+            <if test="XMBYMESGK16 != null">XMBYMESGK16 = #{XMBYMESGK16},</if>
+            <if test="XMBYMESGK17 != null">XMBYMESGK17 = #{XMBYMESGK17},</if>
+            <if test="XMBYMESGK18 != null">XMBYMESGK18 = #{XMBYMESGK18},</if>
+            <if test="XMBYMESGK19 != null">XMBYMESGK19 = #{XMBYMESGK19},</if>
+            <if test="XMBYMESGK20 != null">XMBYMESGK20 = #{XMBYMESGK20},</if>
+            <if test="XMBYMESGK21 != null">XMBYMESGK21 = #{XMBYMESGK21},</if>
+            <if test="XMBYMESGK22 != null">XMBYMESGK22 = #{XMBYMESGK22},</if>
+            <if test="XMBYMESGK23 != null">XMBYMESGK23 = #{XMBYMESGK23},</if>
+            <if test="XMBYMESGK24 != null">XMBYMESGK24 = #{XMBYMESGK24},</if>
+            <if test="XMBYMESGK25 != null">XMBYMESGK25 = #{XMBYMESGK25},</if>
+            <if test="XMBYMESGK26 != null">XMBYMESGK26 = #{XMBYMESGK26},</if>
+            <if test="XMBYMESGK27 != null">XMBYMESGK27 = #{XMBYMESGK27},</if>
+            <if test="XMBYMESGK28 != null">XMBYMESGK28 = #{XMBYMESGK28},</if>
+            <if test="XMBYMESGK29 != null">XMBYMESGK29 = #{XMBYMESGK29},</if>
+            <if test="XMBYMESGK30 != null">XMBYMESGK30 = #{XMBYMESGK30},</if>
+            <if test="XMBYMESGK31 != null">XMBYMESGK31 = #{XMBYMESGK31},</if>
+            <if test="XMBYMESGK32 != null">XMBYMESGK32 = #{XMBYMESGK32},</if>
+            <if test="XMBYMESGK33 != null">XMBYMESGK33 = #{XMBYMESGK33},</if>
+            <if test="XMBYMESGK34 != null">XMBYMESGK34 = #{XMBYMESGK34},</if>
+            <if test="XMBYMESGK35 != null">XMBYMESGK35 = #{XMBYMESGK35},</if>
+            <if test="XMBYMESGK36 != null">XMBYMESGK36 = #{XMBYMESGK36},</if>
+            <if test="XMBYMESGK37 != null">XMBYMESGK37 = #{XMBYMESGK37},</if>
+            <if test="XMBYMESGK38 != null">XMBYMESGK38 = #{XMBYMESGK38},</if>
+            <if test="XMBYMESGK39 != null">XMBYMESGK39 = #{XMBYMESGK39},</if>
+            <if test="XMBYMESGK40 != null">XMBYMESGK40 = #{XMBYMESGK40},</if>
+            <if test="XMBYMESGK41 != null">XMBYMESGK41 = #{XMBYMESGK41},</if>
+            <if test="XMBYMESGK42 != null">XMBYMESGK42 = #{XMBYMESGK42},</if>
+            <if test="XMBYMESGK43 != null">XMBYMESGK43 = #{XMBYMESGK43},</if>
+            <if test="XMBYMESGK44 != null">XMBYMESGK44 = #{XMBYMESGK44},</if>
+            <if test="XMBYMESGK45 != null">XMBYMESGK45 = #{XMBYMESGK45},</if>
+            <if test="XMBYMESGK46 != null">XMBYMESGK46 = #{XMBYMESGK46},</if>
+            <if test="XMBYMESGK47 != null">XMBYMESGK47 = #{XMBYMESGK47},</if>
+            <if test="XMBYMESGK48 != null">XMBYMESGK48 = #{XMBYMESGK48},</if>
+            <if test="XMBYMESGK49 != null">XMBYMESGK49 = #{XMBYMESGK49},</if>
+            <if test="XMBYMESGK50 != null">XMBYMESGK50 = #{XMBYMESGK50},</if>
+            <if test="XMBYMESGK51 != null">XMBYMESGK51 = #{XMBYMESGK51},</if>
+            <if test="XMBYMESGK52 != null">XMBYMESGK52 = #{XMBYMESGK52},</if>
+            <if test="XMBYMESGK53 != null">XMBYMESGK53 = #{XMBYMESGK53},</if>
+            <if test="XMBYMESGK54 != null">XMBYMESGK54 = #{XMBYMESGK54},</if>
+            <if test="XMBYMESGK55 != null">XMBYMESGK55 = #{XMBYMESGK55},</if>
+            <if test="XMBYMESGK56 != null">XMBYMESGK56 = #{XMBYMESGK56},</if>
+            <if test="XMBYMESGK57 != null">XMBYMESGK57 = #{XMBYMESGK57},</if>
+            <if test="XMBYMESGK58 != null">XMBYMESGK58 = #{XMBYMESGK58},</if>
+            <if test="XMBYMESGK59 != null">XMBYMESGK59 = #{XMBYMESGK59},</if>
+            <if test="XMBYMESGK60 != null">XMBYMESGK60 = #{XMBYMESGK60},</if>
+        </trim>
+        where 采样时间 = #{采样时间}
+    </update>
+
+    <delete id="deleteOutputMes12By采样时间" parameterType="Date">
+        delete from output_mes12 where 采样时间 = #{采样时间}
+    </delete>
+
+    <delete id="deleteOutputMes12By采样时间s" parameterType="String">
+        delete from output_mes12 where 采样时间 in 
+        <foreach item="采样时间" collection="array" open="(" separator="," close=")">
+            #{采样时间}
+        </foreach>
+    </delete>
+</mapper>
